@@ -1,0 +1,14 @@
+gst-launch-1.0 -v v4l2src device=/dev/video0 ! video/x-raw,framerate=15/1,width=1280,height=720 ! xvimagesink
+
+gst-launch-1.0 -v v4l2src device=/dev/video0 ! video/x-raw,framerate=30/1,width=1280,height=720 ! x264enc ! tcpserversink port=4444
+
+gst-launch-1.0 tcpclientsrc port=4444 host=localhost ! h264parse ! avdec_h264 ! glimagesink
+
+sudo apt-get install gstreamer1.0-plugins-bad
+
+ssh pi@10.0.0.7
+
+gst-launch-1.0 -v v4l2src device=/dev/video1 ! image/jpeg,framerate=60/1,width=1280,height=720 ! rtpjpegpay ! udpsink host=127.0.0.1 port=8081 sync=false
+
+gst-launch-1.0 udpsrc port=8081 ! application/x-rtp,encoding-name=JPEG,payload=26 ! rtpjpegdepay ! jpegdec !  xvimagesink sync=false
+
