@@ -12,7 +12,7 @@ class VideoStream():
         self._ip = ip
         self._port = port
         self._pipeline = Gst.parse_launch(
-            "v4l2src device=/dev/video0 ! image/jpeg, width=1280, height=720, framerate=60/1 ! rtpjpegpay ! udpsink host=" + ip + " port=" + port + " sync=false")
+            "v4l2src device=/dev/video1 ! image/jpeg, width=1280, height=720, framerate=60/1 ! rtpjpegpay ! udpsink host=" + ip + " port=" + port + " sync=false")
         self._thread = None
 
     def start(self):

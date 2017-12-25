@@ -41,14 +41,13 @@ class ROVREGIONAL:
         self._myhardware._avrList[0].addDevice("DC", zero, 1)
         self._myhardware._avrList[0].addDevice("LED", zero, 1)
 
-
         # =============Components
         # identifiers must be in the form of a dict  {identifier : Base value}
         self._rovmanipulator = Manipulator(self._myhardware, {"grip": 0})
-        self._rovLight = Lights(self._myhardware, {"led1": 0, "led2" : 0})
+        self._rovLight = Lights(self._myhardware, {"led1": 0, "led2": 0})
         self._rovCamera = Camera(self._myhardware, {"cam": 0})
-        self._rovmotion = Motion(self._myhardware, {"x": 0, "y": 0, "z": 0, "r": 0, "currentmode": 0, "flip":0})
-        modules = [self._rovCamera, self._rovmotion,self._rovmanipulator,self._rovLight]
+        self._rovmotion = Motion(self._myhardware, {"x": 0, "y": 0, "z": 0, "r": 0, "currentmode": 0, "flip": 0})
+        modules = [self._rovCamera, self._rovmotion, self._rovmanipulator, self._rovLight]
 
         # =============PostOffcie
 
@@ -60,19 +59,17 @@ class ROVREGIONAL:
         self.mypostoffice.registerEventListner("I2C", self._rovmotion.mail)
         self.mypostoffice.registerEventListner("I2C", self._myhardware._avrList[0].mail)
 
-
         self.mypostoffice.registerEventListner("Sensors", self._topcommunicator._send)
 
         self._topcommunicator.registerCallBack(self.mypostoffice.triggerEvent)
 
         # =============Sensors
-        self._mysensors=SensorRegistry()
+        self._mysensors = SensorRegistry()
         self._mysensors.registerSensor(sensor)
         self._mysensors.registerCallBack(self.mypostoffice.triggerEvent)
 
-        # =====intterupts
+        # =====interrupts
         self._interruptor = Interrupt()
         self._interruptor.register(23, False, self.mypostoffice.triggerEvent, "I2C")
 
         self._topcommunicator._mainLoop()
-

@@ -6,7 +6,7 @@ from Motion import *
 from PostOffice import *
 from communication.LowLevelCommunicator import *
 from communication.TcpCommunication import *
-from communication.Interrupts import *
+# from communication.Interrupts import *
 from SensorClass import *
 from Sensors import *
 class ROV:

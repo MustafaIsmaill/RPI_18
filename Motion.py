@@ -20,6 +20,7 @@ class Motion(Component):
         self.PWMRANGE=810
         self.SWORDFISHCOEFFICIENT=0.25
         self.RETURNCOEFFICIENT=0.25
+
         #=========VARIABLES==========
         self._futureStepsForSuddenChange={"Front_Right_Thruster":[None,0],"Front_Left_Thruster":[None,0],
                                          "Back_Right_Thruster":[None,0],"Back_Left_Thruster":[None,0],

@@ -1,8 +1,11 @@
 from ROV import *
-from ROVLOCAL import *
-from ROVREGIONAL import *
+# from ROVLOCAL import *
+# from ROVREGIONAL import *
+
+from ROVMANSY import *
+
 if __name__ == '__main__':
     try:
-        rov2017=ROVREGIONAL()
+        rov2017=ROVMANSY()
     except():
-        print("Keyboard Interrupt Rov aborted")
+        print("El connection mat")
