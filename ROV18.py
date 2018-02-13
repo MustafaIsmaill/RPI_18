@@ -1,54 +1,71 @@
-from Camera import *
-from Lights import *
-from Manipulator import *
-from Motion import *
-from PostOffice import *
-from communication.LowLevelCommunicator import *
 from communication.TcpCommunication import *
-from communication.Interrupts import *
-from SensorClass import *
-from Sensors import *
+from Interrupter import *
+from Publisher import *
+from Motion import *
 from Hat import *
-from Adafruit_PWM_Servo_Driver import PWM
 
 
-class ROVMANSY:
+class ROV18:
     def __init__(self):
+        # initialize tcp_communicator for communicating with QT via TCP
         ip = "0.0.0.0"
         port = 8005
-        self._topcommunicator = TcpCommunicator(ip, port, bind=True)
-        self._botcommunicator = I2cCommunicator()
+        self.tcp_communicator = TcpCommunicator(ip, port, bind=True)
 
-        # ===============Hat
-        pwm = PWM(0x40)
-        self.hat = Hat(pwm, 50)
+        # initialize hat with default address and frequency
+        hat_address = 0x40
+        frequency = 50
+        self.hat = Hat(hat_address, frequency)
 
-        # =============Components
-        # identifiers must be in the form of a dict  {identifier : Base value}
-        self._rovmotion = Motion(self._myhardware, {"x": 0, "y": 0, "z": 0, "r": 0, "currentmode": 0, "flip": 0})
-        modules = [self._rovCamera, self._rovmotion, self._rovmanipulator, self._rovLight]
+        # adding devices to hat -- args: (device name, channel, base pwm)
+        thruster_base_pwm = 305
+        self.hat.addDevice("top_rear_thruster", 0, thruster_base_pwm)
+        self.hat.addDevice("left_rear_thruster", 1, thruster_base_pwm)
+        self.hat.addDevice("right_rear_thruster", 2, thruster_base_pwm)
+        self.hat.addDevice("top_front_thruster", 3, thruster_base_pwm)
+        self.hat.addDevice("left_front_thruster", 4, thruster_base_pwm)
+        self.hat.addDevice("right_front_thruster", 5, thruster_base_pwm)
 
-        # =============PostOffice
+        # system components
+        components = []
 
-        self.mypostoffice = PostOffice()
-        for module in modules:
-            self.mypostoffice.registerEventListner("TCP", module.mail)
-            self.mypostoffice.registerEventListner("TCP ERROR", module.mail)
+        # motion equation component -- args (hat, angle zeros)
+        self.motion = Motion(self.hat, {"x": 0, "y": 0, "z": 0, "r": 0})
+        components.append(self.motion)
 
-        self.mypostoffice.registerEventListner("I2C", self._rovmotion.mail)
-        self.mypostoffice.registerEventListner("I2C", self._myhardware._avrList[0].mail)
+        # publisher
+        self.publisher = Publisher()
 
-        self.mypostoffice.registerEventListner("Sensors", self._topcommunicator._send)
+        # bind component listeners to TCP and I2C events in publisher
+        for component in components:
+            self.publisher.registerEventListener("TCP", component.update)
+            self.publisher.registerEventListener("TCP ERROR", component.update)
 
-        self._topcommunicator.registerCallBack(self.mypostoffice.triggerEvent)
+        self.publisher.registerEventListener("I2C", self.motion.update)
+        self.publisher.registerEventListener("I2C", self.hat.update)
 
-        # =============Sensors
-        self._mysensors = SensorRegistry()
-        self._mysensors.registerSensor(sensor)
-        self._mysensors.registerCallBack(self.mypostoffice.triggerEvent)
+        self.tcp_communicator.registerCallBack(self.publisher.trigger_event)
 
-        # =====interrupts
-        self._interruptor = Interrupt()
-        self._interruptor.register(23, False, self.mypostoffice.triggerEvent, "I2C")
+        # create interrupter and bind to I2C event trigger callback
+        self.interrupter = Interrupter(self.publisher.trigger_event, "I2C")
 
-        self._topcommunicator._mainLoop()
+        # Main loop
+        self.tcp_communicator.mainLoop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

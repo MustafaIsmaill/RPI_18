@@ -11,6 +11,8 @@ class VideoStream():
         Gst.init(None)
         self._ip = ip
         self._port = port
+        self._ip = "0.0.0.0"
+        self._port = "5000"
         self._pipeline = Gst.parse_launch(
             "v4l2src device=/dev/video1 ! image/jpeg, width=1280, height=720, framerate=60/1 ! rtpjpegpay ! udpsink host=" + ip + " port=" + port + " sync=false")
         self._thread = None

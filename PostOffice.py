@@ -1,34 +1,18 @@
 class PostOffice:
     def __init__(self):
-        self._eventListeners={}
-        self._mail_map={}
-    def registerEventListner(self,eventName,eventListner):
-        if(self._eventListeners.get(eventName) is None): #New Event
-            list=[eventListner]
-            self._eventListeners[eventName]=list
-        else:                                            #Adding a listner to an old event
-            self._eventListeners[eventName].append(eventListner)
+        self._eventListeners = {}
+        self._mail_map = {}
 
-    def deleteEventListner(self,eventName):
-            del(self._eventListeners[eventName])
+    def register_event_listener(self, event_name, event_listener):
+        if self._eventListeners.get(event_name) is None:  # New Event
+            self._eventListeners[event_name] = [event_listener]
+        else:  # Add listener to an existing event
+            self._eventListeners[event_name].append(event_listener)
 
-    def triggerEvent(self,*args):
-        eventName=args[0]
-        for listner in self._eventListeners[eventName]:
-            listner(*args)
+    def delete_event_listener(self, event_name):
+        del (self._eventListeners[event_name])
 
-
-
-        # for listner in self._eventListeners[eventName]:
-        #     if eventName is "I2C":
-        #         try:
-        #          listner(eventName)
-        #         except Exception as e:
-        #             print("Error in the post office... Calling to the Event Listener Failed",e)
-        #     if eventName == "TCP":
-        #         listner(eventName,args[1])
-        #     if eventName == "Sensors":
-        #         listner(args[1],self.triggerEvent)
-        #     if eventName =='TCP ERROR':
-        #         listner(eventName,args[1])
-
+    def trigger_event(self, *args):
+        event_name = args[0]
+        for listener in self._eventListeners[event_name]:
+            listener(*args)

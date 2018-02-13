@@ -63,6 +63,7 @@ class TcpCommunicator:
         conn, addr = self._socket.accept()
         udp_ip = "12.0.0.102"
         udp_ip = "127.0.0.1"
+
         udp_ip = addr[0]
         self._udpSocket = UdpCommunicator(udp_ip, 8004)
         if "win" in sys.platform:
@@ -78,8 +79,8 @@ class TcpCommunicator:
         self._selector.register(self._conn, selectors.EVENT_READ, self._recv)
         if self._videoStreamingEnable:
             import VideoStream
-            self._videoStream = VideoStream.VideoStream(addr[0], "8888")
-            # self._videoStream = VideoStream.VideoStream("127.0.0.1", "8888")
+            # self._videoStream = VideoStream.VideoStream(addr[0], "8888")
+            self._videoStream = VideoStream.VideoStream("127.0.0.1", "5000")
             self._videoStream.start()
 
     def _recv(self):
@@ -143,7 +144,7 @@ class TcpCommunicator:
         self._udpSocket._socket.close()
         self._udpSocket = None
 
-    def _mainLoop(self):
+    def mainLoop(self):
 
         while True:
             events = self._selector.select()
@@ -151,15 +152,18 @@ class TcpCommunicator:
             for key, mask in events:
                 callback = key.data
                 callback()
-                # dataReceived=""
-                # try:
-                #       dataReceived = self._recv()
-                # if dataReceived== b'':
-                #       print("received None")
-                #       callback("TCP ERROR", {})
-                #       self._closeAndReopenSocket()
-                #       self._bindAndListen()
-                #       continue
+                data_received = ""
+                try:
+                    data_received = self._recv()
+                    if data_received == b'':
+                        print("received None")
+                        callback("TCP ERROR", {})
+                        self._closeAndReopenSocket()
+                        self._bindAndListen()
+                        continue
+                    print (data_received)
+                except:
+                    print()
                 # except Exception as e:
                 # print (e)
                 # print (type(e).__name__)
@@ -168,4 +172,3 @@ class TcpCommunicator:
                 # self._closeAndReopenSocket()
                 # self._bindAndListen()
                 # continue
-                #
