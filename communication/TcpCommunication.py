@@ -9,6 +9,7 @@ class UdpCommunicator:
         self._socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self._socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         # self._socket.bind(("0.0.0.0",self._port))
+        self._socket.bind((targetIp,self._port))
 
     def send(self, message):
         if self._socket != None:
@@ -19,6 +20,11 @@ class UdpCommunicator:
 class TcpCommunicator:
     def __init__(self, ip, port, timeout=None, closingword="close connection", bind=False):  # timeout is in seconds
         self._videoStreamingEnable = True
+
+        import VideoStream
+        self._videoStream = VideoStream.VideoStream("127.0.0.1", "5000")
+        self._videoStream.start()
+
         self._ip = ip
         self._port = port
         self._connectionClosingKeyWord = closingword

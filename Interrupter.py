@@ -8,4 +8,4 @@ class Interrupter:
 
     def register(self, callback_function, *args):
         callback_function(*args)
-        threading.Timer(0.1, self.register).start()
+#        threading.Timer(0.1, self.register).start()

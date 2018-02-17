@@ -8,7 +8,7 @@ from Hat import *
 class ROV18:
     def __init__(self):
         # initialize tcp_communicator for communicating with QT via TCP
-        ip = "0.0.0.0"
+        ip = "10.0.1.55"
         port = 8005
         self.tcp_communicator = TcpCommunicator(ip, port, bind=True)
 

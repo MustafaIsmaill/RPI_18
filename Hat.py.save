@@ -13,15 +13,15 @@ class Hat:
         self._hat = Adafruit_PCA9685.PCA9685()
         self._hat.set_pwm_freq(frequency)
 
-    def _setPWM(self, channel, value):
-        self._hat.set_pwm(channel,0,value)
+#   def _setPWM(self, channel, value):
+#        self._hat.set_pwm(channel,0,value)
 
-#    def _setAllPWM(self, value):
-#        self._hat.setAllPWM(0, value)
+    def _setAllPWM(self, value):
+        self._hat.setAllPWM(0, value)
 
     def _updatePWM(self):
         for device in self._devices:
-            self._hat.set_pwm(self._devices[device]["channel"],0,self._devices[device]["current"])
+            self.set_pwm(self._devices[device]["channel"],self._devices[device]["current"])
             self._devices[device]["previous"] = self._devices[device]["current"]
 
     def addDevice(self, name, channel, baseValue):
