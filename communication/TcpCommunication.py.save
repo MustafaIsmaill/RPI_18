@@ -19,7 +19,12 @@ class UdpCommunicator:
 
 class TcpCommunicator:
     def __init__(self, ip, port, timeout=None, closingword="close connection", bind=False):  # timeout is in seconds
-        self._videoStreamingEnable = False
+        self._videoStreamingEnable = True
+
+        #import VideoStream
+        #self._videoStream = VideoStream.VideoStream("127.0.0.1", "5000")
+        #self._videoStream.start()
+
         self._ip = ip
         self._port = port
         self._connectionClosingKeyWord = closingword
@@ -67,7 +72,8 @@ class TcpCommunicator:
 
         #udp_ip = addr[0]
         #self._udpSocket = UdpCommunicator(udp_ip, 8004)
-        if "win" in sys.platform:
+        
+if "win" in sys.platform:
             self._socket.ioctl(socket.SIO_KEEPALIVE_VALS, (1, self._keepaliveduration, self._keepaliveinterval))
         else:
             self._socket.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
@@ -91,14 +97,16 @@ class TcpCommunicator:
             print(data)
         except:
             pass
+            # print("exception")
 
-        if not data:
-            self._cleanup()
-            return
+            # if not data:
+            # self._cleanup()
 
-        data_map = self._parse(data)
-        if self._eventcallback is not None:
-            self._eventcallback("TCP", data_map)
+            # return
+            #
+            # data_map = self._parse(data)
+            # if self._eventcallback is not None:
+            #     self._eventcallback("TCP", data_map)
 
     def _parse(self, data):
         data = data.decode(encoding="UTF-8")

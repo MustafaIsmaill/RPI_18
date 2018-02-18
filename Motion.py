@@ -13,8 +13,8 @@ class Motion(Component):
         self.MOTORS_BASE_PWM = self._hardware.getDeviceBaseValue("right_front_thruster")
         self.FULL_ROTATION_COEFFICIENT = 0.4 * 8.1
         self.MAXIMUMPWMCHANGE = 200
-        self.PWMNORMAL = 1440
-        self.PWMRANGE = 810
+        self.PWMNORMAL = 305
+        self.PWMRANGE = 330
         self.SWORDFISHCOEFFICIENT = 0.25
         self.RETURNCOEFFICIENT = 0.25
 
@@ -189,6 +189,13 @@ class Motion(Component):
             self._futureStepsForSuddenChange[key] = [None, 0]
 
     def _setFromMyLocalToDevice(self):
+        print("right_front_thruster pwm: ", self._motors["right_front_thruster"])
+        print("left_front_thruster pwm: ", self._motors["left_front_thruster"])
+        print("right_rear_thruster pwm: ", self._motors["right_rear_thruster"])
+        print("left_rear_thruster pwm: ", self._motors["left_rear_thruster"])
+        print("top_front_thruster pwm: ", self._motors["top_front_thruster"])
+        print("top_rear_thruster pwm: ", self._motors["top_rear_thruster"])
+
         self._hardware.setDeviceValue("right_front_thruster", self._motors["right_front_thruster"])
         self._hardware.setDeviceValue("left_front_thruster", self._motors["left_front_thruster"])
         self._hardware.setDeviceValue("right_rear_thruster", self._motors["right_rear_thruster"])
@@ -200,25 +207,18 @@ class Motion(Component):
         if event == "TCP ERROR":
             self._setMyDevicesToDefaults()
         if event is "TCP":
+            print("TCP Event")
             if super().mail(event, mail_map):
                 for key in self._valueMap:
                     self._valueMap[key] = float(self._valueMap[key])
                 # change values to floats
                 for key in self._futureStepsForSuddenChange:
                     self._futureStepsForSuddenChange[key][0] = None
-
                 if self._valueMap["currentmode"] > 0:
                     self._valueMap["x"] = 0
                 self._calculateHorizontalMotors()
                 self._calculateVerticalMotors()
                 self._limit()
-
-                self._checkForSuddenChange("right_front_thruster")
-                self._checkForSuddenChange("left_front_thruster")
-                self._checkForSuddenChange("right_rear_thruster")
-                self._checkForSuddenChange("left_rear_thruster")
-                self._checkForSuddenChange("top_front_thruster")
-                self._checkForSuddenChange("top_rear_thruster")
 
                 self._hardware.setDeviceValue("right_front_thruster", self._motors["right_front_thruster"])
                 self._hardware.setDeviceValue("left_front_thruster", (self._motors["left_front_thruster"]))
@@ -234,37 +234,12 @@ class Motion(Component):
                 # self._hardware.setDeviceValue("top_front_thruster",1845)
                 # self._hardware.setDeviceValue("top_rear_thruster",1845)
                 #
-                # print(self._hardware.getDeviceValue("right_front_thruster"))
-                # print(self._hardware.getDeviceValue("left_front_thruster"))
-                # print(self._hardware.getDeviceValue("right_rear_thruster"))
-                # print(self._hardware.getDeviceValue("left_rear_thruster"))
-                # print(self._hardware.getDeviceValue("top_front_thruster"))
-                # print(self._hardware.getDeviceValue("top_rear_thruster"))
+                print(self._hardware.getDeviceValue("right_front_thruster"))
+                print(self._hardware.getDeviceValue("left_front_thruster"))
+                print(self._hardware.getDeviceValue("right_rear_thruster"))
+                print(self._hardware.getDeviceValue("left_rear_thruster"))
+                print(self._hardware.getDeviceValue("top_front_thruster"))
+                print(self._hardware.getDeviceValue("top_rear_thruster"))
 
         if event == "I2C":
-            futursteps = False
-            for key in self._futureStepsForSuddenChange:
-                if self._futureStepsForSuddenChange[key][0] != None:
-
-                    if (self._futureStepsForSuddenChange[key][1] == 0):
-                        self._motors[key] = self._futureStepsForSuddenChange[key][0]
-                        self._futureStepsForSuddenChange[key][0] = None
-
-                    if (self._futureStepsForSuddenChange[key][1] > 0):
-                        futursteps = True
-                        self._futureStepsForSuddenChange[key][1] -= 1
-                        # self._checkForSuddenChange(key)
-            if (futursteps):
-                max_number_of_steps = 0
-                for key in self._futureStepsForSuddenChange:
-                    if (self._futureStepsForSuddenChange[key][1] > max_number_of_steps):
-                        max_number_of_steps = self._futureStepsForSuddenChange[key][1]
-                for key in self._futureStepsForSuddenChange:
-                    if (self._futureStepsForSuddenChange[key][0] == None):
-                        self._futureStepsForSuddenChange[key][0] = self._motors[key]
-                        self._motors[key] = self.PWMNORMAL
-                        self._futureStepsForSuddenChange[key][1] = max_number_of_steps
-                    elif (self._futureStepsForSuddenChange[key][1] < max_number_of_steps):
-                        self._futureStepsForSuddenChange[key][1] = max_number_of_steps
-
             self._setFromMyLocalToDevice()

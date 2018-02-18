@@ -3,9 +3,9 @@ import threading
 
 class Interrupter:
 
-    def __init__(self, callback_function, *args):
-        self.register(callback_function, *args)
+    def __init__(self, callback_function, str):
+        self.register(callback_function)
 
-    def register(self, callback_function, *args):
-        callback_function(*args)
-#        threading.Timer(0.1, self.register).start()
+    def register(self, callback_function):
+        callback_function("I2C")
+        threading.Timer(0.01, self.register, [callback_function]).start()
