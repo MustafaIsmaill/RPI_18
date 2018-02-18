@@ -9,7 +9,7 @@ class Hat:
         self._address = address
         self._devices = {}
         self._devicesBaseValue = {}
-        print("address: ", address)	
+        print("Hat address: ", address)
         self._hat = Adafruit_PCA9685.PCA9685()
         self._hat.set_pwm_freq(frequency)
 

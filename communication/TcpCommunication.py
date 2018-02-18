@@ -144,30 +144,25 @@ class TcpCommunicator:
         self._udpSocket = None
 
     def mainLoop(self):
-
         while True:
             events = self._selector.select()
-            print("main loop")
             for key, mask in events:
                 callback = key.data
                 callback()
-                data_received = ""
-                try:
-                    data_received = self._recv()
-                    if data_received == b'':
-                        print("received None")
-                        callback("TCP ERROR", {})
-                        self._closeAndReopenSocket()
-                        self._bindAndListen()
-                        continue
-                    print (data_received)
-                except:
-                    print()
-                # except Exception as e:
-                # print (e)
-                # print (type(e).__name__)
-                # print("socket error caught in receiving")
-                # callback("TCP ERROR",{})
-                # self._closeAndReopenSocket()
-                # self._bindAndListen()
-                # continue
+            dataReceived=""
+            try:
+                dataReceived = self._recv()
+                if dataReceived== b'':
+                      print("received None")
+                      callback("TCP ERROR", {})
+                      self._closeAndReopenSocket()
+                      self._bindAndListen()
+                      continue
+            except Exception as e:
+                print(e)
+                print(type(e).__name__)
+                print("socket error caught in receiving")
+                callback("TCP ERROR",{})
+                self._closeAndReopenSocket()
+                self._bindAndListen()
+                continue

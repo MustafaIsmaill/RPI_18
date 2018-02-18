@@ -148,21 +148,6 @@ class Motion(Component):
         else:
             return False
 
-    def _checkForSuddenChange(self, motorname):
-        MAXIMUMDIFFERENCE = self.MAXIMUMPWMCHANGE
-        previousPwm = float(self._hardware.getDevicePreviousValue(motorname))
-        currentPwm = float(self._motors[motorname])
-        self._zeroCrossing(previousPwm, currentPwm, motorname)
-        # difference = self._checkForMaximumDifference(previousPwm, currentPwm)
-        # if (difference):
-        # currentPwm[i]=ZeroPwm
-        # print("Sudden Change Occured current PWM: ", currentPwm , " Previous: ", previousPwm ,end=" ")
-        # unitVector = (currentPwm - previousPwm) / (abs(currentPwm - previousPwm))
-        # newCurrentPwm = previousPwm + (MAXIMUMDIFFERENCE * unitVector)
-        # print("Current Pwm Set To: ", newCurrentPwm)
-        # self._futureStepsForSuddenChange[motorname]=currentPwm
-        # self._motors[motorname]=newCurrentPwm
-
     def _setMyDevicesToDefaults(self):
 
         # self._motors["right_front_thruster"]=  self._hardware.getDeviceBaseValue("right_front_thruster")
@@ -185,16 +170,13 @@ class Motion(Component):
         self._hardware.setDeviceValue("top_front_thruster", self._hardware.getDeviceBaseValue("top_front_thruster"))
         self._hardware.setDeviceValue("top_rear_thruster", self._hardware.getDeviceBaseValue("top_rear_thruster"))
 
-        for key in self._futureStepsForSuddenChange:
-            self._futureStepsForSuddenChange[key] = [None, 0]
-
     def _setFromMyLocalToDevice(self):
-        print("right_front_thruster pwm: ", self._motors["right_front_thruster"])
-        print("left_front_thruster pwm: ", self._motors["left_front_thruster"])
-        print("right_rear_thruster pwm: ", self._motors["right_rear_thruster"])
-        print("left_rear_thruster pwm: ", self._motors["left_rear_thruster"])
-        print("top_front_thruster pwm: ", self._motors["top_front_thruster"])
-        print("top_rear_thruster pwm: ", self._motors["top_rear_thruster"])
+        # print("right_front_thruster pwm: ", self._motors["right_front_thruster"])
+        # print("left_front_thruster pwm: ", self._motors["left_front_thruster"])
+        # print("right_rear_thruster pwm: ", self._motors["right_rear_thruster"])
+        # print("left_rear_thruster pwm: ", self._motors["left_rear_thruster"])
+        # print("top_front_thruster pwm: ", self._motors["top_front_thruster"])
+        # print("top_rear_thruster pwm: ", self._motors["top_rear_thruster"])
 
         self._hardware.setDeviceValue("right_front_thruster", self._motors["right_front_thruster"])
         self._hardware.setDeviceValue("left_front_thruster", self._motors["left_front_thruster"])
@@ -207,15 +189,16 @@ class Motion(Component):
         if event == "TCP ERROR":
             self._setMyDevicesToDefaults()
         if event is "TCP":
+
             print("TCP Event")
             if super().mail(event, mail_map):
+                # change values to floats
                 for key in self._valueMap:
                     self._valueMap[key] = float(self._valueMap[key])
-                # change values to floats
-                for key in self._futureStepsForSuddenChange:
-                    self._futureStepsForSuddenChange[key][0] = None
+
                 if self._valueMap["currentmode"] > 0:
                     self._valueMap["x"] = 0
+
                 self._calculateHorizontalMotors()
                 self._calculateVerticalMotors()
                 self._limit()
@@ -227,13 +210,6 @@ class Motion(Component):
                 self._hardware.setDeviceValue("top_front_thruster", self._motors["top_front_thruster"])
                 self._hardware.setDeviceValue("top_rear_thruster", (self._motors["top_rear_thruster"]))
 
-                # self._hardware.setDeviceValue("right_front_thruster", 1845)
-                # self._hardware.setDeviceValue("left_front_thruster",1845)
-                # self._hardware.setDeviceValue("right_rear_thruster",1845)
-                # self._hardware.setDeviceValue("left_rear_thruster",1035)
-                # self._hardware.setDeviceValue("top_front_thruster",1845)
-                # self._hardware.setDeviceValue("top_rear_thruster",1845)
-                #
                 print(self._hardware.getDeviceValue("right_front_thruster"))
                 print(self._hardware.getDeviceValue("left_front_thruster"))
                 print(self._hardware.getDeviceValue("right_rear_thruster"))
