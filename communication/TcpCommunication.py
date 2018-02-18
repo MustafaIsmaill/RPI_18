@@ -97,12 +97,13 @@ class TcpCommunicator:
             return
 
         data_map = self._parse(data)
+
         if self._eventcallback is not None:
             self._eventcallback("TCP", data_map)
 
     def _parse(self, data):
         data = data.decode(encoding="UTF-8")
-        print(data)
+        print("parsing", data)
         tokens = data.split(";")
 
         del tokens[len(
@@ -121,6 +122,7 @@ class TcpCommunicator:
             except:
                 print("Can't parse token: ", token)
 
+        print("data_map", data_map)
         return data_map
 
     def _send(self, data, errorhandler=None):
@@ -152,7 +154,8 @@ class TcpCommunicator:
             dataReceived=""
             try:
                 dataReceived = self._recv()
-                if dataReceived== b'':
+                print("data receivedd: ", dataReceived)
+                if dataReceived== "None":
                       print("received None")
                       callback("TCP ERROR", {})
                       self._closeAndReopenSocket()
