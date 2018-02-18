@@ -140,8 +140,8 @@ class TcpCommunicator:
         self._selector.unregister(self._conn)
         self._conn.close()
         self._conn = None
-        self._udpSocket._socket.close()
-        self._udpSocket = None
+        # self._udpSocket._socket.close()
+        # self._udpSocket = None
 
     def mainLoop(self):
         while True:
