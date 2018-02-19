@@ -20,7 +20,7 @@ class Motion(Component):
 
     def _calculateHorizontalMotors(self):
         if(self._valueMap['x'] + self._valueMap['y'] + self._valueMap['r'] == 0):
-            print("sum = 0")
+            # print("sum = 0")
             # self._setMyDevicesToDefaults()
             return
         left_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((self._valueMap['x'] * self._valueMap['x'] + self._valueMap['y'] * self._valueMap['y'] + self._valueMap['r'] * self._valueMap['r']) / 10000) * (100 / (self._valueMap['x'] + self._valueMap['y'] + self._valueMap['r']))
@@ -33,10 +33,10 @@ class Motion(Component):
         self._motors["right_rear_thruster"] = right_rear_thruster_value
         self._motors["left_rear_thruster"] = left_rear_thruster_value
 
-        print("right_front_thruster pwm: ",right_front_thruster_value)
-        print("left_front_thruster pwm: ",left_front_thruster_value)
-        print("right_rear_thruster pwm: ",right_rear_thruster_value)
-        print("left_rear_thruster pwm: ",left_rear_thruster_value)
+        print("right_front_thruster pwm: ",int(right_front_thruster_value))
+        print("left_front_thruster pwm: ",int(left_front_thruster_value))
+        print("right_rear_thruster pwm: ",int(right_rear_thruster_value))
+        print("left_rear_thruster pwm: ",int(left_rear_thruster_value))
 
         # self._motors["right_front_thruster"] = 330
         # self._motors["left_front_thruster"] = 330
@@ -91,8 +91,8 @@ class Motion(Component):
 
     def update(self, event, mail_map=None):
 
-        if event == "TCP ERROR":
-            self._setMyDevicesToDefaults()
+        # if event == "TCP ERROR":
+            # self._setMyDevicesToDefaults()
 
         if event is "TCP":
             self._valueMap = mail_map
