@@ -31,6 +31,11 @@ class Motion(Component):
         self._motors["right_rear_thruster"] = right_rear_thruster_value
         self._motors["left_rear_thruster"] = left_rear_thruster_value
 
+        self._motors["right_front_thruster"] = 330
+        self._motors["left_front_thruster"] = 330
+        self._motors["right_rear_thruster"] = 330
+        self._motors["left_rear_thruster"] = 330
+
     def _calculateVerticalMotors(self):
         top_front_thruster_value = int(self.MOTORS_BASE_PWM + (self._valueMap['z'] * self.FULL_PWM_RANGE_COEFFICIENT))
         top_rear_thruster_value = int(self.MOTORS_BASE_PWM + (self._valueMap['z'] * self.FULL_PWM_RANGE_COEFFICIENT))
@@ -86,7 +91,7 @@ class Motion(Component):
 
                 #                if self._valueMap["currentmode"] > 0:
                 #                   self._valueMap["x"] = 0
-
+                print("calculating horizontal motors")
                 self._calculateHorizontalMotors()
                 # self._calculateVerticalMotors()
                 # self._hardware.setDeviceValue("right_front_thruster", self._motors["right_front_thruster"])
