@@ -83,6 +83,7 @@ class Motion(Component):
         self._hardware.setDeviceValue("top_rear_thruster", self._motors["top_rear_thruster"])
 
         # print(self._motors)
+        print(self._valueMap)
 
     def update(self, event, mail_map=None):
 
