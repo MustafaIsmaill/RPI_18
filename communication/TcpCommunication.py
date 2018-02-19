@@ -92,9 +92,9 @@ class TcpCommunicator:
         except:
             pass
 
-        if not data:
-            self._cleanup()
-            return
+        # if not data:
+        #     self._cleanup()
+        #     return
 
         data_map = self._parse(data)
 

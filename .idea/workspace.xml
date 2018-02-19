@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Motion.py" afterPath="$PROJECT_DIR$/Motion.py" />
+      <change beforePath="$PROJECT_DIR$/communication/TcpCommunication.py" afterPath="$PROJECT_DIR$/communication/TcpCommunication.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,7 +67,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Motion.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
@@ -87,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1836">
-              <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+            <state relative-caret-position="254">
+              <caret line="90" column="23" lean-forward="true" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -211,8 +211,8 @@
         <option value="$PROJECT_DIR$/Main.py" />
         <option value="$PROJECT_DIR$/Hat.py" />
         <option value="$PROJECT_DIR$/Motion_backup.py" />
-        <option value="$PROJECT_DIR$/communication/TcpCommunication.py" />
         <option value="$PROJECT_DIR$/Motion.py" />
+        <option value="$PROJECT_DIR$/communication/TcpCommunication.py" />
       </list>
     </option>
   </component>
@@ -660,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519076968608</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="linear test">
+      <created>1519077252727</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1519077252727</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -715,7 +722,8 @@
     <MESSAGE value="toss" />
     <MESSAGE value="test #1243214132" />
     <MESSAGE value="equation of motion" />
-    <option name="LAST_COMMIT_MESSAGE" value="equation of motion" />
+    <MESSAGE value="linear test" />
+    <option name="LAST_COMMIT_MESSAGE" value="linear test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -942,6 +950,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Motion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="29" column="67" lean-forward="false" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -952,16 +968,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Motion.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
-          <caret line="29" column="67" lean-forward="false" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+          <caret line="90" column="23" lean-forward="true" selection-start-line="90" selection-start-column="23" selection-end-line="90" selection-end-column="23" />
           <folding />
         </state>
       </provider>
