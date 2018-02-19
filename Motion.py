@@ -21,6 +21,7 @@ class Motion(Component):
     def _calculateHorizontalMotors(self):
         if(self._valueMap['x'] + self._valueMap['y'] + self._valueMap['r'] == 0):
             print("sum = 0")
+            self._setMyDevicesToDefaults()
             return
         left_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((self._valueMap['x'] * self._valueMap['x'] + self._valueMap['y'] * self._valueMap['y'] + self._valueMap['r'] * self._valueMap['r']) / 10000) * (100 / (self._valueMap['x'] + self._valueMap['y'] + self._valueMap['r']))
         right_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((-1 * self._valueMap['x'] * self._valueMap['x'] + self._valueMap['y'] * self._valueMap['y'] + -1 * self._valueMap['r'] * self._valueMap['r']) / 10000) * (100 / (self._valueMap['x'] + self._valueMap['y'] + self._valueMap['r']))
