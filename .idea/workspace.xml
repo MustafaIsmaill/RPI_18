@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Motion.py" afterPath="$PROJECT_DIR$/Motion.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +26,8 @@
       <file leaf-file-name="ROV18.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ROV18.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="40" column="73" lean-forward="true" selection-start-line="40" selection-start-column="73" selection-end-line="40" selection-end-column="73" />
+            <state relative-caret-position="450">
+              <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -47,8 +48,8 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="25" column="63" lean-forward="false" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+            <state relative-caret-position="313">
+              <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -506,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519073105156</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="default value">
+      <created>1519073126725</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1519073126725</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -790,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ROV18.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="40" column="73" lean-forward="true" selection-start-line="40" selection-start-column="73" selection-end-line="40" selection-end-column="73" />
+        <state relative-caret-position="450">
+          <caret line="25" column="37" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
@@ -800,8 +808,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="25" column="63" lean-forward="false" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+        <state relative-caret-position="313">
+          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
         </state>
       </provider>
