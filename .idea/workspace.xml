@@ -58,7 +58,7 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="354">
               <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
@@ -602,7 +602,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519074174756</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="ok">
+      <created>1519074300295</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1519074300295</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -652,7 +659,8 @@
     <MESSAGE value="sdas" />
     <MESSAGE value="ta3laly" />
     <MESSAGE value="hmmmmmmmmmm" />
-    <option name="LAST_COMMIT_MESSAGE" value="hmmmmmmmmmm" />
+    <MESSAGE value="ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -897,7 +905,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="354">
           <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
