@@ -47,8 +47,8 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+            <state relative-caret-position="376">
+              <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -464,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519071616698</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="raqam thaabet">
+      <created>1519071828270</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1519071828270</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -507,7 +514,8 @@
     <MESSAGE value="Added Mustafa Ismail's Equation of Motion" />
     <MESSAGE value="fokkak" />
     <MESSAGE value="ana motafa2el" />
-    <option name="LAST_COMMIT_MESSAGE" value="ana motafa2el" />
+    <MESSAGE value="raqam thaabet" />
+    <option name="LAST_COMMIT_MESSAGE" value="raqam thaabet" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -754,8 +762,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="34" column="20" lean-forward="true" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+        <state relative-caret-position="376">
+          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding />
         </state>
       </provider>
