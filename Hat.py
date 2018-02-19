@@ -21,7 +21,7 @@ class Hat:
 
     def _updatePWM(self):
         for device in self._devices:
-            self._hat.set_pwm(self._devices[device]["channel"],0,self._devices[device]["current"])
+            self._hat.set_pwm(self._devices[device]["channel"],0,int(self._devices[device]["current"]))
             self._devices[device]["previous"] = self._devices[device]["current"]
 
     def addDevice(self, name, channel, baseValue):
