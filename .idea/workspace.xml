@@ -70,8 +70,8 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="94" column="34" lean-forward="true" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
+            <state relative-caret-position="344">
+              <caret line="25" column="299" lean-forward="false" selection-start-line="25" selection-start-column="299" selection-end-line="25" selection-end-column="299" />
               <folding />
             </state>
           </provider>
@@ -646,7 +646,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519075507871</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="test #1243214132">
+      <created>1519076197533</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1519076197533</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -699,7 +706,8 @@
     <MESSAGE value="ok" />
     <MESSAGE value="7aga kwayesa" />
     <MESSAGE value="toss" />
-    <option name="LAST_COMMIT_MESSAGE" value="toss" />
+    <MESSAGE value="test #1243214132" />
+    <option name="LAST_COMMIT_MESSAGE" value="test #1243214132" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -944,8 +952,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="94" column="34" lean-forward="true" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
+        <state relative-caret-position="344">
+          <caret line="25" column="299" lean-forward="false" selection-start-line="25" selection-start-column="299" selection-end-line="25" selection-end-column="299" />
           <folding />
         </state>
       </provider>
