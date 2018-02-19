@@ -14,7 +14,7 @@ class Hat:
         self._hat.set_pwm_freq(frequency)
 
     def _setPWM(self, channel, value):
-        self._hat.set_pwm(channel,0,value)
+        self._hat.set_pwm(channel,0,int(value))
 
 #    def _setAllPWM(self, value):
 #        self._hat.setAllPWM(0, value)

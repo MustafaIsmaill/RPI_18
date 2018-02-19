@@ -155,7 +155,7 @@ class TcpCommunicator:
             try:
                 dataReceived = self._recv()
                 print("data receivedd: ", dataReceived)
-                if dataReceived== "None":
+                if dataReceived == "None":
                       #print("received None")
                       callback("TCP ERROR", {})
                       self._closeAndReopenSocket()
