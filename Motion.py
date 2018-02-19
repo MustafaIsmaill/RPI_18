@@ -31,10 +31,10 @@ class Motion(Component):
         self._motors["right_rear_thruster"] = right_rear_thruster_value
         self._motors["left_rear_thruster"] = left_rear_thruster_value
 
-        self._motors["right_front_thruster"] = 330
-        self._motors["left_front_thruster"] = 330
-        self._motors["right_rear_thruster"] = 330
-        self._motors["left_rear_thruster"] = 330
+        # self._motors["right_front_thruster"] = 330
+        # self._motors["left_front_thruster"] = 330
+        # self._motors["right_rear_thruster"] = 330
+        # self._motors["left_rear_thruster"] = 330
 
     def _calculateVerticalMotors(self):
         top_front_thruster_value = int(self.MOTORS_BASE_PWM + (self._valueMap['z'] * self.FULL_PWM_RANGE_COEFFICIENT))
@@ -79,27 +79,16 @@ class Motion(Component):
         print(self._motors)
 
     def update(self, event, mail_map=None):
+
         if event == "TCP ERROR":
             self._setMyDevicesToDefaults()
+
         if event is "TCP":
-
+            for key in self._valueMap:
+                self._valueMap[key] = float(self._valueMap[key])
             print("TCP Event")
-            if super().mail(event, mail_map):
-                # change values to floats
-                for key in self._valueMap:
-                    self._valueMap[key] = float(self._valueMap[key])
-
-                #                if self._valueMap["currentmode"] > 0:
-                #                   self._valueMap["x"] = 0
-                print("calculating horizontal motors")
-                self._calculateHorizontalMotors()
-                # self._calculateVerticalMotors()
-                # self._hardware.setDeviceValue("right_front_thruster", self._motors["right_front_thruster"])
-                # self._hardware.setDeviceValue("left_front_thruster", (self._motors["left_front_thruster"]))
-                # self._hardware.setDeviceValue("right_rear_thruster", self._motors["right_rear_thruster"])
-                # self._hardware.setDeviceValue("left_rear_thruster", self._inverse(self._motors["left_rear_thruster"]))
-                # self._hardware.setDeviceValue("top_front_thruster", self._motors["top_front_thruster"])
-                # self._hardware.setDeviceValue("top_rear_thruster", (self._motors["top_rear_thruster"]))
+            print("calculating horizontal motors")
+            self._calculateHorizontalMotors()
 
         if event == "I2C":
             #            print("PWM UPDATE")
