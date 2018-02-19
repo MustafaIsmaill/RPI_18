@@ -33,6 +33,11 @@ class Motion(Component):
         self._motors["right_rear_thruster"] = right_rear_thruster_value
         self._motors["left_rear_thruster"] = left_rear_thruster_value
 
+        print("right_front_thruster pwm: ",right_front_thruster_value)
+        print("left_front_thruster pwm: ",left_front_thruster_value)
+        print("right_rear_thruster pwm: ",right_rear_thruster_value)
+        print("left_rear_thruster pwm: ",left_rear_thruster_value)
+
         # self._motors["right_front_thruster"] = 330
         # self._motors["left_front_thruster"] = 330
         # self._motors["right_rear_thruster"] = 330
@@ -96,6 +101,8 @@ class Motion(Component):
             print("TCP Event")
             print("calculating horizontal motors")
             self._calculateHorizontalMotors()
+
+
 
         if event == "I2C":
             #print("PWM UPDATE")
