@@ -70,7 +70,7 @@ class Motion(Component):
         # print("top_rear_thruster pwm: ", self._motors["top_rear_thruster"])
 
         # self._motors["right_front_thruster"] = 330
-        self._motors["left_front_thruster"] = 350
+        self._motors["left_front_thruster"] = 305
         # self._motors["right_rear_thruster"] = 330
         # self._motors["left_rear_thruster"] = 330
 
