@@ -23,20 +23,20 @@ class Motion(Component):
             # print("sum = 0")
             # self._setMyDevicesToDefaults()
             return
-        left_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((self._valueMap['x'] * self._valueMap['x'] + self._valueMap['y'] * self._valueMap['y'] + self._valueMap['r'] * self._valueMap['r']) / 10000) * (100 / (abs(self._valueMap['x']) + abs(self._valueMap['y']) + abs(self._valueMap['r'])))
-        right_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((-1 * self._valueMap['x'] * self._valueMap['x'] + self._valueMap['y'] * self._valueMap['y'] + -1 * self._valueMap['r'] * self._valueMap['r']) / 10000) * (100 / (self._valueMap['x'] + self._valueMap['y'] + self._valueMap['r']))
-        left_rear_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((-1 * self._valueMap['x'] * self._valueMap['x'] + self._valueMap['y'] * self._valueMap['y'] + self._valueMap['r'] * self._valueMap['r']) / 10000) * (100 / (self._valueMap['x'] + self._valueMap['y'] + self._valueMap['r']))
-        right_rear_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((self._valueMap['x'] * self._valueMap['x'] + self._valueMap['y'] * self._valueMap['y'] + -1 * self._valueMap['r'] * self._valueMap['r']) / 10000) * (100 / (self._valueMap['x'] + self._valueMap['y'] + self._valueMap['r']))
-
-        self._motors["right_front_thruster"] = right_front_thruster_value
+        # left_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((self._valueMap['x'] * self._valueMap['x'] + self._valueMap['y'] * self._valueMap['y'] + self._valueMap['r'] * self._valueMap['r']) / 10000) * (100 / (abs(self._valueMap['x']) + abs(self._valueMap['y']) + abs(self._valueMap['r'])))
+        # right_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((-1 * self._valueMap['x'] * self._valueMap['x'] + self._valueMap['y'] * self._valueMap['y'] + -1 * self._valueMap['r'] * self._valueMap['r']) / 10000) * (100 / (self._valueMap['x'] + self._valueMap['y'] + self._valueMap['r']))
+        # left_rear_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((-1 * self._valueMap['x'] * self._valueMap['x'] + self._valueMap['y'] * self._valueMap['y'] + self._valueMap['r'] * self._valueMap['r']) / 10000) * (100 / (self._valueMap['x'] + self._valueMap['y'] + self._valueMap['r']))
+        # right_rear_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((self._valueMap['x'] * self._valueMap['x'] + self._valueMap['y'] * self._valueMap['y'] + -1 * self._valueMap['r'] * self._valueMap['r']) / 10000) * (100 / (self._valueMap['x'] + self._valueMap['y'] + self._valueMap['r']))
+        left_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((1 * self._valueMap['y']) / 100)
+        # self._motors["right_front_thruster"] = right_front_thruster_value
         self._motors["left_front_thruster"] = left_front_thruster_value
-        self._motors["right_rear_thruster"] = right_rear_thruster_value
-        self._motors["left_rear_thruster"] = left_rear_thruster_value
+        # self._motors["right_rear_thruster"] = right_rear_thruster_value
+        # self._motors["left_rear_thruster"] = left_rear_thruster_value
 
-        print("right_front_thruster pwm: ",int(right_front_thruster_value))
+        # print("right_front_thruster pwm: ",int(right_front_thruster_value))
         print("left_front_thruster pwm: ",int(left_front_thruster_value))
-        print("right_rear_thruster pwm: ",int(right_rear_thruster_value))
-        print("left_rear_thruster pwm: ",int(left_rear_thruster_value))
+        # print("right_rear_thruster pwm: ",int(right_rear_thruster_value))
+        # print("left_rear_thruster pwm: ",int(left_rear_thruster_value))
 
         # self._motors["right_front_thruster"] = 330
         # self._motors["left_front_thruster"] = 330
