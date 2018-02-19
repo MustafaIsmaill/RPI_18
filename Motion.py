@@ -44,17 +44,17 @@ class Motion(Component):
         right_front_thruster_value += self._valueMap['r'] * self.FULL_ROTATION_COEFFICIENT
         left_front_thruster_value -= self._valueMap['r'] * self.FULL_ROTATION_COEFFICIENT
 
-        if (self._valueMap['currentmode'] > 0):
-            r = self._valueMap['r']
-            pwm_difference = min(
-                self.sign(r) * (self.PWMNORMAL + (self.sign(r) * self.PWMRANGE) - right_front_thruster_value),
-                self.sign(r) * (- self.PWMNORMAL + (self.sign(r) * self.PWMRANGE) + left_front_thruster_value))
-            pwm_difference_normalized = self.normalize(pwm_difference)
+#        if (self._valueMap['currentmode'] > 0):
+ #           r = self._valueMap['r']
+  #          pwm_difference = min(
+   #             self.sign(r) * (self.PWMNORMAL + (self.sign(r) * self.PWMRANGE) - right_front_thruster_value),
+    #            self.sign(r) * (- self.PWMNORMAL + (self.sign(r) * self.PWMRANGE) + left_front_thruster_value))
+     #       pwm_difference_normalized = self.normalize(pwm_difference)
 
-            right_front_thruster_value -= self.sign(RightComponent) * pwm_difference_normalized
-            left_front_thruster_value -= self.sign(RightComponent) * pwm_difference_normalized
-            left_rear_thruster_value -= self.sign(RightComponent) * pwm_difference_normalized
-            right_rear_thruster_value -= self.sign(RightComponent) * pwm_difference_normalized
+      #      right_front_thruster_value -= self.sign(RightComponent) * pwm_difference_normalized
+       #     left_front_thruster_value -= self.sign(RightComponent) * pwm_difference_normalized
+        #    left_rear_thruster_value -= self.sign(RightComponent) * pwm_difference_normalized
+         #   right_rear_thruster_value -= self.sign(RightComponent) * pwm_difference_normalized
 
         self._motors["right_front_thruster"] = right_front_thruster_value
         self._motors["left_front_thruster"] = left_front_thruster_value
@@ -85,12 +85,12 @@ class Motion(Component):
         self._motors["top_rear_thruster"] = top_rear_thruster_value
 
     def _limit(self):
-        if (self._valueMap['currentmode'] == 0):
-            self.limitations_normal_mode()
-        elif (self._valueMap['currentmode'] == 1):
-            self.limitations_swordfish_mode()
-        elif (self._valueMap['currentmode'] == 2):
-            self.limitations_return_mode()
+#        if (self._valueMap['currentmode'] == 0):
+#            self.limitations_normal_mode()
+#        elif (self._valueMap['currentmode'] == 1):
+#            self.limitations_swordfish_mode()
+#        elif (self._valueMap['currentmode'] == 2):
+#            self.limitations_return_mode()
         return
 
     def limitations_normal_mode(self):
@@ -185,6 +185,16 @@ class Motion(Component):
         self._hardware.setDeviceValue("top_front_thruster", self._motors["top_front_thruster"])
         self._hardware.setDeviceValue("top_rear_thruster", self._motors["top_rear_thruster"])
 
+        print(self._motors)
+        
+#        self._hardware.setDeviceValue("right_front_thruster", 330)
+#        self._hardware.setDeviceValue("left_front_thruster", 330)
+#        self._hardware.setDeviceValue("right_rear_thruster", 330)
+#        self._hardware.setDeviceValue("left_rear_thruster", 330)
+#        self._hardware.setDeviceValue("top_front_thruster", 330)
+#        self._hardware.setDeviceValue("top_rear_thruster", 330)
+
+
     def update(self, event, mail_map=None):
         if event == "TCP ERROR":
             self._setMyDevicesToDefaults()
@@ -196,8 +206,8 @@ class Motion(Component):
                 for key in self._valueMap:
                     self._valueMap[key] = float(self._valueMap[key])
 
-                if self._valueMap["currentmode"] > 0:
-                    self._valueMap["x"] = 0
+#                if self._valueMap["currentmode"] > 0:
+#                   self._valueMap["x"] = 0
 
                 self._calculateHorizontalMotors()
                 self._calculateVerticalMotors()
@@ -218,4 +228,5 @@ class Motion(Component):
                 print(self._hardware.getDeviceValue("top_rear_thruster"))
 
         if event == "I2C":
+#            print("PWM UPDATE")
             self._setFromMyLocalToDevice()

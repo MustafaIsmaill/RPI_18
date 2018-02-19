@@ -75,7 +75,7 @@ class TcpCommunicator:
             self._socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPINTVL, 1)
             self._socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPCNT, 2)
         conn.setblocking(False)
-        print(addr, "Connected!")
+       # print(addr, "Connected!")
         self._conn = conn
         self._selector.register(self._conn, selectors.EVENT_READ, self._recv)
         if self._videoStreamingEnable:
@@ -156,7 +156,7 @@ class TcpCommunicator:
                 dataReceived = self._recv()
                 print("data receivedd: ", dataReceived)
                 if dataReceived== "None":
-                      print("received None")
+                      #print("received None")
                       callback("TCP ERROR", {})
                       self._closeAndReopenSocket()
                       self._bindAndListen()
