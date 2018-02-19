@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Motion.py" afterPath="$PROJECT_DIR$/Motion.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,8 +48,8 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+            <state relative-caret-position="108">
+              <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -562,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519073881999</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="ta3laly">
+      <created>1519073887862</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1519073887862</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -787,14 +795,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hardware.py" />
     <entry file="file://$PROJECT_DIR$/Interrupter2.py" />
-    <entry file="file://$PROJECT_DIR$/Interrupter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Component.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -856,10 +856,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Interrupter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state relative-caret-position="108">
+          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="28" />
           <folding />
         </state>
       </provider>
