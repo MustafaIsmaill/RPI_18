@@ -118,7 +118,7 @@ class TcpCommunicator:
                     continue
                 else:
                     key, value = token.lower().split()
-                    data_map[key] = value
+                    data_map[key] = int(value)
             except:
                 print("Can't parse token: ", token)
 
