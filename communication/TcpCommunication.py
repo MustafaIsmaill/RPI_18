@@ -58,7 +58,7 @@ class TcpCommunicator:
     def registerCallBack(self, callback):
         self._eventcallback = callback
 
-    def _accept(self):
+    def _accept(self, x=0, y=0):
         if self._conn is not None:
             return
         conn, addr = self._socket.accept()
