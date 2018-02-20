@@ -71,8 +71,8 @@
       <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="168" column="24" lean-forward="false" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
+            <state relative-caret-position="372">
+              <caret line="227" column="32" lean-forward="false" selection-start-line="227" selection-start-column="24" selection-end-line="227" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -141,7 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>i2c_communicator</find>
       <find>mainLoop</find>
       <find>Front_Right_Thruster</find>
       <find>Front_Left_Thruster</find>
@@ -171,6 +170,7 @@
       <find>_recv</find>
       <find>closeA</find>
       <find>print</find>
+      <find>closeAnd</find>
     </findStrings>
     <replaceStrings>
       <replace>right_front_thruster</replace>
@@ -415,13 +415,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00034" summary="toss">
-      <created>1519075507871</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1519075507871</updated>
     </task>
     <task id="LOCAL-00035" summary="test #1243214132">
       <created>1519076197533</created>
@@ -759,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519166440824</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="backup">
+      <created>1519166978344</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1519166978344</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -796,7 +796,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="equation of motion" />
     <MESSAGE value="linear test" />
     <MESSAGE value="sifndskf" />
     <MESSAGE value="New Day" />
@@ -821,7 +820,8 @@
     <MESSAGE value="string not int" />
     <MESSAGE value="removed streaming" />
     <MESSAGE value="tokens length check" />
-    <option name="LAST_COMMIT_MESSAGE" value="tokens length check" />
+    <MESSAGE value="backup" />
+    <option name="LAST_COMMIT_MESSAGE" value="backup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1075,8 +1075,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="168" column="24" lean-forward="false" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
+        <state relative-caret-position="372">
+          <caret line="227" column="32" lean-forward="false" selection-start-line="227" selection-start-column="24" selection-end-line="227" selection-end-column="32" />
           <folding />
         </state>
       </provider>

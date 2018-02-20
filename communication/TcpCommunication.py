@@ -53,7 +53,7 @@ class UdpCommunicator:
                 print(type(e).__name__)
                 print("socket error caught in receiving")
                 callback("TCP ERROR",{})
-                self._closeAndReopenSocket()
+                # self._closeAndReopenSocket()
                 self._bindAndListen()
                 continue
 
@@ -225,6 +225,6 @@ class TcpCommunicator:
                 print(type(e).__name__)
                 print("socket error caught in receiving")
                 callback("TCP ERROR",{})
-                self._closeAndReopenSocket()
+                # self._closeAndReopenSocket()
                 self._bindAndListen()
                 continue
