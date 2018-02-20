@@ -151,7 +151,6 @@ class TcpCommunicator:
             for key, mask in events:
                 callback = key.data
                 callback()
-            dataReceived=""
             try:
                 dataReceived = self._recv()
                 # print("data receivedd: ", dataReceived)
