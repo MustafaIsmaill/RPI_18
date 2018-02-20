@@ -153,13 +153,13 @@ class TcpCommunicator:
                 callback()
             try:
                 dataReceived = self._recv()
-                # print("data receivedd: ", dataReceived)
-                if dataReceived == None:
-                      print("received None")
-                      # callback("TCP ERROR", {})
-                      self._closeAndReopenSocket()
-                      self._bindAndListen()
-                      continue
+                print("data receivedd: ", dataReceived)
+                # if dataReceived == None:
+                #       print("received None")
+                #       callback("TCP ERROR", {})
+                      # self._closeAndReopenSocket()
+                      # self._bindAndListen()
+                      # continue
             except Exception as e:
                 print(e)
                 print(type(e).__name__)
