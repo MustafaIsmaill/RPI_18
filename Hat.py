@@ -49,4 +49,5 @@ class Hat:
 
     def update(self, event_name, data=None):
         if event_name == "HAT":
+            print("Sent PWM")
             self._updatePWM()
