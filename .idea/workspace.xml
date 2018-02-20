@@ -415,13 +415,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00019" summary="default value">
-      <created>1519073297603</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1519073297603</updated>
-    </task>
     <task id="LOCAL-00020" summary="default value">
       <created>1519073324539</created>
       <option name="number" value="00020" />
@@ -758,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519143189312</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="print pwm">
+      <created>1519143285622</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1519143285622</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="ToolWindowManager">
