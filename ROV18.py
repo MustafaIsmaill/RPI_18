@@ -11,6 +11,7 @@ class ROV18:
         ip = "10.0.1.55"
         port = 9005
         self.tcp_communicator = TcpCommunicator(ip, port, bind=True)
+        self.udp_communicator = UdpCommunicator(ip,port)
 
         # initialize hat with default address and frequency
         hat_address = 0x40
@@ -46,14 +47,17 @@ class ROV18:
 
         self.publisher.registerEventListener("HAT", self.hat.update)
 
-        self.tcp_communicator.registerCallBack(self.publisher.trigger_event)
+        # self.tcp_communicator.registerCallBack(self.publisher.trigger_event)
+        self.udp_communicator.registerCallBack(self.publisher.trigger_event)
         self.motion.registerCallBack(self.publisher.trigger_event)
 
         # create interrupter and bind to I2C event trigger callback
         self.interrupter = Interrupter(self.publisher.trigger_event, "I2C")
 
         # Main loop
-        self.tcp_communicator.mainLoop()
+        # self.tcp_communicator.mainLoop()
+        self.udp_communicator.mainLoop()
+
 
 
 
