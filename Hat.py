@@ -48,6 +48,6 @@ class Hat:
                 self._devices[device]["current"] = value
 
     def update(self, event_name, data=None):
-        if event_name == "I2C":
-            print("Sent PWM")
+        if event_name == "HAT":
+            # print("Sent PWM")
             self._updatePWM()
