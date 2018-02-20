@@ -167,6 +167,7 @@ class TcpCommunicator:
             tokens = list()
             for i in range(4):
                 tokens += tokens_clone[len(tokens_clone)-(4-i)]
+            print (tokens)
 
         for token in tokens:
             try:
