@@ -17,7 +17,7 @@
     <SUITE FILE_PATH="coverage/RPI_18$Hat.coverage" NAME="Hat Coverage Results" MODIFIED="1518293848481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RPI_18$Adafruit_I2C.coverage" NAME="Adafruit_I2C Coverage Results" MODIFIED="1518283989300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RPI_18$Motion.coverage" NAME="Motion Coverage Results" MODIFIED="1519072701106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RPI_18$TcpCommunication.coverage" NAME="TcpCommunication Coverage Results" MODIFIED="1519151038864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/communication" />
+    <SUITE FILE_PATH="coverage/RPI_18$TcpCommunication.coverage" NAME="TcpCommunication Coverage Results" MODIFIED="1519166692525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/communication" />
     <SUITE FILE_PATH="coverage/RPI_18$ROV18.coverage" NAME="ROV18 Coverage Results" MODIFIED="1519072719031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RPI_18$Stream_Test.coverage" NAME="Stream_Test Coverage Results" MODIFIED="1517844538940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RPI_18$VideoStream.coverage" NAME="VideoStream Coverage Results" MODIFIED="1519165136382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -71,7 +71,7 @@
       <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
+            <state relative-caret-position="336">
               <caret line="168" column="24" lean-forward="false" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
               <folding />
             </state>
@@ -289,7 +289,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.VideoStream">
+  <component name="RunManager" selected="Python.TcpCommunication">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -394,8 +394,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.VideoStream" />
-        <item index="1" class="java.lang.String" itemvalue="Python.TcpCommunication" />
+        <item index="0" class="java.lang.String" itemvalue="Python.TcpCommunication" />
+        <item index="1" class="java.lang.String" itemvalue="Python.VideoStream" />
         <item index="2" class="java.lang.String" itemvalue="Python.Main" />
         <item index="3" class="java.lang.String" itemvalue="Python.ROV18" />
         <item index="4" class="java.lang.String" itemvalue="Python.Motion" />
@@ -415,13 +415,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00033" summary="7aga kwayesa">
-      <created>1519075226487</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1519075226487</updated>
     </task>
     <task id="LOCAL-00034" summary="toss">
       <created>1519075507871</created>
@@ -759,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519165858623</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="tokens length check">
+      <created>1519166440824</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1519166440824</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -796,7 +796,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test #1243214132" />
     <MESSAGE value="equation of motion" />
     <MESSAGE value="linear test" />
     <MESSAGE value="sifndskf" />
@@ -821,7 +820,8 @@
     <MESSAGE value="s not S" />
     <MESSAGE value="string not int" />
     <MESSAGE value="removed streaming" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed streaming" />
+    <MESSAGE value="tokens length check" />
+    <option name="LAST_COMMIT_MESSAGE" value="tokens length check" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1075,7 +1075,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="336">
           <caret line="168" column="24" lean-forward="false" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
           <folding />
         </state>

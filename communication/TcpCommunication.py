@@ -105,7 +105,7 @@ class TcpCommunicator:
     def registerCallBack(self, callback):
         self._eventcallback = callback
 
-    def _accept(self):
+    def _accept(self, x=None, y=None):
         if self._conn is not None:
             return
         conn, addr = self._socket.accept()
@@ -164,9 +164,9 @@ class TcpCommunicator:
         if (len(tokens) is not 4):
             print("wrong token")
             tokens_clone = tokens
-            tokens = []
+            tokens = list()
             for i in range(4):
-                tokens += len(tokens)-(i+1)
+                tokens += tokens_clone[len(tokens)-(4-i)]
 
         for token in tokens:
             try:
