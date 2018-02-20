@@ -129,7 +129,7 @@ class TcpCommunicator:
         self._selector.register(self._conn, selectors.EVENT_READ, self._recv)
         if self._videoStreamingEnable:
             import VideoStream
-            self._videoStream = VideoStream.VideoStream(self._streamingIP, self._streamingPort1, self._StreamingPort2)
+            self._videoStream = VideoStream.VideoStream(self._streamingIP, self._streamingPort1, self._streamingPort2)
             # self._videoStream = VideoStream.VideoStream("127.0.0.1", "5000")
             self._videoStream.start()
 
