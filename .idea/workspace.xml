@@ -92,8 +92,8 @@
       <file leaf-file-name="Hat.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Hat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+            <state relative-caret-position="431">
+              <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -414,13 +414,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00015" summary="print">
-      <created>1519072816296</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1519072816296</updated>
     </task>
     <task id="LOCAL-00016" summary="default value">
       <created>1519073105156</created>
@@ -758,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519142770979</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="print pwm">
+      <created>1519143105203</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1519143105203</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -795,7 +795,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ana motafa2el" />
     <MESSAGE value="raqam thaabet" />
     <MESSAGE value="ya mosahel" />
     <MESSAGE value="print" />
@@ -820,7 +819,8 @@
     <MESSAGE value="no lag" />
     <MESSAGE value="test for butts" />
     <MESSAGE value="eh ely beye7sal" />
-    <option name="LAST_COMMIT_MESSAGE" value="eh ely beye7sal" />
+    <MESSAGE value="print pwm" />
+    <option name="LAST_COMMIT_MESSAGE" value="print pwm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1065,8 +1065,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Hat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        <state relative-caret-position="431">
+          <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
           <folding />
         </state>
       </provider>
