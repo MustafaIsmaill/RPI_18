@@ -58,7 +58,7 @@ class TcpCommunicator:
     def registerCallBack(self, callback):
         self._eventcallback = callback
 
-    def _accept(self, x=0, y=0):
+    def _accept(self):
         if self._conn is not None:
             return
         conn, addr = self._socket.accept()
@@ -156,7 +156,7 @@ class TcpCommunicator:
                 # print("data receivedd: ", dataReceived)
                 if dataReceived == None:
                       print("received None")
-                      callback("TCP ERROR", {})
+                      # callback("TCP ERROR", {})
                       self._closeAndReopenSocket()
                       self._bindAndListen()
                       continue
