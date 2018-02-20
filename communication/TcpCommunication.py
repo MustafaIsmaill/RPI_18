@@ -161,6 +161,13 @@ class TcpCommunicator:
 
         data_map = {}
 
+        if (len(tokens) is not 4):
+            print("wrong token")
+            tokens_clone = tokens
+            tokens = []
+            for i in range(4):
+                tokens += len(tokens)-(i+1)
+
         for token in tokens:
             try:
                 if len(token.split()) is not 2:
