@@ -10,7 +10,9 @@ class ROV18:
         # initialize tcp_communicator for communicating with QT via TCP
         ip = "10.0.1.55"
         port = 9005
-        self.tcp_communicator = TcpCommunicator(ip, port, bind=True)
+        streamingPort1 = 1234
+        streamingPort2 = 5678
+        self.tcp_communicator = TcpCommunicator(ip, port, streamingPort1, streamingPort2, bind=True)
         # self.udp_communicator = UdpCommunicator(ip,port)
 
         # initialize hat with default address and frequency
