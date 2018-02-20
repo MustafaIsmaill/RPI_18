@@ -91,8 +91,8 @@ class Motion(Component):
 
     def update(self, event, mail_map=None):
 
-        # if event == "TCP ERROR":
-            # self._setMyDevicesToDefaults()
+        if event == "TCP ERROR":
+            self._setMyDevicesToDefaults()
 
         if event is "TCP":
             self._valueMap = mail_map
