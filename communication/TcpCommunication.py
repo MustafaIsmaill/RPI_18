@@ -201,12 +201,12 @@ class TcpCommunicator:
             try:
                 dataReceived = self._recv()
                 print("data received: ", dataReceived)
-                # if dataReceived == None:
-                #       print("received None")
-                #       callback("TCP ERROR", {})
-                #       self._closeAndReopenSocket()
-                #       self._bindAndListen()
-                #       continue
+                if dataReceived == b'':
+                      print("received None")
+                      callback("TCP ERROR", {})
+                      self._closeAndReopenSocket()
+                      self._bindAndListen()
+                      continue
 
             except Exception as e:
                 print(e)
