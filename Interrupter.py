@@ -8,4 +8,4 @@ class Interrupter:
 
     def register(self, callback_function):
         callback_function("I2C")
-        threading.Timer(0.01, self.register, [callback_function]).start()
+        threading.Timer(0.02, self.register, [callback_function]).start()
