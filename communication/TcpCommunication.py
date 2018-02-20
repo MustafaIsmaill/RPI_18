@@ -93,7 +93,7 @@ class TcpCommunicator:
             pass
 
         if not data:
-            self._cleanup()
+            # self._cleanup()
             return data
 
         data_map = self._parse(data)
@@ -154,13 +154,14 @@ class TcpCommunicator:
                 callback()
             try:
                 dataReceived = self._recv()
-                print("data receivedd: ", dataReceived)
+                print("data received: ", dataReceived)
                 # if dataReceived == None:
                 #       print("received None")
                 #       callback("TCP ERROR", {})
                 #       self._closeAndReopenSocket()
                 #       self._bindAndListen()
                 #       continue
+
             except Exception as e:
                 print(e)
                 print(type(e).__name__)
