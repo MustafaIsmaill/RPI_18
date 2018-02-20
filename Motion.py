@@ -111,7 +111,7 @@ class Motion(Component):
             print("TCP Event")
             print("calculating horizontal motors")
             self._calculateHorizontalMotors()
-            self._setFromMyLocalToDevice()
+            # self._setFromMyLocalToDevice()
 
 
 

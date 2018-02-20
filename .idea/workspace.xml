@@ -57,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Motion.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
+            <state relative-caret-position="314">
               <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -69,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Interrupter.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Interrupter.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Interrupter.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -415,13 +415,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00012" summary="raqam thaabet">
-      <created>1519071968937</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1519071968937</updated>
-    </task>
     <task id="LOCAL-00013" summary="ya mosahel">
       <created>1519072218579</created>
       <option name="number" value="00013" />
@@ -758,7 +751,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519140321988</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="test for butts">
+      <created>1519142337002</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1519142337002</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -795,7 +795,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added Mustafa Ismail's Equation of Motion" />
     <MESSAGE value="fokkak" />
     <MESSAGE value="ana motafa2el" />
     <MESSAGE value="raqam thaabet" />
@@ -820,7 +819,8 @@
     <MESSAGE value="Hat interruptor" />
     <MESSAGE value="Literally commented one line" />
     <MESSAGE value="no lag" />
-    <option name="LAST_COMMIT_MESSAGE" value="no lag" />
+    <MESSAGE value="test for butts" />
+    <option name="LAST_COMMIT_MESSAGE" value="test for butts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1053,21 +1053,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Motion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Interrupter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Motion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
