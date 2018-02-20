@@ -164,7 +164,7 @@ class TcpCommunicator:
         if (len(tokens) is not 4):
             print("wrong token")
             tokens_clone = tokens
-            tokens = list()
+            tokens = list(4)
             for i in range(4):
                 tokens[i] = tokens_clone[len(tokens_clone)-(4-i)]
             print (tokens)

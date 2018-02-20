@@ -71,8 +71,8 @@
       <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="168" column="27" lean-forward="false" selection-start-line="168" selection-start-column="27" selection-end-line="168" selection-end-column="27" />
+            <state relative-caret-position="200">
+              <caret line="166" column="28" lean-forward="false" selection-start-line="166" selection-start-column="28" selection-end-line="166" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -416,13 +416,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00038" summary="linear test">
-      <created>1519078067101</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1519078067101</updated>
-    </task>
     <task id="LOCAL-00039" summary="linear test">
       <created>1519078093843</created>
       <option name="number" value="00039" />
@@ -759,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519167391071</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="tokens[i]">
+      <created>1519167481942</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1519167481942</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -796,7 +796,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Ha" />
     <MESSAGE value="check zero crossing" />
     <MESSAGE value="ay 7aga" />
     <MESSAGE value="frequency" />
@@ -821,7 +820,8 @@
     <MESSAGE value="closeAndReopenSocket commented" />
     <MESSAGE value="tokens_clone" />
     <MESSAGE value="print(tokens)" />
-    <option name="LAST_COMMIT_MESSAGE" value="print(tokens)" />
+    <MESSAGE value="tokens[i]" />
+    <option name="LAST_COMMIT_MESSAGE" value="tokens[i]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1075,8 +1075,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="168" column="27" lean-forward="false" selection-start-line="168" selection-start-column="27" selection-end-line="168" selection-end-column="27" />
+        <state relative-caret-position="200">
+          <caret line="166" column="28" lean-forward="false" selection-start-line="166" selection-start-column="28" selection-end-line="166" selection-end-column="28" />
           <folding />
         </state>
       </provider>
