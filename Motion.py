@@ -8,6 +8,8 @@ class Motion(Component):
 
         # ===========CONSTANTS========
 
+        self._eventcallback = None
+
         self.PWMNORMAL = 305
         self.PWMMAXCW = 470
         self.PWMMAXCCW = 140
@@ -94,6 +96,9 @@ class Motion(Component):
         # print(self._motors)
         # print(self._valueMap)
 
+    def registerCallBack(self, callback):
+        self._eventcallback = callback
+
     def update(self, event, mail_map=None):
 
         if event == "TCP ERROR":
@@ -112,5 +117,7 @@ class Motion(Component):
         if event == "I2C":
             #print("PWM UPDATE")
             self._setFromMyLocalToDevice()
+            self._eventcallback("HAT")
+
 
 
