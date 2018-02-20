@@ -121,7 +121,7 @@ class TcpCommunicator:
             self._socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPINTVL, 1)
             self._socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPCNT, 2)
         conn.setblocking(False)
-       # print(addr, "Connected!")
+        print(addr, "Connected!")
         self._conn = conn
         self._selector.register(self._conn, selectors.EVENT_READ, self._recv)
         if self._videoStreamingEnable:
@@ -130,7 +130,7 @@ class TcpCommunicator:
             self._videoStream = VideoStream.VideoStream("127.0.0.1", "5000")
             self._videoStream.start()
 
-    def _recv(self):
+    def _recv(self,x=None,y=None):
         data = None
         try:
             data = self._conn.recv(self._bufferSize)
