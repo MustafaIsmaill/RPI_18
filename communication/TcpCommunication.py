@@ -92,14 +92,15 @@ class TcpCommunicator:
         except:
             pass
 
-        if not data:
-            self._cleanup()
-            return data
+        # if not data:
+        #     self._cleanup()
+        #     return data
 
         data_map = self._parse(data)
+        self._eventcallback("TCP", data_map)
 
-        if self._eventcallback is not None:
-            self._eventcallback("TCP", data_map)
+        # if self._eventcallback is not None:
+            # self._eventcallback("TCP", data_map)
 
     def _parse(self, data):
         data = data.decode(encoding="UTF-8")
