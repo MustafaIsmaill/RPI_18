@@ -14,6 +14,8 @@ class Motion(Component):
 
         self.PWMRANGE = 165
 
+        self.prev_value = self.PWMNORMAL
+
         # =========VARIABLES==========
         self._motors = {}
         self._setMyDevicesToDefaults()
@@ -28,6 +30,9 @@ class Motion(Component):
         # left_rear_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((-1 * self._valueMap['x'] * self._valueMap['x'] + self._valueMap['y'] * self._valueMap['y'] + self._valueMap['r'] * self._valueMap['r']) / 10000) * (100 / (self._valueMap['x'] + self._valueMap['y'] + self._valueMap['r']))
         # right_rear_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((self._valueMap['x'] * self._valueMap['x'] + self._valueMap['y'] * self._valueMap['y'] + -1 * self._valueMap['r'] * self._valueMap['r']) / 10000) * (100 / (self._valueMap['x'] + self._valueMap['y'] + self._valueMap['r']))
         left_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * ((1 * self._valueMap['y']) / 100)
+        if ((self.prev_value - self.PWMNORMAL) * (left_front_thruster_value - self.PWMNORMAL) < 0):
+            left_front_thruster_value = self.PWMNORMAL
+        self.prev_value = left_front_thruster_value
         # self._motors["right_front_thruster"] = right_front_thruster_value
         self._motors["left_front_thruster"] = left_front_thruster_value
         # self._motors["right_rear_thruster"] = right_rear_thruster_value
