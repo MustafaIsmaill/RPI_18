@@ -90,8 +90,8 @@
       <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+            <state relative-caret-position="182">
+              <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -407,13 +407,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Fixed pwm type form float to int">
-      <created>1519069626799</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1519069626799</updated>
     </task>
     <task id="LOCAL-00004" summary="Fixed pwm type form float to int">
       <created>1519069949661</created>
@@ -751,7 +744,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519128057122</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="ay 7aga">
+      <created>1519133160952</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1519133160953</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -812,7 +812,8 @@
     <MESSAGE value="Ha" />
     <MESSAGE value="check zero crossing" />
     <MESSAGE value="frequency" />
-    <option name="LAST_COMMIT_MESSAGE" value="frequency" />
+    <MESSAGE value="ay 7aga" />
+    <option name="LAST_COMMIT_MESSAGE" value="ay 7aga" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1057,8 +1058,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        <state relative-caret-position="182">
+          <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
           <folding />
         </state>
       </provider>
