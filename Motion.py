@@ -29,18 +29,22 @@ class Motion(Component):
         left_rear_thruster_value = self.PWMNORMAL
 
         if n < 1:
-            n =  1
+            n = 1
+
+        _x = self._valueMap['x']
+        _y = self._valueMap['y']
+        _r = self._valueMap['r']*0.4
 
         if n != 0:
             right_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * (
-                    float(self._valueMap['x'] / -100) + float(self._valueMap['y'] / 100)
-                    + float(self._valueMap['r'] / -100)) * (1.0 / n)
-            left_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * (float(self._valueMap['x'] / 100)
-                    + float(self._valueMap['y'] / 100) + float(self._valueMap['r'] / 100)) * (1.0 / n)
-            right_rear_thruster_value = self.PWMNORMAL + self.PWMRANGE * (float(self._valueMap['x'] / 100)
-                    + float(self._valueMap['y'] / 100) + float(self._valueMap['r'] / -100)) * (1.0 / n)
-            left_rear_thruster_value = self.PWMNORMAL + self.PWMRANGE * (float(self._valueMap['x'] / -100)
-                    + float(self._valueMap['y'] / 100) + float(self._valueMap['r'] / 100)) * (1.0 / n)
+                    float(_x / -100) + float(_y / 100)
+                    + float(_r / -100)) * (1.0 / n)
+            left_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * (float(_x / 100)
+                    + float(_y / 100) + float(_r / 100)) * (1.0 / n)
+            right_rear_thruster_value = self.PWMNORMAL + self.PWMRANGE * (float(_x / 100)
+                    + float(_y / 100) + float(_r / -100)) * (1.0 / n)
+            left_rear_thruster_value = self.PWMNORMAL + self.PWMRANGE * (float(_x / -100)
+                    + float(_y / 100) + float(_r / 100)) * (1.0 / n)
 
         self._motors["right_front_thruster"] = right_front_thruster_value
         self._motors["left_front_thruster"] = left_front_thruster_value
