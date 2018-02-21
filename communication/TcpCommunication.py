@@ -214,7 +214,7 @@ class TcpCommunicator:
             try:
                 dataReceived = self._recv()
                 print("data received: ", dataReceived)
-                if dataReceived == '':
+                if dataReceived == "b''":
                       print("received None")
                       callback("TCP ERROR", {})
                       # self._closeAndReopenSocket()

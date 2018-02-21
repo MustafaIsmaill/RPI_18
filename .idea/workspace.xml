@@ -72,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="216" column="37" lean-forward="false" selection-start-line="216" selection-start-column="37" selection-end-line="216" selection-end-column="37" />
+              <caret line="216" column="39" lean-forward="false" selection-start-line="216" selection-start-column="39" selection-end-line="216" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -417,13 +417,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00060" summary="no lag">
-      <created>1519140321988</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1519140321988</updated>
-    </task>
     <task id="LOCAL-00061" summary="test for butts">
       <created>1519142337002</created>
       <option name="number" value="00061" />
@@ -760,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519238327577</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="yalla ya tooto">
+      <created>1519238682689</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1519238682689</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -797,7 +797,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="string not int" />
     <MESSAGE value="removed streaming" />
     <MESSAGE value="tokens length check" />
     <MESSAGE value="backup" />
@@ -822,7 +821,8 @@
     <MESSAGE value="Our equation of motion" />
     <MESSAGE value="print pwms" />
     <MESSAGE value="a5er code" />
-    <option name="LAST_COMMIT_MESSAGE" value="a5er code" />
+    <MESSAGE value="yalla ya tooto" />
+    <option name="LAST_COMMIT_MESSAGE" value="yalla ya tooto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1087,7 +1087,7 @@
     <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="216" column="37" lean-forward="false" selection-start-line="216" selection-start-column="37" selection-end-line="216" selection-end-column="37" />
+          <caret line="216" column="39" lean-forward="false" selection-start-line="216" selection-start-column="39" selection-end-line="216" selection-end-column="39" />
           <folding />
         </state>
       </provider>
