@@ -29,27 +29,27 @@ class VideoStream():
         #     self._thread = threading.Thread(target=self._run, args=())
         #     self._thread.start()
 
-    def _run(self):
-        bus = self._pipeline.get_bus()
-
-        while True:
-            if not self._running:
-                break
-            message = bus.timed_pop_filtered(Gst.CLOCK_TIME_NONE,
-                                             Gst.MessageType.STATE_CHANGED | Gst.MessageType.ERROR | Gst.MessageType.EOS)
-            if message.type == Gst.MessageType.ERROR:
-                err, debug = message.parse_error()
-                # print("Debugging information: %s" % debug, file=sys.stderr)
-                raise Exception("Error received from element %s: %s" % (message.src.get_name(), err), file=sys.stderr)
-            elif message.type == Gst.MessageType.EOS:
-                #print("End-Of-Stream reached.")
-                break
-            elif message.type == Gst.MessageType.STATE_CHANGED:
-                if isinstance(message.src, Gst.Pipeline):
-                    old_state, new_state, pending_state = message.parse_state_changed()
-                    #print("Pipeline state changed from %s to %s." % (old_state.value_nick, new_state.value_nick))
-            else:
-                raise Exception("Unexpected message received.")
+    # def _run(self):
+    #     bus = self._pipeline.get_bus()
+    #
+    #     while True:
+    #         if not self._running:
+    #             break
+    #         message = bus.timed_pop_filtered(Gst.CLOCK_TIME_NONE,
+    #                                          Gst.MessageType.STATE_CHANGED | Gst.MessageType.ERROR | Gst.MessageType.EOS)
+    #         if message.type == Gst.MessageType.ERROR:
+    #             err, debug = message.parse_error()
+    #             # print("Debugging information: %s" % debug, file=sys.stderr)
+    #             raise Exception("Error received from element %s: %s" % (message.src.get_name(), err), file=sys.stderr)
+    #         elif message.type == Gst.MessageType.EOS:
+    #             #print("End-Of-Stream reached.")
+    #             break
+    #         elif message.type == Gst.MessageType.STATE_CHANGED:
+    #             if isinstance(message.src, Gst.Pipeline):
+    #                 old_state, new_state, pending_state = message.parse_state_changed()
+    #                 #print("Pipeline state changed from %s to %s." % (old_state.value_nick, new_state.value_nick))
+    #         else:
+    #             raise Exception("Unexpected message received.")
 
     def pause(self):
         self._pipeline.set_state(Gst.State.PAUSED)
