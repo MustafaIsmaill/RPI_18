@@ -3,7 +3,7 @@ import socket, sys, selectors
 
 class TcpCommunicator:
     def __init__(self, ip, port, streamingIP, streamingPort1, streamingPort2, timeout=None, closingword="close connection", bind=False):  # timeout is in seconds
-        self._videoStreamingEnable = False
+        self._videoStreamingEnable = True
         self._ip = ip
         self._port = port
         self._streamingIP = streamingIP

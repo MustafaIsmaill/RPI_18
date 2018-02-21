@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/communication/TcpCommunication.py" afterPath="$PROJECT_DIR$/communication/TcpCommunication.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,8 +71,8 @@
       <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="79" column="23" lean-forward="false" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="23" />
+            <state relative-caret-position="90">
+              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -170,8 +171,8 @@
       <find>TCP Err</find>
       <find>inter</find>
       <find>print</find>
-      <find>clean</find>
       <find>select</find>
+      <find>clean</find>
     </findStrings>
     <replaceStrings>
       <replace>right_front_thruster</replace>
@@ -416,13 +417,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00071" summary="TCP">
-      <created>1519157839099</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1519157839100</updated>
     </task>
     <task id="LOCAL-00072" summary="removed unnecessary print">
       <created>1519158233620</created>
@@ -760,7 +754,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519245464296</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="recieve only on event">
+      <created>1519245467156</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1519245467156</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1093,8 +1094,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="79" column="23" lean-forward="false" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="23" />
+        <state relative-caret-position="90">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
           <folding />
         </state>
       </provider>
