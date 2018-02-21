@@ -24,10 +24,10 @@ class VideoStream():
         ret = self._pipeline.set_state(Gst.State.PLAYING)
         if ret == Gst.StateChangeReturn.FAILURE:
             raise Exception("Error starting the pipeline")
-        self._running = True
-        if (self._thread is None) or (not self._thread.isAlive()):
-            self._thread = threading.Thread(target=self._run, args=())
-            self._thread.start()
+        # self._running = True
+        # if (self._thread is None) or (not self._thread.isAlive()):
+        #     self._thread = threading.Thread(target=self._run, args=())
+        #     self._thread.start()
 
     def _run(self):
         bus = self._pipeline.get_bus()
@@ -39,7 +39,7 @@ class VideoStream():
                                              Gst.MessageType.STATE_CHANGED | Gst.MessageType.ERROR | Gst.MessageType.EOS)
             if message.type == Gst.MessageType.ERROR:
                 err, debug = message.parse_error()
-                print("Debugging information: %s" % debug, file=sys.stderr)
+                # print("Debugging information: %s" % debug, file=sys.stderr)
                 raise Exception("Error received from element %s: %s" % (message.src.get_name(), err), file=sys.stderr)
             elif message.type == Gst.MessageType.EOS:
                 #print("End-Of-Stream reached.")
