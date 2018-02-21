@@ -29,7 +29,7 @@ class Motion(Component):
         left_rear_thruster_value = self.PWMNORMAL
 
         if n < 1:
-            n = 1
+            n =  1
 
         if n != 0:
             right_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * (
@@ -91,8 +91,8 @@ class Motion(Component):
 
     def update(self, event, mail_map=None):
 
-        # if event == "TCP ERROR":
-        #     self._setMyDevicesToDefaults()
+        if event == "TCP ERROR":
+            self._setMyDevicesToDefaults()
 
         if event is "TCP":
             self._valueMap = mail_map
@@ -103,7 +103,7 @@ class Motion(Component):
             self._calculateHorizontalMotors()
             # self._setFromMyLocalToDevice()
 
-        if event == "I2C":
+        if event == "CLOCK":
             #print("PWM UPDATE")
             self._setFromMyLocalToDevice()
             self._eventcallback("HAT")

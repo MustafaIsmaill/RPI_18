@@ -45,8 +45,8 @@ class ROV18:
             self.publisher.registerEventListener("TCP", component.update)
             self.publisher.registerEventListener("TCP ERROR", component.update)
 
-        self.publisher.registerEventListener("I2C", self.motion.update)
-        self.publisher.registerEventListener("I2C", self.hat.update)
+        self.publisher.registerEventListener("CLOCK", self.motion.update)
+        self.publisher.registerEventListener("CLOCK", self.hat.update)
 
         self.publisher.registerEventListener("HAT", self.hat.update)
 
@@ -55,27 +55,8 @@ class ROV18:
         self.motion.registerCallBack(self.publisher.trigger_event)
 
         # create interrupter and bind to I2C event trigger callback
-        self.interrupter = Interrupter(self.publisher.trigger_event, "I2C")
+        self.interrupter = Interrupter(self.publisher.trigger_event, "CLOCK")
 
         # Main loop
         self.tcp_communicator.mainLoop()
         # self.udp_communicator.mainLoop()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
