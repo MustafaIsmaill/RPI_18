@@ -21,7 +21,8 @@ class Motion(Component):
 
     def _calculateHorizontalMotors(self):
 
-        n = (abs(self._valueMap['x']) + abs(self._valueMap['y']) + abs(self._valueMap['r'])) / 100.0
+        # n = (abs(self._valueMap['x']) + abs(self._valueMap['y']) + abs(self._valueMap['r'])) / 100.0
+        n = (abs(self._valueMap['x']) + abs(self._valueMap['y'])) / 100.0
 
         right_front_thruster_value = self.PWMNORMAL
         left_front_thruster_value = self.PWMNORMAL

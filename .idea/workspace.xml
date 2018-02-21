@@ -49,8 +49,8 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="108">
+              <caret line="24" column="65" lean-forward="false" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -417,13 +417,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00066" summary="print pwm">
-      <created>1519143184683</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1519143184683</updated>
-    </task>
     <task id="LOCAL-00067" summary="print pwm">
       <created>1519143189312</created>
       <option name="number" value="00067" />
@@ -760,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519240702829</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="r fixed at 0">
+      <created>1519242399726</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1519242399726</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -797,7 +797,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tokens_clone" />
     <MESSAGE value="print(tokens)" />
     <MESSAGE value="tokens[i]" />
     <MESSAGE value="list(4)" />
@@ -822,7 +821,8 @@
     <MESSAGE value="no cleanup" />
     <MESSAGE value="Equation of motion r * 0.4" />
     <MESSAGE value="Power 75%" />
-    <option name="LAST_COMMIT_MESSAGE" value="Power 75%" />
+    <MESSAGE value="r fixed at 0" />
+    <option name="LAST_COMMIT_MESSAGE" value="r fixed at 0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1084,8 +1084,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="108">
+          <caret line="24" column="65" lean-forward="false" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
