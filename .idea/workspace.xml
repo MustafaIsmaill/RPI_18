@@ -71,8 +71,8 @@
       <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="216" column="39" lean-forward="false" selection-start-line="216" selection-start-column="39" selection-end-line="216" selection-end-column="39" />
+            <state relative-caret-position="239">
+              <caret line="80" column="18" lean-forward="false" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -143,9 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Front_Left_Thruster</find>
-      <find>setDe</find>
-      <find>Back_Right_Thruster</find>
       <find>Back_Left_Thruster</find>
       <find>Up_Front_Thruster</find>
       <find>Up_Back_Thruster</find>
@@ -173,6 +170,9 @@
       <find>base_value</find>
       <find>y</find>
       <find>r</find>
+      <find>udp</find>
+      <find>TCP Err</find>
+      <find>clean</find>
     </findStrings>
     <replaceStrings>
       <replace>right_front_thruster</replace>
@@ -416,13 +416,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00061" summary="test for butts">
-      <created>1519142337002</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1519142337002</updated>
     </task>
     <task id="LOCAL-00062" summary="eh ely beye7sal">
       <created>1519142417131</created>
@@ -760,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519238682689</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="hmm">
+      <created>1519239671211</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1519239671211</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -776,6 +776,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23352855" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.4941435" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -786,7 +787,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.4941435" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -797,7 +797,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed streaming" />
     <MESSAGE value="tokens length check" />
     <MESSAGE value="backup" />
     <MESSAGE value="closeAndReopenSocket commented" />
@@ -822,7 +821,8 @@
     <MESSAGE value="print pwms" />
     <MESSAGE value="a5er code" />
     <MESSAGE value="yalla ya tooto" />
-    <option name="LAST_COMMIT_MESSAGE" value="yalla ya tooto" />
+    <MESSAGE value="hmm" />
+    <option name="LAST_COMMIT_MESSAGE" value="hmm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1086,8 +1086,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="216" column="39" lean-forward="false" selection-start-line="216" selection-start-column="39" selection-end-line="216" selection-end-column="39" />
+        <state relative-caret-position="239">
+          <caret line="80" column="18" lean-forward="false" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
           <folding />
         </state>
       </provider>
