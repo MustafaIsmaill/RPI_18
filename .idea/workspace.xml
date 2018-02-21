@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Streaming.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/VideoStream.py" afterPath="$PROJECT_DIR$/VideoStream.py" />
+      <change beforePath="$PROJECT_DIR$/communication/TcpCommunication.py" afterPath="$PROJECT_DIR$/communication/TcpCommunication.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,11 +59,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="25" />
+            <state relative-caret-position="288">
+              <caret line="133" column="37" lean-forward="true" selection-start-line="130" selection-start-column="12" selection-end-line="133" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Streaming.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Streaming.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,21 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ROV18.py.save" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ROV18.py.save">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -214,8 +215,9 @@
         <option value="$PROJECT_DIR$/Hat.py" />
         <option value="$PROJECT_DIR$/Interrupter.py" />
         <option value="$PROJECT_DIR$/Motion.py" />
-        <option value="$PROJECT_DIR$/communication/TcpCommunication.py" />
         <option value="$PROJECT_DIR$/VideoStream.py" />
+        <option value="$PROJECT_DIR$/communication/TcpCommunication.py" />
+        <option value="$PROJECT_DIR$/Streaming.py" />
       </list>
     </option>
   </component>
@@ -415,13 +417,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00053" summary="ay 7aga">
-      <created>1519133309346</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1519133309346</updated>
     </task>
     <task id="LOCAL-00054" summary="ay 7aga">
       <created>1519134038854</created>
@@ -759,7 +754,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519204925343</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="videostreaming">
+      <created>1519206566755</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1519206566756</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -796,7 +798,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Exception Handle" />
     <MESSAGE value="more exceptions" />
     <MESSAGE value="Added Videostream for two cameras" />
     <MESSAGE value="Added IP for stream" />
@@ -821,7 +822,8 @@
     <MESSAGE value="Enabled video stream" />
     <MESSAGE value="Disabled video stream" />
     <MESSAGE value="Removed streaming loop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed streaming loop" />
+    <MESSAGE value="videostreaming" />
+    <option name="LAST_COMMIT_MESSAGE" value="videostreaming" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -830,7 +832,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ROVLOCAL.py" />
     <entry file="file://$PROJECT_DIR$/Sensors.py" />
     <entry file="file://$PROJECT_DIR$/SensorClass.py" />
     <entry file="file://$PROJECT_DIR$/Main.py">
@@ -1021,14 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Hat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -1081,10 +1074,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="65" column="25" lean-forward="false" selection-start-line="65" selection-start-column="14" selection-end-line="65" selection-end-column="25" />
+        <state relative-caret-position="288">
+          <caret line="133" column="37" lean-forward="true" selection-start-line="130" selection-start-column="12" selection-end-line="133" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Streaming.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
