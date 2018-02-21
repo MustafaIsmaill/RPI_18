@@ -33,7 +33,8 @@ class Motion(Component):
 
         _x = self._valueMap['x']
         _y = self._valueMap['y']
-        _r = self._valueMap['r']*0.4
+        # _r = self._valueMap['r']*0.4
+        _r = 0
 
         if n != 0:
             right_front_thruster_value = self.PWMNORMAL + self.PWMRANGE * (
