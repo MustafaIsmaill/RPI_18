@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="recieved only">
+    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/communication/TcpCommunication.py" afterPath="$PROJECT_DIR$/communication/TcpCommunication.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -418,13 +417,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00070" summary="udp">
-      <created>1519151093615</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1519151093615</updated>
-    </task>
     <task id="LOCAL-00071" summary="TCP">
       <created>1519157839099</created>
       <option name="number" value="00071" />
@@ -761,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519244204867</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="recieve only on event">
+      <created>1519245464296</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1519245464296</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -798,7 +797,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="*4" />
     <MESSAGE value="freq" />
     <MESSAGE value="oops" />
     <MESSAGE value="dont reconnect" />
@@ -823,7 +821,8 @@
     <MESSAGE value="r fixed" />
     <MESSAGE value="interrupt removed" />
     <MESSAGE value="added interrupt" />
-    <option name="LAST_COMMIT_MESSAGE" value="added interrupt" />
+    <MESSAGE value="recieve only on event" />
+    <option name="LAST_COMMIT_MESSAGE" value="recieve only on event" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
