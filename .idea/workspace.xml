@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Motion.py" afterPath="$PROJECT_DIR$/Motion.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -417,13 +416,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00064" summary="print pwm">
-      <created>1519143105203</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1519143105203</updated>
-    </task>
     <task id="LOCAL-00065" summary="print pwm">
       <created>1519143159027</created>
       <option name="number" value="00065" />
@@ -760,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519240519523</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Power 75%">
+      <created>1519240699737</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1519240699737</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -797,7 +796,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="closeAndReopenSocket commented" />
     <MESSAGE value="tokens_clone" />
     <MESSAGE value="print(tokens)" />
     <MESSAGE value="tokens[i]" />
@@ -822,7 +820,8 @@
     <MESSAGE value="hmm" />
     <MESSAGE value="no cleanup" />
     <MESSAGE value="Equation of motion r * 0.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Equation of motion r * 0.4" />
+    <MESSAGE value="Power 75%" />
+    <option name="LAST_COMMIT_MESSAGE" value="Power 75%" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
