@@ -43,6 +43,11 @@ class Motion(Component):
         self._motors["right_rear_thruster"] = right_rear_thruster_value
         self._motors["left_rear_thruster"] = left_rear_thruster_value
 
+        print("right_front_thruster pwm: ", right_front_thruster_value)
+        print("left_front_thruster pwm: ", left_front_thruster_value)
+        print("right_rear_thruster pwm: ", right_rear_thruster_value)
+        print("left_rear_thruster pwm: ", left_rear_thruster_value)
+
     def _calculateVerticalMotors(self):
 
         top_front_thruster_value = int(self.PWMNORMAL + (self._valueMap['z'] * self.PWMRANGE))
@@ -50,6 +55,8 @@ class Motion(Component):
 
         self._motors["top_front_thruster"] = top_front_thruster_value
         self._motors["top_rear_thruster"] = top_rear_thruster_value
+        print("")
+        print("")
 
     def _setMyDevicesToDefaults(self):
 
