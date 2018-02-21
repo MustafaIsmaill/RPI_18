@@ -55,7 +55,7 @@ class ROV18:
         self.motion.registerCallBack(self.publisher.trigger_event)
 
         # create interrupter and bind to I2C event trigger callback
-        # self.interrupter = Interrupter(self.publisher.trigger_event, "CLOCK")
+        self.interrupter = Interrupter(self.publisher.trigger_event, "CLOCK")
 
         # Main loop
         self.tcp_communicator.mainLoop()

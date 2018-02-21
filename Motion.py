@@ -108,12 +108,12 @@ class Motion(Component):
             print("calculating horizontal motors")
             self._calculateHorizontalMotors()
             self._setFromMyLocalToDevice()
-            self._eventcallback("HAT")
-
-        # if event == "CLOCK":
-            #print("PWM UPDATE")
-            # self._setFromMyLocalToDevice()
             # self._eventcallback("HAT")
+
+        if event == "CLOCK":
+            # print("PWM UPDATE")
+            self._setFromMyLocalToDevice()
+            self._eventcallback("HAT")
 
 
 
