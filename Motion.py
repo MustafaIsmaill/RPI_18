@@ -11,7 +11,7 @@ class Motion(Component):
         self._eventcallback = None
 
         self.PWMNORMAL = 305
-        self.PWMRANGE = 165
+        self.PWMRANGE = 124
 
         self.prev_value = self.PWMNORMAL
 
