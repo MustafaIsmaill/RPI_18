@@ -2,8 +2,8 @@
 import socket, sys, selectors
 
 class TcpCommunicator:
-    def __init__(self, ip, port, streamingIP, streamingPort1, streamingPort2, timeout=None, closingword="close connection", bind=False):  # timeout is in seconds
-        self._videoStreamingEnable = True
+    def __init__(self, ip, port, streamingIP, streamingPort1, streamingPort2, streaming, timeout=None, closingword="close connection", bind=False):  #timeout is in seconds
+        self._videoStreamingEnable = streaming
         self._ip = ip
         self._port = port
         self._streamingIP = streamingIP
@@ -96,12 +96,12 @@ class TcpCommunicator:
 
         data_map = {}
 
-        if (len(tokens) is not 4):
+        if (len(tokens) is not 6):
             print("wrong token")
             tokens_clone = tokens
-            tokens = [""]*4
-            for i in range(4):
-                tokens[i] = tokens_clone[len(tokens_clone)-(4-i)]
+            tokens = [""]*6
+            for i in range(6):
+                tokens[i] = tokens_clone[len(tokens_clone)-(6-i)]
             print (tokens)
 
         for token in tokens:
@@ -131,22 +131,3 @@ class TcpCommunicator:
             for key, mask in events:
                 callback = key.data
                 callback()
-            # dataReceived = ""
-            # try:
-            #     dataReceived = self._recv()
-            #     print("data received: ", dataReceived)
-            #     if dataReceived == "b''":
-            #           print("received None")
-            #           callback("TCP ERROR", {})
-            #           # self._closeAndReopenSocket()
-            #           self._bindAndListen()
-            #           continue
-            #
-            # except Exception as e:
-            #     print(e)
-            #     print(type(e).__name__)
-            #     print("socket error caught in receiving")
-            #     callback("TCP ERROR",{})
-            #     # self._closeAndReopenSocket()
-            #     self._bindAndListen()
-            #     continue

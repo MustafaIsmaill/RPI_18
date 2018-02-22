@@ -3,23 +3,40 @@ from Interrupter import *
 from Publisher import *
 from Motion import *
 from Hat import *
+from Dummy_Hat import *
 
 
 class ROV18:
     def __init__(self):
         # initialize tcp_communicator for communicating with QT via TCP
+
+        # pi ip address (comment for testing)
         ip = "10.0.1.55"
+
+        # local ip address (uncomment for testing)
+        # ip = "0.0.0.0"
+
+        tcpPort = 9005
+
+        # streaming enable or disable
+        streamingEnable = True
+
+        # streaming attributes
         streamingIP = "10.0.1.54"
-        port = 9005
         streamingPort1 = "1234"
         streamingPort2 = "5678"
-        self.tcp_communicator = TcpCommunicator(ip, port, streamingIP, streamingPort1, streamingPort2, bind=True)
-        # self.udp_communicator = UdpCommunicator(ip,port)
 
-        # initialize hat with default address and frequency
+
+        self.tcp_communicator = TcpCommunicator(ip, tcpPort , streamingIP, streamingPort1, streamingPort2, streamingEnable, bind=True)
+        # self.udp_communicator = UdpCommunicator(ip,tcpPort )
+
+        # initialize hat with default address and frequency (comment when testing)
         hat_address = 0x40
         frequency = 50
         self.hat = Hat(hat_address, frequency)
+
+        # initialize dummy hat for testing without the pi
+        self.hat = Dummy_Hat()
 
         # adding devices to hat -- args: (device name, channel, base pwm)
         thruster_base_pwm = 305
@@ -30,7 +47,7 @@ class ROV18:
         self.hat.addDevice("left_front_thruster", 4, thruster_base_pwm)
         self.hat.addDevice("right_front_thruster", 5, thruster_base_pwm)
 
-        # system components
+        # list of system components
         components = []
 
         # motion equation component -- args (hat, angle zeros)
@@ -55,7 +72,7 @@ class ROV18:
         self.motion.registerCallBack(self.publisher.trigger_event)
 
         # create interrupter and bind to I2C event trigger callback
-        self.interrupter = Interrupter(self.publisher.trigger_event, "CLOCK")
+        # self.interrupter = Interrupter(self.publisher.trigger_event, "CLOCK")
 
         # Main loop
         self.tcp_communicator.mainLoop()
