@@ -9,8 +9,8 @@ class Dummy_Hat:
             print("PWM updated for ", device, " with value ", int(self._devices[device]["current"]))
             self._devices[device]["previous"] = self._devices[device]["current"]
 
-    def addDevice(self, name, channel, baseValue):
-        self._devices[name] = {"channel": channel, "base": baseValue, "current": baseValue, "previous": baseValue}
+    def addDevice(self, name, position, channel, baseValue):
+        self._devices[name] = {"position": position, "channel": channel, "base": baseValue, "current": baseValue, "previous": baseValue}
 
     def getDeviceBaseValue(self, deviceName):
         for device in self._devices:

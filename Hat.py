@@ -2,8 +2,6 @@
 import Adafruit_PCA9685
 
 
-#PWM = Adafruit_PCA9685.PCA9685()
-
 class Hat:
     def __init__(self, address, frequency):
         self._address = address
