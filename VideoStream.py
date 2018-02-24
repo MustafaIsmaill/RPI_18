@@ -12,6 +12,8 @@ class VideoStream():
         self._ip = ip
         self._port = port
         self._port2 = port2
+        self._port3 = port3
+        self._port4 = port4
         # self._ip = "10.0.1.54"
         # self._port = "5000"
         self._ip = ip

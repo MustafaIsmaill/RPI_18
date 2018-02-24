@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ROV18.py" afterPath="$PROJECT_DIR$/ROV18.py" />
       <change beforePath="$PROJECT_DIR$/VideoStream.py" afterPath="$PROJECT_DIR$/VideoStream.py" />
-      <change beforePath="$PROJECT_DIR$/communication/TcpCommunication.py" afterPath="$PROJECT_DIR$/communication/TcpCommunication.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -112,17 +110,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VideoStream.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VideoStream.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/VideoStream.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
+            <state relative-caret-position="234">
+              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -153,7 +151,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>zero</find>
       <find>acce</find>
       <find>TCP Erro</find>
       <find>_recv()</find>
@@ -183,6 +180,7 @@
       <find>prev_value</find>
       <find>previo</find>
       <find>_motors</find>
+      <find>videoS</find>
     </findStrings>
     <replaceStrings>
       <replace>right_front_thruster</replace>
@@ -230,9 +228,9 @@
         <option value="$PROJECT_DIR$/Hat.py" />
         <option value="$PROJECT_DIR$/Dummy_Hat.py" />
         <option value="$PROJECT_DIR$/Motion.py" />
-        <option value="$PROJECT_DIR$/VideoStream.py" />
         <option value="$PROJECT_DIR$/ROV18.py" />
         <option value="$PROJECT_DIR$/communication/TcpCommunication.py" />
+        <option value="$PROJECT_DIR$/VideoStream.py" />
       </list>
     </option>
   </component>
@@ -428,13 +426,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00076" summary="Added Videostream for two cameras">
-      <created>1519163371717</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1519163371717</updated>
     </task>
     <task id="LOCAL-00077" summary="Added IP for stream">
       <created>1519164138492</created>
@@ -772,7 +763,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519479541273</updated>
     </task>
-    <option name="localTasksCounter" value="125" />
+    <task id="LOCAL-00125" summary="added third and fourth streams for testing purposes">
+      <created>1519480300135</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1519480300135</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -809,7 +807,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="0.2" />
     <MESSAGE value="dont set to defaults" />
     <MESSAGE value="Enabled Video Stream" />
     <MESSAGE value="Enabled video stream" />
@@ -834,7 +831,8 @@
     <MESSAGE value="Added dummy hat for testing" />
     <MESSAGE value="Separated Vertical and Horizontal Motors" />
     <MESSAGE value="Enabled Streaming" />
-    <option name="LAST_COMMIT_MESSAGE" value="Enabled Streaming" />
+    <MESSAGE value="added third and fourth streams for testing purposes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added third and fourth streams for testing purposes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1101,14 +1099,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VideoStream.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ROV18.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
@@ -1131,6 +1121,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VideoStream.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding />
         </state>
       </provider>
