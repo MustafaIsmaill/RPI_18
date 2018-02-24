@@ -28,9 +28,11 @@ class ROV18:
         streamingIP = "10.0.1.54"
         streamingPort1 = "1234"
         streamingPort2 = "5678"
+        streamingPort3 = "4321"
+        streamingPort4 = "8765"
 
         # initialize tcp communicator
-        self.tcp_communicator = TcpCommunicator(ip, tcpPort , streamingIP, streamingPort1, streamingPort2, streamingEnable, bind=True)
+        self.tcp_communicator = TcpCommunicator(ip, tcpPort , streamingIP, streamingPort1, streamingPort2, streamingPort3, streamingPort4,  streamingEnable, bind=True)
 
         # initialize hat with default address and frequency (comment when testing)
         hat_address = 0x40
