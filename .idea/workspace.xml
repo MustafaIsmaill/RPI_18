@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="Equation">
+    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="Separated Vertical and Horizontal Motors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Dummy_Hat.py" afterPath="$PROJECT_DIR$/Dummy_Hat.py" />
-      <change beforePath="$PROJECT_DIR$/Hat.py" afterPath="$PROJECT_DIR$/Hat.py" />
-      <change beforePath="$PROJECT_DIR$/Motion.py" afterPath="$PROJECT_DIR$/Motion.py" />
       <change beforePath="$PROJECT_DIR$/ROV18.py" afterPath="$PROJECT_DIR$/ROV18.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ROV18.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ROV18.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ROV18.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+            <state relative-caret-position="412">
+              <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -49,13 +46,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hat.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Hat.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="252">
+              <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
               <folding>
                 <element signature="e#531#744#0" expanded="false" />
+                <element signature="e#805#911#0" expanded="false" />
                 <element signature="e#967#1085#0" expanded="false" />
                 <element signature="e#1137#1258#0" expanded="false" />
                 <element signature="e#1318#1440#0" expanded="false" />
@@ -429,13 +427,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00074" summary="Exception Handle">
-      <created>1519162152572</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1519162152574</updated>
-    </task>
     <task id="LOCAL-00075" summary="more exceptions">
       <created>1519162816585</created>
       <option name="number" value="00075" />
@@ -772,7 +763,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519324994501</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="Separated Vertical and Horizontal Motors">
+      <created>1519415081837</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1519415081837</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -809,7 +807,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dont reconnect" />
     <MESSAGE value="0.01" />
     <MESSAGE value="0.2" />
     <MESSAGE value="dont set to defaults" />
@@ -834,7 +831,8 @@
     <MESSAGE value="recieve only on event" />
     <MESSAGE value="Added streaming again" />
     <MESSAGE value="Added dummy hat for testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dummy hat for testing" />
+    <MESSAGE value="Separated Vertical and Horizontal Motors" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separated Vertical and Horizontal Motors" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1040,14 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Interrupter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1088,6 +1078,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="90" column="10" lean-forward="false" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+          <folding>
+            <element signature="e#531#744#0" expanded="false" />
+            <element signature="e#805#911#0" expanded="false" />
+            <element signature="e#967#1085#0" expanded="false" />
+            <element signature="e#1137#1258#0" expanded="false" />
+            <element signature="e#1318#1440#0" expanded="false" />
+            <element signature="e#1499#1621#0" expanded="false" />
+            <element signature="e#1676#1761#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1102,35 +1116,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="90" column="10" lean-forward="false" selection-start-line="90" selection-start-column="10" selection-end-line="90" selection-end-column="10" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ROV18.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+        <state relative-caret-position="412">
+          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#531#744#0" expanded="false" />
-            <element signature="e#967#1085#0" expanded="false" />
-            <element signature="e#1137#1258#0" expanded="false" />
-            <element signature="e#1318#1440#0" expanded="false" />
-            <element signature="e#1499#1621#0" expanded="false" />
-            <element signature="e#1676#1761#0" expanded="false" />
           </folding>
         </state>
       </provider>
