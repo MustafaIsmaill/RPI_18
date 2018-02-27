@@ -22,7 +22,7 @@ class ROV18:
         tcpPort = 9005
 
         # streaming enable or disable
-        streamingEnable = True
+        streamingEnable = False
 
         # streaming attributes
         streamingIP = "10.0.1.54"
@@ -40,7 +40,7 @@ class ROV18:
         self.hat = Hat(hat_address, frequency)
 
         # initialize dummy hat for testing without the pi
-        # self.hat = Dummy_Hat()
+        self.hat = Dummy_Hat()
 
         # adding devices to hat -- args: (device name, channel, base pwm)
         thruster_base_pwm = 305
@@ -55,7 +55,7 @@ class ROV18:
         components = []
 
         # motion equation component -- args (hat, angle zeros)
-        self.motion = Motion(self.hat, {"x": 0, "y": 0, "z": 0, "r": 0, "up": 0, "down": 0})
+        self.motion = Motion(self.hat, {"x": 0, "y": 0, "z": 0, "r": 0, "up": 0, "down": 0, "l": 0})
         components.append(self.motion)
 
         # publisher

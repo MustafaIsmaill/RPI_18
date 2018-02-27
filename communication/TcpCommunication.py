@@ -98,12 +98,12 @@ class TcpCommunicator:
 
         data_map = {}
 
-        if (len(tokens) is not 6):
+        if (len(tokens) is not 7):
             print("wrong token")
             tokens_clone = tokens
-            tokens = [""]*6
-            for i in range(6):
-                tokens[i] = tokens_clone[len(tokens_clone)-(6-i)]
+            tokens = [""]*7
+            for i in range(7):
+                tokens[i] = tokens_clone[len(tokens_clone)-(7-i)]
             print (tokens)
 
         for token in tokens:

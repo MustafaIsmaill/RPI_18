@@ -1,4 +1,5 @@
 from Component import *
+import math
 
 
 class Motion(Component):
@@ -9,7 +10,13 @@ class Motion(Component):
 
         # ===========CONSTANTS========
         self.PWMNORMAL = 305
-        self.PWMRANGE = 124
+        self.PWMRANGE = 165
+        self.ANGLE45 = 0.785398  # 45 deg to rad
+        self.ANGLE90 = 1.5708  # 90 deg to rad
+        self.FULL_PWM_RANGE_COEFFICIENT = self.PWMRANGE / 100.0  # PWMRANGE/100
+        self.MOTORS_BASE_PWM = 305
+        self.FULL_ROTATION_COEFFICIENT = 0.4 * 1.65
+        self.PWMNORMAL = 305
 
         self.prev_value = self.PWMNORMAL
 
@@ -22,7 +29,7 @@ class Motion(Component):
         self._stopVerticalMotors()
         self._setFromMyLocalToDevice()
 
-    def _calculateHorizontalMotors(self):
+    def _calculateHorizontalMotors_Mustafa(self):
         _x = self._valueMap['x']
         _y = self._valueMap['y']
         _r = self._valueMap['r'] * 0.4
@@ -47,13 +54,48 @@ class Motion(Component):
         self._horizontalMotors["right_rear_thruster"] = int(right_rear_thruster_value)
         self._horizontalMotors["left_rear_thruster"] = int(left_rear_thruster_value)
 
+    def _calculateHorizontalMotors_17(self):
+        _x = self._valueMap['x']
+        _y = self._valueMap['y']
+        _r = self._valueMap['r']
+
+        theta = math.atan2(_x, _y)
+        circle_factor = max(abs(math.cos(theta)), abs(math.sin(theta)))
+        resultant = math.hypot(_x, _y) * circle_factor
+
+        # alpha = 45 deg - theta
+        alpha = self.ANGLE45 - theta
+        maximum_factor = 1 / (math.cos(self.ANGLE45 - abs(theta) + (int(abs(theta) / self.ANGLE90) * self.ANGLE90)))
+        RightComponent = resultant * math.cos(alpha ) * maximum_factor
+        LeftComponent = resultant * math.sin(alpha ) * maximum_factor
+
+        front_right_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT))
+        front_left_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT))
+        back_right_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT))
+        back_left_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT))
+
+        front_right_thruster_value -= _r * self.FULL_ROTATION_COEFFICIENT
+        front_left_thruster_value += _r * self.FULL_ROTATION_COEFFICIENT
+        back_left_thruster_value += _r * self.FULL_ROTATION_COEFFICIENT
+        back_right_thruster_value -= _r * self.FULL_ROTATION_COEFFICIENT
+
+        right_front_thruster_value = 0.7 * (front_right_thruster_value - self.PWMNORMAL) + self.PWMNORMAL
+        left_front_thruster_value = 0.7 * (front_left_thruster_value - self.PWMNORMAL) + self.PWMNORMAL
+        right_rear_thruster_value = 0.7 * (back_right_thruster_value - self.PWMNORMAL) + self.PWMNORMAL
+        left_rear_thruster_value = 0.7 * (back_left_thruster_value - self.PWMNORMAL) + self.PWMNORMAL
+
+        self._horizontalMotors["right_front_thruster"] = int(right_front_thruster_value)
+        self._horizontalMotors["left_front_thruster"] = int(left_front_thruster_value)
+        self._horizontalMotors["right_rear_thruster"] = int(right_rear_thruster_value)
+        self._horizontalMotors["left_rear_thruster"] = int(left_rear_thruster_value)
+
     def _calculateVerticalMotors(self):
         if self._valueMap['up']:
-            top_front_thruster_value = int(self.PWMNORMAL + (self._valueMap['z'] * (self.PWMRANGE/100)))
-            top_rear_thruster_value = int(self.PWMNORMAL + (self._valueMap['z'] * (self.PWMRANGE/100)))
+            top_front_thruster_value = int(self.PWMNORMAL + (self._valueMap['z']*0.7* (self.PWMRANGE/100)))
+            top_rear_thruster_value = int(self.PWMNORMAL + (self._valueMap['z']*0.7* (self.PWMRANGE/100)))
         elif self._valueMap['down']:
-            top_front_thruster_value = int(self.PWMNORMAL - (self._valueMap['z'] * (self.PWMRANGE/100)))
-            top_rear_thruster_value = int(self.PWMNORMAL - (self._valueMap['z'] * (self.PWMRANGE/100)))
+            top_front_thruster_value = int(self.PWMNORMAL - (self._valueMap['z']*0.7* (self.PWMRANGE/100)))
+            top_rear_thruster_value = int(self.PWMNORMAL - (self._valueMap['z']*0.7* (self.PWMRANGE/100)))
         self._verticalMotors["top_front_thruster"] = int(top_front_thruster_value)
         self._verticalMotors["top_rear_thruster"] = int(top_rear_thruster_value)
 
@@ -108,7 +150,7 @@ class Motion(Component):
             else:
                 print("calculating horizontal motors")
                 self._stopVerticalMotors()
-                self._calculateHorizontalMotors()
+                self._calculateHorizontalMotors_17()
 
             self._setFromMyLocalToDevice()
             # self._printPWMValues()
