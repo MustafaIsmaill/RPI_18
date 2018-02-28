@@ -99,12 +99,12 @@ class TcpCommunicator:
 
         data_map = {}
 
-        if (len(tokens) is not 9):
+        if (len(tokens) is not 10):
             print("wrong token")
             tokens_clone = tokens
-            tokens = [""]*9
-            for i in range(9):
-                tokens[i] = tokens_clone[len(tokens_clone)-(9-i)]
+            tokens = [""]*10
+            for i in range(10):
+                tokens[i] = tokens_clone[len(tokens_clone)-(10-i)]
             print(tokens)
 
         for token in tokens:

@@ -93,15 +93,27 @@ class Motion(Component):
         self._horizontalMotors["right_rear_thruster"] = int(right_rear_thruster_value)
         self._horizontalMotors["left_rear_thruster"] = int(left_rear_thruster_value)
 
-    def _calculateVerticalMotors(self):
+    def _calculateVerticalMotors_NormalMode(self):
         # top_front_thruster_value = self._hardware.getDeviceValue('top_front_thruster')
-        # top_rear_thruster_value =self._hardware.getDeviceValue('top_rear_thruster')
+        # top_rear_thruster_value = self._hardware.getDeviceValue('top_rear_thruster')
         if self._valueMap['up']:
             top_front_thruster_value = int(self.PWMNORMAL + (self._valueMap['z']*0.7*(self.PWMRANGE/100)))
             top_rear_thruster_value = int(self.PWMNORMAL + (self._valueMap['z']*0.7*(self.PWMRANGE/100)))
         elif self._valueMap['down']:
             top_front_thruster_value = int(self.PWMNORMAL - (self._valueMap['z']*0.7*(self.PWMRANGE/100)))
             top_rear_thruster_value = int(self.PWMNORMAL - (self._valueMap['z']*0.7*(self.PWMRANGE/100)))
+        self._verticalMotors["top_front_thruster"] = int(top_front_thruster_value)
+        self._verticalMotors["top_rear_thruster"] = int(top_rear_thruster_value)
+
+    def _calculateVerticalMotors_HomeMode(self):
+        # top_front_thruster_value = self._hardware.getDeviceValue('top_front_thruster')
+        # top_rear_thruster_value = self._hardware.getDeviceValue('top_rear_thruster')
+        if self._valueMap['up']:
+            top_front_thruster_value = int(self.PWMNORMAL + (self._valueMap['z']*(self.PWMRANGE/100)))
+            top_rear_thruster_value = int(self.PWMNORMAL + (self._valueMap['z']*(self.PWMRANGE/100)))
+        elif self._valueMap['down']:
+            top_front_thruster_value = int(self.PWMNORMAL - (self._valueMap['z']*(self.PWMRANGE/100)))
+            top_rear_thruster_value = int(self.PWMNORMAL - (self._valueMap['z']*(self.PWMRANGE/100)))
         self._verticalMotors["top_front_thruster"] = int(top_front_thruster_value)
         self._verticalMotors["top_rear_thruster"] = int(top_rear_thruster_value)
 
@@ -175,24 +187,45 @@ class Motion(Component):
 
             print("TCP Event")
 
-            if self._valueMap["up"] == 1 or self._valueMap["down"] == 1:
-                print("calculating vertical motors")
-                # self._stopHorizontalMotors()
-                self._calculateVerticalMotors()
-            else:
-                self._stopVerticalMotors()
+            if self._valueMap['mode'] == 0:
 
-            if self._valueMap["cam_up"] == 1 or self._valueMap["cam_down"]:
-                print("moving camera")
-                self._moveCamera()
+                if self._valueMap["up"] == 1 or self._valueMap["down"] == 1:
+                    print("calculating vertical motors")
+                    self._calculateVerticalMotors_NormalMode()
 
-            if self._valueMap['l'] == 1:
-                print("light event")
-                self._light()
+                else:
+                    self._stopVerticalMotors()
 
-            print("calculating horizontal motors")
-            # self._stopVerticalMotors()
-            self._calculateHorizontalMotors_17()
+                if self._valueMap["cam_up"] == 1 or self._valueMap["cam_down"]:
+                    print("moving camera")
+                    self._moveCamera()
+
+                if self._valueMap['l'] == 1:
+                    print("light event")
+                    self._light()
+
+                print("calculating horizontal motors")
+                self._calculateHorizontalMotors_17()
+
+            elif self._valueMap['mode'] == 1:
+
+                if self._valueMap["up"] == 1 or self._valueMap["down"] == 1:
+                    print("calculating vertical motors")
+                    self._stopHorizontalMotors()
+                    self._calculateVerticalMotors_HomeMode()
+
+                else:
+                    print("calculating horizontal motors")
+                    self._stopVerticalMotors()
+                    self._calculateHorizontalMotors_17()
+
+                if self._valueMap["cam_up"] == 1 or self._valueMap["cam_down"]:
+                    print("moving camera")
+                    self._moveCamera()
+
+                if self._valueMap['l'] == 1:
+                    print("light event")
+                    self._light()
 
             self._setFromMyLocalToDevice()
             # self._printPWMValues()
