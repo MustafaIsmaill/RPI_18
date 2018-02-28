@@ -22,7 +22,7 @@ class ROV18:
         tcpPort = 9005
 
         # streaming enable or disable
-        streamingEnable = False
+        streamingEnable = True
 
         # streaming attributes
         streamingIP = "10.0.1.54"
@@ -46,12 +46,12 @@ class ROV18:
         thruster_base_pwm = 305
         camera_base_pwm = 400
 
-        self.hat.addDevice("top_rear_thruster", 0, thruster_base_pwm)
-        self.hat.addDevice("top_front_thruster", 1, thruster_base_pwm)
-        self.hat.addDevice("left_rear_thruster", 2, thruster_base_pwm)
-        self.hat.addDevice("right_rear_thruster", 3, thruster_base_pwm)
-        self.hat.addDevice("left_front_thruster", 4, thruster_base_pwm)
-        self.hat.addDevice("right_front_thruster", 5, thruster_base_pwm)
+        self.hat.addDevice("top_rear_thruster", 3, thruster_base_pwm)
+        self.hat.addDevice("top_front_thruster", 9, thruster_base_pwm)
+        self.hat.addDevice("left_rear_thruster", 11, thruster_base_pwm)
+        self.hat.addDevice("right_rear_thruster", 5, thruster_base_pwm)
+        self.hat.addDevice("left_front_thruster", 7, thruster_base_pwm)
+        self.hat.addDevice("right_front_thruster", 0, thruster_base_pwm)
         self.hat.addDevice("camera_servo", 15, camera_base_pwm)
         self.hat.addDevice("light", 13, 0)
 

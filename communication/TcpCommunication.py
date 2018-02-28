@@ -105,7 +105,7 @@ class TcpCommunicator:
             tokens = [""]*9
             for i in range(9):
                 tokens[i] = tokens_clone[len(tokens_clone)-(9-i)]
-            print (tokens)
+            print(tokens)
 
         for token in tokens:
             try:
