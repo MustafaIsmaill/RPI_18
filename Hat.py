@@ -24,6 +24,7 @@ class Hat:
 
     def addDevice(self, name, channel, baseValue):
         self._devices[name] = {"channel": channel, "base": baseValue, "current": baseValue, "previous": baseValue}
+        self._hat.set_pwm(channel, 0, baseValue)
 
     def getDeviceBaseValue(self, deviceName):
         for device in self._devices:

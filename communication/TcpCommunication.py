@@ -1,6 +1,7 @@
 # TcpCommunicator.py
 import socket, sys, selectors
 
+
 class TcpCommunicator:
     def __init__(self, ip, port, streamingIP, streamingPort1, streamingPort2, streamingPort3, streamingPort4, streaming, timeout=None, closingword="close connection", bind=False):  #timeout is in seconds
         self._videoStreamingEnable = streaming
@@ -98,12 +99,12 @@ class TcpCommunicator:
 
         data_map = {}
 
-        if (len(tokens) is not 7):
+        if (len(tokens) is not 9):
             print("wrong token")
             tokens_clone = tokens
-            tokens = [""]*7
-            for i in range(7):
-                tokens[i] = tokens_clone[len(tokens_clone)-(7-i)]
+            tokens = [""]*9
+            for i in range(9):
+                tokens[i] = tokens_clone[len(tokens_clone)-(9-i)]
             print (tokens)
 
         for token in tokens:

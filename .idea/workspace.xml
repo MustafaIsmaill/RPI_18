@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
+    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="Enabled Streaming">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Hat.py" afterPath="$PROJECT_DIR$/Hat.py" />
+      <change beforePath="$PROJECT_DIR$/Main.py" afterPath="$PROJECT_DIR$/Main.py" />
+      <change beforePath="$PROJECT_DIR$/Motion.py" afterPath="$PROJECT_DIR$/Motion.py" />
       <change beforePath="$PROJECT_DIR$/ROV18.py" afterPath="$PROJECT_DIR$/ROV18.py" />
-      <change beforePath="$PROJECT_DIR$/VideoStream.py" afterPath="$PROJECT_DIR$/VideoStream.py" />
+      <change beforePath="$PROJECT_DIR$/communication/TcpCommunication.py" afterPath="$PROJECT_DIR$/communication/TcpCommunication.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ROV18.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ROV18.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ROV18.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            <state relative-caret-position="396">
+              <caret line="55" column="42" lean-forward="true" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -47,12 +50,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VideoStream.py.save" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VideoStream.py.save">
+      <file leaf-file-name="Hat.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="378">
+              <caret line="36" column="41" lean-forward="true" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+              <folding>
+                <element signature="e#1016#1134#0" expanded="false" />
+                <element signature="e#1367#1489#0" expanded="false" />
+                <element signature="e#1725#1810#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,28 +67,36 @@
       <file leaf-file-name="Dummy_Hat.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dummy_Hat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            <state relative-caret-position="252">
+              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Motion.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="108">
+              <caret line="144" column="13" lean-forward="true" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#952#2349#0" expanded="false" />
-                <element signature="e#2404#4504#0" expanded="false" />
-                <element signature="e#5254#5461#0" expanded="false" />
-                <element signature="e#5508#5951#0" expanded="false" />
-                <element signature="e#5992#6201#0" expanded="false" />
-                <element signature="e#6250#6879#0" expanded="false" />
-                <element signature="e#6931#6961#0" expanded="false" />
+                <element signature="e#1072#2469#0" expanded="false" />
+                <element signature="e#2524#4624#0" expanded="false" />
+                <element signature="e#5545#5752#0" expanded="false" />
+                <element signature="e#5928#6371#0" expanded="false" />
+                <element signature="e#6412#6621#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Component.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Component.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,16 +106,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
               <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TcpCommunication.py.save" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py.save">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -119,8 +124,8 @@
       <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="116" column="19" lean-forward="true" selection-start-line="116" selection-start-column="19" selection-end-line="116" selection-end-column="19" />
+            <state relative-caret-position="484">
+              <caret line="99" column="21" lean-forward="true" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -147,8 +152,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>acce</find>
-      <find>TCP Erro</find>
       <find>_recv()</find>
       <find>registerc</find>
       <find>TCP ERROR</find>
@@ -177,6 +180,8 @@
       <find>_motors</find>
       <find>videoS</find>
       <find>parse</find>
+      <find>&lt;=</find>
+      <find>_horizontalMotors</find>
     </findStrings>
     <replaceStrings>
       <replace>right_front_thruster</replace>
@@ -221,12 +226,12 @@
         <option value="$PROJECT_DIR$/Streaming.py" />
         <option value="$PROJECT_DIR$/GStreamer-webcam" />
         <option value="$PROJECT_DIR$/Interrupter.py" />
-        <option value="$PROJECT_DIR$/Hat.py" />
         <option value="$PROJECT_DIR$/Dummy_Hat.py" />
-        <option value="$PROJECT_DIR$/Motion.py" />
-        <option value="$PROJECT_DIR$/communication/TcpCommunication.py" />
         <option value="$PROJECT_DIR$/VideoStream.py" />
+        <option value="$PROJECT_DIR$/communication/TcpCommunication.py" />
+        <option value="$PROJECT_DIR$/Hat.py" />
         <option value="$PROJECT_DIR$/ROV18.py" />
+        <option value="$PROJECT_DIR$/Motion.py" />
       </list>
     </option>
   </component>
@@ -422,13 +427,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00080" summary="string not int">
-      <created>1519165772114</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1519165772114</updated>
     </task>
     <task id="LOCAL-00081" summary="removed streaming">
       <created>1519165858623</created>
@@ -766,7 +764,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519751965140</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="Enabled Streaming">
+      <created>1519752116325</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1519752116325</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -824,15 +829,15 @@
     <MESSAGE value="Added streaming again" />
     <MESSAGE value="Added dummy hat for testing" />
     <MESSAGE value="Separated Vertical and Horizontal Motors" />
-    <MESSAGE value="Enabled Streaming" />
     <MESSAGE value="added third and fourth streams for testing purposes" />
     <MESSAGE value="Dry Testing" />
     <MESSAGE value="1 camera streaming" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 camera streaming" />
+    <MESSAGE value="Enabled Streaming" />
+    <option name="LAST_COMMIT_MESSAGE" value="Enabled Streaming" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -853,13 +858,11 @@
           <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#952#2349#0" expanded="false" />
-            <element signature="e#2404#4504#0" expanded="false" />
-            <element signature="e#5254#5461#0" expanded="false" />
-            <element signature="e#5508#5951#0" expanded="false" />
-            <element signature="e#5992#6201#0" expanded="false" />
-            <element signature="e#6250#6879#0" expanded="false" />
-            <element signature="e#6931#6961#0" expanded="false" />
+            <element signature="e#1072#2469#0" expanded="false" />
+            <element signature="e#2524#4624#0" expanded="false" />
+            <element signature="e#5545#5752#0" expanded="false" />
+            <element signature="e#5928#6371#0" expanded="false" />
+            <element signature="e#6412#6621#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -887,13 +890,11 @@
           <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#952#2349#0" expanded="false" />
-            <element signature="e#2404#4504#0" expanded="false" />
-            <element signature="e#5254#5461#0" expanded="false" />
-            <element signature="e#5508#5951#0" expanded="false" />
-            <element signature="e#5992#6201#0" expanded="false" />
-            <element signature="e#6250#6879#0" expanded="false" />
-            <element signature="e#6931#6961#0" expanded="false" />
+            <element signature="e#1072#2469#0" expanded="false" />
+            <element signature="e#2524#4624#0" expanded="false" />
+            <element signature="e#5545#5752#0" expanded="false" />
+            <element signature="e#5928#6371#0" expanded="false" />
+            <element signature="e#6412#6621#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -985,14 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Component.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python3.6/selectors.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10908">
@@ -1016,22 +1009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="41" lean-forward="false" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <element signature="e#531#744#0" expanded="false" />
-            <element signature="e#805#911#0" expanded="false" />
-            <element signature="e#967#1085#0" expanded="false" />
-            <element signature="e#1137#1258#0" expanded="false" />
-            <element signature="e#1318#1440#0" expanded="false" />
-            <element signature="e#1499#1621#0" expanded="false" />
-            <element signature="e#1676#1761#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/communication/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1044,14 +1021,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="58" column="20" lean-forward="false" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dummy_Hat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1080,6 +1049,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/VideoStream.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1088,35 +1065,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Motion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#952#2349#0" expanded="false" />
-            <element signature="e#2404#4504#0" expanded="false" />
-            <element signature="e#5254#5461#0" expanded="false" />
-            <element signature="e#5508#5951#0" expanded="false" />
-            <element signature="e#5992#6201#0" expanded="false" />
-            <element signature="e#6250#6879#0" expanded="false" />
-            <element signature="e#6931#6961#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="116" column="19" lean-forward="true" selection-start-line="116" selection-start-column="19" selection-end-line="116" selection-end-column="19" />
+        <state relative-caret-position="484">
+          <caret line="99" column="21" lean-forward="true" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VideoStream.py">
+    <entry file="file://$PROJECT_DIR$/Hat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state relative-caret-position="378">
+          <caret line="36" column="41" lean-forward="true" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+          <folding>
+            <element signature="e#1016#1134#0" expanded="false" />
+            <element signature="e#1367#1489#0" expanded="false" />
+            <element signature="e#1725#1810#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Component.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="2" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -1129,12 +1101,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Dummy_Hat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ROV18.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        <state relative-caret-position="396">
+          <caret line="55" column="42" lean-forward="true" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Motion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="144" column="13" lean-forward="true" selection-start-line="144" selection-start-column="13" selection-end-line="144" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1072#2469#0" expanded="false" />
+            <element signature="e#2524#4624#0" expanded="false" />
+            <element signature="e#5545#5752#0" expanded="false" />
+            <element signature="e#5928#6371#0" expanded="false" />
+            <element signature="e#6412#6621#0" expanded="false" />
           </folding>
         </state>
       </provider>
