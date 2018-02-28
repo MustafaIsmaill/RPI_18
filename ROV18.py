@@ -4,7 +4,7 @@ from Publisher import *
 from Motion import *
 
 # import the Hat module (comment for testing)
-# from Hat import *
+from Hat import *
 
 from Dummy_Hat import *
 
@@ -14,10 +14,10 @@ class ROV18:
         # initialize tcp_communicator for communicating with QT via TCP
 
         # pi ip address (comment for testing)
-        # ip = "10.0.1.55"
+        ip = "10.0.1.55"
 
         # local ip address (uncomment for testing)
-        ip = "0.0.0.0"
+        # ip = "0.0.0.0"
 
         tcpPort = 9005
 
@@ -37,10 +37,10 @@ class ROV18:
         # initialize hat with default address and frequency (comment when testing)
         hat_address = 0x40
         frequency = 50
-        # self.hat = Hat(hat_address, frequency)
+        self.hat = Hat(hat_address, frequency)
 
         # initialize dummy hat for testing without the pi
-        self.hat = Dummy_Hat()
+        # self.hat = Dummy_Hat()
 
         # adding devices to hat -- args: (device name, channel, base pwm)
         thruster_base_pwm = 305
