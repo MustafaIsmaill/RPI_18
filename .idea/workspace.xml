@@ -73,12 +73,12 @@
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="77" column="119" lean-forward="false" selection-start-line="77" selection-start-column="119" selection-end-line="77" selection-end-column="119" />
+              <caret line="77" column="120" lean-forward="false" selection-start-line="77" selection-start-column="120" selection-end-line="77" selection-end-column="120" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#1072#2469#0" expanded="false" />
-                <element signature="e#6911#7354#0" expanded="false" />
-                <element signature="e#7395#7604#0" expanded="false" />
+                <element signature="e#6913#7356#0" expanded="false" />
+                <element signature="e#7397#7606#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -422,13 +422,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00107" summary="print pwms">
-      <created>1519223091967</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1519223091967</updated>
-    </task>
     <task id="LOCAL-00108" summary="a5er code">
       <created>1519238327577</created>
       <option name="number" value="00108" />
@@ -765,7 +758,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519943953018</updated>
     </task>
-    <option name="localTasksCounter" value="156" />
+    <task id="LOCAL-00156" summary="305">
+      <created>1519944029101</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1519944029101</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -853,8 +853,8 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1072#2469#0" expanded="false" />
-            <element signature="e#6911#7354#0" expanded="false" />
-            <element signature="e#7395#7604#0" expanded="false" />
+            <element signature="e#6913#7356#0" expanded="false" />
+            <element signature="e#7397#7606#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -883,8 +883,8 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1072#2469#0" expanded="false" />
-            <element signature="e#6911#7354#0" expanded="false" />
-            <element signature="e#7395#7604#0" expanded="false" />
+            <element signature="e#6913#7356#0" expanded="false" />
+            <element signature="e#7397#7606#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1112,12 +1112,12 @@
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="77" column="119" lean-forward="false" selection-start-line="77" selection-start-column="119" selection-end-line="77" selection-end-column="119" />
+          <caret line="77" column="120" lean-forward="false" selection-start-line="77" selection-start-column="120" selection-end-line="77" selection-end-column="120" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1072#2469#0" expanded="false" />
-            <element signature="e#6911#7354#0" expanded="false" />
-            <element signature="e#7395#7604#0" expanded="false" />
+            <element signature="e#6913#7356#0" expanded="false" />
+            <element signature="e#7397#7606#0" expanded="false" />
           </folding>
         </state>
       </provider>
