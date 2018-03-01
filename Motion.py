@@ -9,14 +9,13 @@ class Motion(Component):
         self._eventCallBack = None
 
         # ===========CONSTANTS========
-        self.PWMNORMAL = 305
+        self.PWMNORMAL = 300
         self.PWMRANGE = 165
         self.ANGLE45 = 0.785398  # 45 deg to rad
         self.ANGLE90 = 1.5708  # 90 deg to rad
         self.FULL_PWM_RANGE_COEFFICIENT = self.PWMRANGE / 100.0  # PWMRANGE/100
-        self.MOTORS_BASE_PWM = 305
+        self.MOTORS_BASE_PWM = 300
         self.FULL_ROTATION_COEFFICIENT = 0.4 * 1.65
-        self.PWMNORMAL = 305
         self.MAXTHRUST = 0.4
 
         self.prev_value = self.PWMNORMAL
