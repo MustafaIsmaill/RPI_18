@@ -72,13 +72,13 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="78" column="61" lean-forward="false" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
+            <state relative-caret-position="444">
+              <caret line="81" column="62" lean-forward="false" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#1072#2469#0" expanded="false" />
-                <element signature="e#6913#7356#0" expanded="false" />
-                <element signature="e#7397#7606#0" expanded="false" />
+                <element signature="e#1121#2518#0" expanded="false" />
+                <element signature="e#7060#7503#0" expanded="false" />
+                <element signature="e#7544#7753#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -422,13 +422,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00109" summary="yalla ya tooto">
-      <created>1519238682689</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1519238682689</updated>
-    </task>
     <task id="LOCAL-00110" summary="hmm">
       <created>1519239671211</created>
       <option name="number" value="00110" />
@@ -765,7 +758,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519944245006</updated>
     </task>
-    <option name="localTasksCounter" value="158" />
+    <task id="LOCAL-00158" summary="Code toss">
+      <created>1519944819352</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1519944819352</updated>
+    </task>
+    <option name="localTasksCounter" value="159" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -802,7 +802,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added streaming again" />
     <MESSAGE value="Added dummy hat for testing" />
     <MESSAGE value="Separated Vertical and Horizontal Motors" />
     <MESSAGE value="added third and fourth streams for testing purposes" />
@@ -827,7 +826,8 @@
     <MESSAGE value="shift zero downwards" />
     <MESSAGE value="decrease front" />
     <MESSAGE value="305" />
-    <option name="LAST_COMMIT_MESSAGE" value="305" />
+    <MESSAGE value="Code toss" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code toss" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -852,9 +852,9 @@
           <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1072#2469#0" expanded="false" />
-            <element signature="e#6913#7356#0" expanded="false" />
-            <element signature="e#7397#7606#0" expanded="false" />
+            <element signature="e#1121#2518#0" expanded="false" />
+            <element signature="e#7060#7503#0" expanded="false" />
+            <element signature="e#7544#7753#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -882,9 +882,9 @@
           <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1072#2469#0" expanded="false" />
-            <element signature="e#6913#7356#0" expanded="false" />
-            <element signature="e#7397#7606#0" expanded="false" />
+            <element signature="e#1121#2518#0" expanded="false" />
+            <element signature="e#7060#7503#0" expanded="false" />
+            <element signature="e#7544#7753#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1111,13 +1111,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="78" column="61" lean-forward="false" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
+        <state relative-caret-position="444">
+          <caret line="81" column="62" lean-forward="false" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1072#2469#0" expanded="false" />
-            <element signature="e#6913#7356#0" expanded="false" />
-            <element signature="e#7397#7606#0" expanded="false" />
+            <element signature="e#1121#2518#0" expanded="false" />
+            <element signature="e#7060#7503#0" expanded="false" />
+            <element signature="e#7544#7753#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -13,6 +13,7 @@ class Motion(Component):
         self.PWMRANGE = 165
         self.ANGLE45 = 0.785398  # 45 deg to rad
         self.ANGLE90 = 1.5708  # 90 deg to rad
+        self.ANGLE135 = 2.3562  # 135 deg to rad
         self.FULL_PWM_RANGE_COEFFICIENT = self.PWMRANGE / 100.0  # PWMRANGE/100
         self.MOTORS_BASE_PWM = 305
         self.FULL_ROTATION_COEFFICIENT = 0.4 * 1.65
@@ -68,15 +69,18 @@ class Motion(Component):
         resultant = math.hypot(_x, _y) * circle_factor
 
         # alpha = 45 deg - theta
-        alpha = self.ANGLE45 - theta
+        alpha = theta - self.ANGLE135
         maximum_factor = 1 / (math.cos(self.ANGLE45 - abs(theta) + (int(abs(theta) / self.ANGLE90) * self.ANGLE90)))
         RightComponent = resultant * math.cos(alpha ) * maximum_factor
         LeftComponent = resultant * math.sin(alpha ) * maximum_factor
 
-        front_right_thruster_value = int(self.MOTORS_BASE_PWM - (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT) * 0.72)
-        front_left_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT))
-        back_right_thruster_value = int(self.MOTORS_BASE_PWM - (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT) * 0.72)
-        back_left_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT) )
+        print("Right Component", RightComponent)
+        print("Left Component", LeftComponent)
+
+        front_right_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT) * 0.72)
+        front_left_thruster_value = int(self.MOTORS_BASE_PWM - (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT))
+        back_right_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT) * 0.72)
+        back_left_thruster_value = int(self.MOTORS_BASE_PWM - (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT) )
 
         front_right_thruster_value -= _r * self.FULL_ROTATION_COEFFICIENT
         front_left_thruster_value += _r * self.FULL_ROTATION_COEFFICIENT
