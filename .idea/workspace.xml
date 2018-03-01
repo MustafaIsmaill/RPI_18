@@ -4,7 +4,6 @@
     <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Motion.py" afterPath="$PROJECT_DIR$/Motion.py" />
-      <change beforePath="$PROJECT_DIR$/ROV18.py" afterPath="$PROJECT_DIR$/ROV18.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ROV18.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ROV18.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ROV18.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-594">
-              <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            <state relative-caret-position="288">
+              <caret line="73" column="44" lean-forward="true" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -71,16 +70,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Motion.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="94" column="19" lean-forward="true" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+            <state relative-caret-position="184">
+              <caret line="91" column="66" lean-forward="false" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#1101#2498#0" expanded="false" />
-                <element signature="e#6928#7371#0" expanded="false" />
-                <element signature="e#7412#7621#0" expanded="false" />
+                <element signature="e#6927#7370#0" expanded="false" />
+                <element signature="e#7411#7620#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -226,8 +225,8 @@
         <option value="$PROJECT_DIR$/VideoStream.py" />
         <option value="$PROJECT_DIR$/Hat.py" />
         <option value="$PROJECT_DIR$/communication/TcpCommunication.py" />
-        <option value="$PROJECT_DIR$/Motion.py" />
         <option value="$PROJECT_DIR$/ROV18.py" />
+        <option value="$PROJECT_DIR$/Motion.py" />
       </list>
     </option>
   </component>
@@ -423,13 +422,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00093" summary="0.01">
-      <created>1519168355687</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1519168355688</updated>
     </task>
     <task id="LOCAL-00094" summary="0.2">
       <created>1519168440090</created>
@@ -767,7 +759,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519878148256</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Camera on">
+      <created>1519920305686</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1519920305686</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -804,7 +803,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="hmm" />
     <MESSAGE value="no cleanup" />
     <MESSAGE value="Equation of motion r * 0.4" />
     <MESSAGE value="Power 75%" />
@@ -829,7 +827,8 @@
     <MESSAGE value="no cam" />
     <MESSAGE value="60% power" />
     <MESSAGE value="50% power" />
-    <option name="LAST_COMMIT_MESSAGE" value="50% power" />
+    <MESSAGE value="Camera on" />
+    <option name="LAST_COMMIT_MESSAGE" value="Camera on" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -855,8 +854,8 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1101#2498#0" expanded="false" />
-            <element signature="e#6928#7371#0" expanded="false" />
-            <element signature="e#7412#7621#0" expanded="false" />
+            <element signature="e#6927#7370#0" expanded="false" />
+            <element signature="e#7411#7620#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -885,8 +884,8 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1101#2498#0" expanded="false" />
-            <element signature="e#6928#7371#0" expanded="false" />
-            <element signature="e#7412#7621#0" expanded="false" />
+            <element signature="e#6927#7370#0" expanded="false" />
+            <element signature="e#7411#7620#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1102,25 +1101,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Motion.py">
+    <entry file="file://$PROJECT_DIR$/ROV18.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="94" column="19" lean-forward="true" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
+        <state relative-caret-position="288">
+          <caret line="73" column="44" lean-forward="true" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1101#2498#0" expanded="false" />
-            <element signature="e#6928#7371#0" expanded="false" />
-            <element signature="e#7412#7621#0" expanded="false" />
+            <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ROV18.py">
+    <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-594">
-          <caret line="24" column="30" lean-forward="false" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        <state relative-caret-position="184">
+          <caret line="91" column="66" lean-forward="false" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
           <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1101#2498#0" expanded="false" />
+            <element signature="e#6927#7370#0" expanded="false" />
+            <element signature="e#7411#7620#0" expanded="false" />
           </folding>
         </state>
       </provider>
