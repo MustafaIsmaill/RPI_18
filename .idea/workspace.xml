@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="Code toss">
+    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Motion.py" afterPath="$PROJECT_DIR$/Motion.py" />
     </list>
@@ -72,13 +72,13 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+            <state relative-caret-position="210">
+              <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#1122#2519#0" expanded="false" />
-                <element signature="e#7061#7504#0" expanded="false" />
-                <element signature="e#7545#7754#0" expanded="false" />
+                <element signature="e#7100#7543#0" expanded="false" />
+                <element signature="e#7584#7793#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -422,13 +422,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00111" summary="no cleanup">
-      <created>1519239980725</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1519239980725</updated>
-    </task>
     <task id="LOCAL-00112" summary="Equation of motion r * 0.4">
       <created>1519240519522</created>
       <option name="number" value="00112" />
@@ -765,7 +758,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519945211867</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="225">
+      <created>1519945511754</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1519945511754</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -802,7 +802,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added dummy hat for testing" />
     <MESSAGE value="Separated Vertical and Horizontal Motors" />
     <MESSAGE value="added third and fourth streams for testing purposes" />
     <MESSAGE value="Dry Testing" />
@@ -827,7 +826,8 @@
     <MESSAGE value="decrease front" />
     <MESSAGE value="305" />
     <MESSAGE value="Code toss" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code toss" />
+    <MESSAGE value="225" />
+    <option name="LAST_COMMIT_MESSAGE" value="225" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -853,8 +853,8 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1122#2519#0" expanded="false" />
-            <element signature="e#7061#7504#0" expanded="false" />
-            <element signature="e#7545#7754#0" expanded="false" />
+            <element signature="e#7100#7543#0" expanded="false" />
+            <element signature="e#7584#7793#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -883,8 +883,8 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1122#2519#0" expanded="false" />
-            <element signature="e#7061#7504#0" expanded="false" />
-            <element signature="e#7545#7754#0" expanded="false" />
+            <element signature="e#7100#7543#0" expanded="false" />
+            <element signature="e#7584#7793#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1111,13 +1111,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="71" column="37" lean-forward="false" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
+        <state relative-caret-position="210">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1122#2519#0" expanded="false" />
-            <element signature="e#7061#7504#0" expanded="false" />
-            <element signature="e#7545#7754#0" expanded="false" />
+            <element signature="e#7100#7543#0" expanded="false" />
+            <element signature="e#7584#7793#0" expanded="false" />
           </folding>
         </state>
       </provider>

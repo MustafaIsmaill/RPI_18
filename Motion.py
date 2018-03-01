@@ -69,7 +69,8 @@ class Motion(Component):
         resultant = math.hypot(_x, _y) * circle_factor
 
         # alpha = 45 deg - theta
-        alpha = theta - self.ANGLE225
+        # alpha = theta - self.ANGLE225
+        alpha = self.ANGLE45 - theta
         maximum_factor = 1 / (math.cos(self.ANGLE45 - abs(theta) + (int(abs(theta) / self.ANGLE90) * self.ANGLE90)))
         RightComponent = resultant * math.cos(alpha ) * maximum_factor
         LeftComponent = resultant * math.sin(alpha ) * maximum_factor
