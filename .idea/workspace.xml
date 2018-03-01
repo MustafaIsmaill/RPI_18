@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
+    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="motion">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Motion.py" afterPath="$PROJECT_DIR$/Motion.py" />
     </list>
@@ -72,13 +72,13 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+            <state relative-caret-position="342">
+              <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#1121#2518#0" expanded="false" />
-                <element signature="e#7181#7624#0" expanded="false" />
-                <element signature="e#7665#7874#0" expanded="false" />
+                <element signature="e#1122#2519#0" expanded="false" />
+                <element signature="e#7182#7625#0" expanded="false" />
+                <element signature="e#7666#7875#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -422,13 +422,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00119" summary="recieve only on event">
-      <created>1519245464296</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1519245464296</updated>
-    </task>
     <task id="LOCAL-00120" summary="recieve only on event">
       <created>1519245467156</created>
       <option name="number" value="00120" />
@@ -765,7 +758,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519947036397</updated>
     </task>
-    <option name="localTasksCounter" value="168" />
+    <task id="LOCAL-00168" summary="motion">
+      <created>1519947476848</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1519947476848</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -802,7 +802,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added third and fourth streams for testing purposes" />
     <MESSAGE value="Dry Testing" />
     <MESSAGE value="1 camera streaming" />
     <MESSAGE value="Enabled Streaming" />
@@ -827,7 +826,8 @@
     <MESSAGE value="Code toss" />
     <MESSAGE value="225" />
     <MESSAGE value="nancy" />
-    <option name="LAST_COMMIT_MESSAGE" value="nancy" />
+    <MESSAGE value="motion" />
+    <option name="LAST_COMMIT_MESSAGE" value="motion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -852,9 +852,9 @@
           <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1121#2518#0" expanded="false" />
-            <element signature="e#7181#7624#0" expanded="false" />
-            <element signature="e#7665#7874#0" expanded="false" />
+            <element signature="e#1122#2519#0" expanded="false" />
+            <element signature="e#7182#7625#0" expanded="false" />
+            <element signature="e#7666#7875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -882,9 +882,9 @@
           <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1121#2518#0" expanded="false" />
-            <element signature="e#7181#7624#0" expanded="false" />
-            <element signature="e#7665#7874#0" expanded="false" />
+            <element signature="e#1122#2519#0" expanded="false" />
+            <element signature="e#7182#7625#0" expanded="false" />
+            <element signature="e#7666#7875#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1111,13 +1111,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="67" column="31" lean-forward="false" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+        <state relative-caret-position="342">
+          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1121#2518#0" expanded="false" />
-            <element signature="e#7181#7624#0" expanded="false" />
-            <element signature="e#7665#7874#0" expanded="false" />
+            <element signature="e#1122#2519#0" expanded="false" />
+            <element signature="e#7182#7625#0" expanded="false" />
+            <element signature="e#7666#7875#0" expanded="false" />
           </folding>
         </state>
       </provider>

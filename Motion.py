@@ -23,7 +23,7 @@ class Motion(Component):
 
         # =========VARIABLES==========
         self._verticalMotors = {}
-        self._horizontalMotors = {
+        self._horizontalMotors = {}
         self._servos = {}
         self._lights = {}
 
