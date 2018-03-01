@@ -103,23 +103,23 @@ class Motion(Component):
         _y = self._valueMap['y']
         _r = self._valueMap['r']
 
-        # if _y > _x and  _y > 0:
-        theta = math.atan2(_x, _y)
-        circle_factor = max(abs(math.cos(theta)), abs(math.sin(theta)))
-        resultant = math.hypot(_x, _y) * circle_factor
+        if abs(_y) > abs(_x) and _y > 0:
+            front_right_thruster_value = 352
+            front_left_thruster_value = 239
+            back_right_thruster_value = self.PWMNORMAL
+            back_left_thruster_value = self.PWMNORMAL
 
-        # alpha = 45 deg - theta
-        # alpha = theta - self.ANGLE225
-        alpha = self.ANGLE45 - theta
-        maximum_factor = 1 / (math.cos(self.ANGLE45 - abs(theta) + (int(abs(theta) / self.ANGLE90) * self.ANGLE90)))
-        RightComponent = resultant * math.cos(alpha ) * maximum_factor
-        LeftComponent = resultant * math.sin(alpha ) * maximum_factor
+        elif abs(_x) > abs(_y) and _y < 0:
+            front_right_thruster_value = 352
+            front_left_thruster_value = 239
+            back_right_thruster_value = self.PWMNORMAL
+            back_left_thruster_value = self.PWMNORMAL
 
-        front_right_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT))
-        front_left_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT))
-
-        back_right_thruster_value = self.PWMNORMAL
-        back_left_thruster_value = self.PWMNORMAL
+        else:
+            back_right_thruster_value = self.PWMNORMAL
+            back_left_thruster_value = self.PWMNORMAL
+            front_right_thruster_value = self.PWMNORMAL
+            front_left_thruster_value = self.PWMNORMAL
 
         front_right_thruster_value -= _r * self.FULL_ROTATION_COEFFICIENT
         front_left_thruster_value += _r * self.FULL_ROTATION_COEFFICIENT

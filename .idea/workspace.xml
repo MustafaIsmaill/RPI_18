@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="motion">
+    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Motion.py" afterPath="$PROJECT_DIR$/Motion.py" />
     </list>
@@ -72,14 +72,14 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86">
-              <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="37" />
+            <state relative-caret-position="238">
+              <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#1122#2519#0" expanded="false" />
                 <element signature="e#2574#4952#0" expanded="false" />
-                <element signature="e#9332#9775#0" expanded="false" />
-                <element signature="e#9816#10025#0" expanded="false" />
+                <element signature="e#9150#9593#0" expanded="false" />
+                <element signature="e#9634#9843#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -423,13 +423,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00123" summary="Separated Vertical and Horizontal Motors">
-      <created>1519415081837</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1519415081837</updated>
-    </task>
     <task id="LOCAL-00124" summary="Enabled Streaming">
       <created>1519479541273</created>
       <option name="number" value="00124" />
@@ -766,7 +759,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519948089685</updated>
     </task>
-    <option name="localTasksCounter" value="172" />
+    <task id="LOCAL-00172" summary="motion">
+      <created>1519948210234</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1519948210234</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -855,8 +855,8 @@
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1122#2519#0" expanded="false" />
             <element signature="e#2574#4952#0" expanded="false" />
-            <element signature="e#9332#9775#0" expanded="false" />
-            <element signature="e#9816#10025#0" expanded="false" />
+            <element signature="e#9150#9593#0" expanded="false" />
+            <element signature="e#9634#9843#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -886,8 +886,8 @@
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1122#2519#0" expanded="false" />
             <element signature="e#2574#4952#0" expanded="false" />
-            <element signature="e#9332#9775#0" expanded="false" />
-            <element signature="e#9816#10025#0" expanded="false" />
+            <element signature="e#9150#9593#0" expanded="false" />
+            <element signature="e#9634#9843#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1114,14 +1114,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86">
-          <caret line="61" column="37" lean-forward="false" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="37" />
+        <state relative-caret-position="238">
+          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1122#2519#0" expanded="false" />
             <element signature="e#2574#4952#0" expanded="false" />
-            <element signature="e#9332#9775#0" expanded="false" />
-            <element signature="e#9816#10025#0" expanded="false" />
+            <element signature="e#9150#9593#0" expanded="false" />
+            <element signature="e#9634#9843#0" expanded="false" />
           </folding>
         </state>
       </provider>
