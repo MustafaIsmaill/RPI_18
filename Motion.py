@@ -78,9 +78,9 @@ class Motion(Component):
         print("Right Component", RightComponent)
         print("Left Component", LeftComponent)
 
-        front_right_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT) * 0.72)
+        front_right_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT) * 1)
         front_left_thruster_value = int(self.MOTORS_BASE_PWM - (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT))
-        back_right_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT) * 0.72)
+        back_right_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT) * 1)
         back_left_thruster_value = int(self.MOTORS_BASE_PWM - (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT) )
 
         front_right_thruster_value -= _r * self.FULL_ROTATION_COEFFICIENT
