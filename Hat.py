@@ -21,6 +21,7 @@ class Hat:
         for device in self._devices:
             self._hat.set_pwm(self._devices[device]["channel"],0,int(self._devices[device]["current"]))
             self._devices[device]["previous"] = self._devices[device]["current"]
+            print("PWM updated for ", device, " with value ", int(self._devices[device]["current"]))
 
     def addDevice(self, name, channel, baseValue):
         self._devices[name] = {"channel": channel, "base": baseValue, "current": baseValue, "previous": baseValue}
