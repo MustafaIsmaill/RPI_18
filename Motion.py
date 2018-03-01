@@ -98,6 +98,44 @@ class Motion(Component):
         self._horizontalMotors["right_rear_thruster"] = int(right_rear_thruster_value)
         self._horizontalMotors["left_rear_thruster"] = int(left_rear_thruster_value)
 
+    def _calculateHorizontalMotors_Local(self):
+        _x = self._valueMap['x']
+        _y = self._valueMap['y']
+        _r = self._valueMap['r']
+
+        # if _y >
+        theta = math.atan2(_x, _y)
+        circle_factor = max(abs(math.cos(theta)), abs(math.sin(theta)))
+        resultant = math.hypot(_x, _y) * circle_factor
+
+        # alpha = 45 deg - theta
+        # alpha = theta - self.ANGLE225
+        alpha = self.ANGLE45 - theta
+        maximum_factor = 1 / (math.cos(self.ANGLE45 - abs(theta) + (int(abs(theta) / self.ANGLE90) * self.ANGLE90)))
+        RightComponent = resultant * math.cos(alpha ) * maximum_factor
+        LeftComponent = resultant * math.sin(alpha ) * maximum_factor
+
+        front_right_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT))
+        front_left_thruster_value = int(self.MOTORS_BASE_PWM - (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT))
+
+        back_right_thruster_value = self.PWMNORMAL
+        back_left_thruster_value = self.PWMNORMAL
+
+        front_right_thruster_value -= _r * self.FULL_ROTATION_COEFFICIENT
+        front_left_thruster_value += _r * self.FULL_ROTATION_COEFFICIENT
+        back_left_thruster_value += _r * self.FULL_ROTATION_COEFFICIENT
+        back_right_thruster_value -= _r * self.FULL_ROTATION_COEFFICIENT
+
+        right_front_thruster_value = self.MAXTHRUST * (front_right_thruster_value - self.PWMNORMAL) + self.PWMNORMAL
+        left_front_thruster_value = self.MAXTHRUST * (front_left_thruster_value - self.PWMNORMAL) + self.PWMNORMAL
+        right_rear_thruster_value = self.MAXTHRUST * (back_right_thruster_value - self.PWMNORMAL) + self.PWMNORMAL
+        left_rear_thruster_value = self.MAXTHRUST * (back_left_thruster_value - self.PWMNORMAL) + self.PWMNORMAL
+
+        self._horizontalMotors["right_front_thruster"] = int(right_front_thruster_value)
+        self._horizontalMotors["left_front_thruster"] = int(left_front_thruster_value)
+        self._horizontalMotors["right_rear_thruster"] = int(right_rear_thruster_value)
+        self._horizontalMotors["left_rear_thruster"] = int(left_rear_thruster_value)
+
     def _calculateVerticalMotors_NormalMode(self):
         # top_front_thruster_value = self._hardware.getDeviceValue('top_front_thruster')
         # top_rear_thruster_value = self._hardware.getDeviceValue('top_rear_thruster')
