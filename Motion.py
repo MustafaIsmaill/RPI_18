@@ -106,14 +106,14 @@ class Motion(Component):
         if abs(_y) > abs(_x) and _y > 0:
             front_right_thruster_value = 352
             front_left_thruster_value = 239
-            back_right_thruster_value = self.PWMNORMAL
-            back_left_thruster_value = self.PWMNORMAL
+            back_right_thruster_value = 352
+            back_left_thruster_value = 239
 
         elif abs(_x) > abs(_y) and _y < 0:
-            front_right_thruster_value = 352
-            front_left_thruster_value = 239
-            back_right_thruster_value = self.PWMNORMAL
-            back_left_thruster_value = self.PWMNORMAL
+            front_right_thruster_value = 239
+            front_left_thruster_value = 352
+            back_right_thruster_value = 239
+            back_left_thruster_value = 352
 
         else:
             back_right_thruster_value = self.PWMNORMAL
