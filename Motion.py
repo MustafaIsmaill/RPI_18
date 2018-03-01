@@ -109,7 +109,7 @@ class Motion(Component):
             back_right_thruster_value = 352
             back_left_thruster_value = 239
 
-        elif abs(_x) > abs(_y) and _y < 0:
+        elif abs(_x) < abs(_y) and _y < 0:
             front_right_thruster_value = 239
             front_left_thruster_value = 352
             back_right_thruster_value = 239
