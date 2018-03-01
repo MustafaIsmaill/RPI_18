@@ -72,13 +72,13 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="82" column="120" lean-forward="false" selection-start-line="82" selection-start-column="120" selection-end-line="82" selection-end-column="120" />
+            <state relative-caret-position="162">
+              <caret line="81" column="116" lean-forward="false" selection-start-line="81" selection-start-column="116" selection-end-line="81" selection-end-column="116" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#1122#2519#0" expanded="false" />
-                <element signature="e#7100#7543#0" expanded="false" />
-                <element signature="e#7584#7793#0" expanded="false" />
+                <element signature="e#7101#7544#0" expanded="false" />
+                <element signature="e#7585#7794#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -422,13 +422,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00115" summary="r fixed at 0">
-      <created>1519242399726</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1519242399726</updated>
-    </task>
     <task id="LOCAL-00116" summary="r fixed">
       <created>1519242690289</created>
       <option name="number" value="00116" />
@@ -765,7 +758,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519946125176</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="225">
+      <created>1519946136739</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1519946136739</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -778,7 +778,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.103125" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24158126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.040263545" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -853,8 +853,8 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1122#2519#0" expanded="false" />
-            <element signature="e#7100#7543#0" expanded="false" />
-            <element signature="e#7584#7793#0" expanded="false" />
+            <element signature="e#7101#7544#0" expanded="false" />
+            <element signature="e#7585#7794#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -883,8 +883,8 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1122#2519#0" expanded="false" />
-            <element signature="e#7100#7543#0" expanded="false" />
-            <element signature="e#7584#7793#0" expanded="false" />
+            <element signature="e#7101#7544#0" expanded="false" />
+            <element signature="e#7585#7794#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1111,13 +1111,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="82" column="120" lean-forward="false" selection-start-line="82" selection-start-column="120" selection-end-line="82" selection-end-column="120" />
+        <state relative-caret-position="162">
+          <caret line="81" column="116" lean-forward="false" selection-start-line="81" selection-start-column="116" selection-end-line="81" selection-end-column="116" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1122#2519#0" expanded="false" />
-            <element signature="e#7100#7543#0" expanded="false" />
-            <element signature="e#7584#7793#0" expanded="false" />
+            <element signature="e#7101#7544#0" expanded="false" />
+            <element signature="e#7585#7794#0" expanded="false" />
           </folding>
         </state>
       </provider>
