@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="50% power">
+    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Motion.py" afterPath="$PROJECT_DIR$/Motion.py" />
     </list>
@@ -73,13 +73,13 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+            <state relative-caret-position="144">
+              <caret line="91" column="66" lean-forward="false" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#1072#2469#0" expanded="false" />
-                <element signature="e#6810#7253#0" expanded="false" />
-                <element signature="e#7294#7503#0" expanded="false" />
+                <element signature="e#1101#2498#0" expanded="false" />
+                <element signature="e#6927#7370#0" expanded="false" />
+                <element signature="e#7411#7620#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -422,13 +422,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00091" summary="oops">
-      <created>1519168164256</created>
-      <option name="number" value="00091" />
-      <option name="presentableId" value="LOCAL-00091" />
-      <option name="project" value="LOCAL" />
-      <updated>1519168164256</updated>
-    </task>
     <task id="LOCAL-00092" summary="dont reconnect">
       <created>1519168237403</created>
       <option name="number" value="00092" />
@@ -765,7 +758,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519874988485</updated>
     </task>
-    <option name="localTasksCounter" value="140" />
+    <task id="LOCAL-00140" summary="60% power">
+      <created>1519877846102</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1519877846102</updated>
+    </task>
+    <option name="localTasksCounter" value="141" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -802,7 +802,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="yalla ya tooto" />
     <MESSAGE value="hmm" />
     <MESSAGE value="no cleanup" />
     <MESSAGE value="Equation of motion r * 0.4" />
@@ -827,7 +826,8 @@
     <MESSAGE value="Camera enabled koleyet el banat" />
     <MESSAGE value="no cam" />
     <MESSAGE value="50% power" />
-    <option name="LAST_COMMIT_MESSAGE" value="50% power" />
+    <MESSAGE value="60% power" />
+    <option name="LAST_COMMIT_MESSAGE" value="60% power" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -852,9 +852,9 @@
           <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1072#2469#0" expanded="false" />
-            <element signature="e#6810#7253#0" expanded="false" />
-            <element signature="e#7294#7503#0" expanded="false" />
+            <element signature="e#1101#2498#0" expanded="false" />
+            <element signature="e#6927#7370#0" expanded="false" />
+            <element signature="e#7411#7620#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -882,9 +882,9 @@
           <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1072#2469#0" expanded="false" />
-            <element signature="e#6810#7253#0" expanded="false" />
-            <element signature="e#7294#7503#0" expanded="false" />
+            <element signature="e#1101#2498#0" expanded="false" />
+            <element signature="e#6927#7370#0" expanded="false" />
+            <element signature="e#7411#7620#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1112,13 +1112,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+        <state relative-caret-position="144">
+          <caret line="91" column="66" lean-forward="false" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1072#2469#0" expanded="false" />
-            <element signature="e#6810#7253#0" expanded="false" />
-            <element signature="e#7294#7503#0" expanded="false" />
+            <element signature="e#1101#2498#0" expanded="false" />
+            <element signature="e#6927#7370#0" expanded="false" />
+            <element signature="e#7411#7620#0" expanded="false" />
           </folding>
         </state>
       </provider>
