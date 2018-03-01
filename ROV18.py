@@ -22,7 +22,7 @@ class ROV18:
         tcpPort = 9005
 
         # streaming enable or disable
-        streamingEnable = False
+        streamingEnable = True
 
         # streaming attributes
         streamingIP = "10.0.1.54"
