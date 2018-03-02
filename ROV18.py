@@ -47,8 +47,8 @@ class ROV18:
         vertical_thruster_base_pwm = 358
         camera_base_pwm = 400
 
-        self.hat.addDevice("top_rear_thruster", 0, thruster_base_pwm)
-        self.hat.addDevice("top_front_thruster", 7, thruster_base_pwm)
+        self.hat.addDevice("top_rear_thruster", 0, vertical_thruster_base_pwm)
+        self.hat.addDevice("top_front_thruster", 7, vertical_thruster_base_pwm)
         self.hat.addDevice("left_rear_thruster", 11, thruster_base_pwm)
         self.hat.addDevice("right_rear_thruster", 5, thruster_base_pwm)
         self.hat.addDevice("left_front_thruster", 9, thruster_base_pwm)
