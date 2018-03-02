@@ -44,7 +44,7 @@ class ROV18:
 
         # adding c to hat -- args: (device name, channel, base pwm)
         thruster_base_pwm = 305
-        vertical_thruster_base_pwm = 324
+        # vertical_thruster_base_pwm = 324
         camera_base_pwm = 400
 
         self.hat.addDevice("top_rear_thruster", 0, thruster_base_pwm)

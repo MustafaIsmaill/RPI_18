@@ -29,7 +29,7 @@ class Motion(Component):
 
         # ========SET MOTORS TO DEFAULTS=====
         self._stopHorizontalMotors()
-        self._stopVerticalMotors()
+        # self._stopVerticalMotors()
         self._setCamToNormalPosition()
         self._turnLightOff()
         self._setFromMyLocalToDevice()

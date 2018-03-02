@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ROV18.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ROV18.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ROV18.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="50" column="69" lean-forward="false" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
+            <state relative-caret-position="191">
+              <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -69,17 +69,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Motion.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="164" column="32" lean-forward="true" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
+            <state relative-caret-position="468">
+              <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <element signature="e#1122#2519#0" expanded="false" />
-                <element signature="e#4814#6615#0" expanded="false" />
-                <element signature="e#8974#9417#0" expanded="false" />
-                <element signature="e#9458#9667#0" expanded="false" />
+                <element signature="e#1124#2521#0" expanded="false" />
+                <element signature="e#4816#6617#0" expanded="false" />
+                <element signature="e#8976#9419#0" expanded="false" />
+                <element signature="e#9460#9669#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -225,8 +225,8 @@
         <option value="$PROJECT_DIR$/communication/TcpCommunication.py" />
         <option value="$PROJECT_DIR$/VideoStream.py" />
         <option value="$PROJECT_DIR$/Hat.py" />
-        <option value="$PROJECT_DIR$/Motion.py" />
         <option value="$PROJECT_DIR$/ROV18.py" />
+        <option value="$PROJECT_DIR$/Motion.py" />
       </list>
     </option>
   </component>
@@ -422,13 +422,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00140" summary="60% power">
-      <created>1519877846102</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1519877846102</updated>
     </task>
     <task id="LOCAL-00141" summary="50% power">
       <created>1519878148256</created>
@@ -766,7 +759,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519990723286</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="vertical">
+      <created>1519991072447</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1519991072447</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -853,10 +853,10 @@
           <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1122#2519#0" expanded="false" />
-            <element signature="e#4814#6615#0" expanded="false" />
-            <element signature="e#8974#9417#0" expanded="false" />
-            <element signature="e#9458#9667#0" expanded="false" />
+            <element signature="e#1124#2521#0" expanded="false" />
+            <element signature="e#4816#6617#0" expanded="false" />
+            <element signature="e#8976#9419#0" expanded="false" />
+            <element signature="e#9460#9669#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -884,10 +884,10 @@
           <caret line="11" column="37" lean-forward="false" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1122#2519#0" expanded="false" />
-            <element signature="e#4814#6615#0" expanded="false" />
-            <element signature="e#8974#9417#0" expanded="false" />
-            <element signature="e#9458#9667#0" expanded="false" />
+            <element signature="e#1124#2521#0" expanded="false" />
+            <element signature="e#4816#6617#0" expanded="false" />
+            <element signature="e#8976#9419#0" expanded="false" />
+            <element signature="e#9460#9669#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1077,6 +1077,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ROV18.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1097,24 +1107,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="164" column="32" lean-forward="true" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
+        <state relative-caret-position="468">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#1122#2519#0" expanded="false" />
-            <element signature="e#4814#6615#0" expanded="false" />
-            <element signature="e#8974#9417#0" expanded="false" />
-            <element signature="e#9458#9667#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ROV18.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="50" column="69" lean-forward="false" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#1124#2521#0" expanded="false" />
+            <element signature="e#4816#6617#0" expanded="false" />
+            <element signature="e#8976#9419#0" expanded="false" />
+            <element signature="e#9460#9669#0" expanded="false" />
           </folding>
         </state>
       </provider>
