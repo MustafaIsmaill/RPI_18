@@ -126,10 +126,10 @@ class Motion(Component):
         back_left_thruster_value += _r * self.FULL_ROTATION_COEFFICIENT
         back_right_thruster_value -= _r * self.FULL_ROTATION_COEFFICIENT
 
-        right_front_thruster_value = self.MAXTHRUST * (front_right_thruster_value - self.PWMNORMAL) + self.PWMNORMAL
-        left_front_thruster_value = self.MAXTHRUST * (front_left_thruster_value - self.PWMNORMAL) + self.PWMNORMAL
-        right_rear_thruster_value = self.MAXTHRUST * (back_right_thruster_value - self.PWMNORMAL) + self.PWMNORMAL
-        left_rear_thruster_value = self.MAXTHRUST * (back_left_thruster_value - self.PWMNORMAL) + self.PWMNORMAL
+        right_front_thruster_value = front_right_thruster_value
+        left_front_thruster_value = front_left_thruster_value
+        right_rear_thruster_value = back_right_thruster_value
+        left_rear_thruster_value = back_left_thruster_value
 
         self._horizontalMotors["right_front_thruster"] = int(right_front_thruster_value)
         self._horizontalMotors["left_front_thruster"] = int(left_front_thruster_value)
