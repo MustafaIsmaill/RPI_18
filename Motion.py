@@ -103,7 +103,19 @@ class Motion(Component):
         _y = self._valueMap['y']
         _r = self._valueMap['r']
 
-        if abs(_y) > abs(_x) and _y > 0:
+        if _r < 0:
+            front_right_thruster_value = 352
+            front_left_thruster_value = self.PWMNORMAL
+            back_right_thruster_value = self.PWMNORMAL
+            back_left_thruster_value = 239
+
+        elif _r > 0:
+            front_right_thruster_value = self.PWMNORMAL
+            front_left_thruster_value = 352
+            back_right_thruster_value = 239
+            back_left_thruster_value = self.PWMNORMAL
+
+        elif abs(_y) > abs(_x) and _y > 0:
             front_right_thruster_value = 352
             front_left_thruster_value = 239
             back_right_thruster_value = 352
@@ -116,15 +128,10 @@ class Motion(Component):
             back_left_thruster_value = 338
 
         else:
-            back_right_thruster_value = self.PWMNORMAL
             back_left_thruster_value = self.PWMNORMAL
+            back_right_thruster_value = self.PWMNORMAL
             front_right_thruster_value = self.PWMNORMAL
             front_left_thruster_value = self.PWMNORMAL
-
-        front_right_thruster_value -= _r * self.FULL_ROTATION_COEFFICIENT
-        front_left_thruster_value += _r * self.FULL_ROTATION_COEFFICIENT
-        back_left_thruster_value += _r * self.FULL_ROTATION_COEFFICIENT
-        back_right_thruster_value -= _r * self.FULL_ROTATION_COEFFICIENT
 
         right_front_thruster_value = front_right_thruster_value
         left_front_thruster_value = front_left_thruster_value
