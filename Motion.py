@@ -29,8 +29,8 @@ class Motion(Component):
 
         # ========SET MOTORS TO DEFAULTS=====
         self._stopHorizontalMotors()
-        # self._stopVerticalMotors()
-        self._stopVerticalMotors_()
+        self._stopVerticalMotors()
+        # self._stopVerticalMotors_()
         self._setCamToNormalPosition()
         self._turnLightOff()
         self._setFromMyLocalToDevice()
@@ -166,10 +166,10 @@ class Motion(Component):
         self._verticalMotors["top_rear_thruster"] = int(top_rear_thruster_value)
 
     def _stopVerticalMotors(self):
-        # self._verticalMotors["top_front_thruster"] = self._hardware.getDeviceBaseValue("top_front_thruster")
-        self._verticalMotors["top_front_thruster"] = 324
-        self._verticalMotors["top_rear_thruster"] = 324
-        # self._verticalMotors["top_rear_thruster"] = self._hardware.getDeviceBaseValue("top_rear_thruster")
+        self._verticalMotors["top_front_thruster"] = self._hardware.getDeviceBaseValue("top_front_thruster")
+        # self._verticalMotors["top_front_thruster"] = 324
+        # self._verticalMotors["top_rear_thruster"] = 324
+        self._verticalMotors["top_rear_thruster"] = self._hardware.getDeviceBaseValue("top_rear_thruster")
 
     def _stopVerticalMotors_(self):
         self._verticalMotors["top_front_thruster"] = self._hardware.getDeviceBaseValue("top_front_thruster")
