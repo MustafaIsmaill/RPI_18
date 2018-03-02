@@ -16,7 +16,7 @@ class Motion(Component):
         self.ANGLE225 = 3.92699  # 225 deg to rad
         self.FULL_PWM_RANGE_COEFFICIENT = self.PWMRANGE / 100.0  # PWMRANGE/100
         self.MOTORS_BASE_PWM = 305
-        self.FULL_ROTATION_COEFFICIENT = 0.4 * 1.65
+        self.FULL_ROTATION_COEFFICIENT = 0.2 * 1.65
         self.MAXTHRUST = 0.4
 
         self.prev_value = self.PWMNORMAL
