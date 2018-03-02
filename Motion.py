@@ -64,9 +64,6 @@ class Motion(Component):
         _y = self._valueMap['y']
         _r = self._valueMap['r']
 
-        self.right_factor = ( (0.72 * _y) / 200 ) + 0.36
-        self.left_factor = ( (-0.5 * _y) / 200 ) + 0.25
-
         theta = math.atan2(_x, _y)
         circle_factor = max(abs(math.cos(theta)), abs(math.sin(theta)))
         resultant = math.hypot(_x, _y) * circle_factor
@@ -75,13 +72,13 @@ class Motion(Component):
         # alpha = theta - self.ANGLE225
         alpha = self.ANGLE45 - theta
         maximum_factor = 1 / (math.cos(self.ANGLE45 - abs(theta) + (int(abs(theta) / self.ANGLE90) * self.ANGLE90)))
-        RightComponent = resultant * math.cos(alpha ) * maximum_factor
-        LeftComponent = resultant * math.sin(alpha ) * maximum_factor
+        RightComponent = resultant * math.cos(alpha) * maximum_factor
+        LeftComponent = resultant * math.sin(alpha) * maximum_factor
 
-        front_right_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT) * self.right_factor)
-        front_left_thruster_value = int(self.MOTORS_BASE_PWM - (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT) * self.left_factor )
-        back_right_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT) * self.right_factor)
-        back_left_thruster_value = int(self.MOTORS_BASE_PWM - (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT) * self.left_factor )
+        front_right_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT))
+        front_left_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT))
+        back_right_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT))
+        back_left_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT))
 
         front_right_thruster_value -= _r * self.FULL_ROTATION_COEFFICIENT
         front_left_thruster_value += _r * self.FULL_ROTATION_COEFFICIENT
