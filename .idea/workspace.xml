@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ROV18.py" afterPath="$PROJECT_DIR$/ROV18.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,7 +71,7 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
+            <state relative-caret-position="1044">
               <caret line="161" column="45" lean-forward="false" selection-start-line="161" selection-start-column="45" selection-end-line="161" selection-end-column="45" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -260,6 +259,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -277,7 +277,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,13 +422,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00131" summary="dry test #2">
-      <created>1519848773262</created>
-      <option name="number" value="00131" />
-      <option name="presentableId" value="LOCAL-00131" />
-      <option name="project" value="LOCAL" />
-      <updated>1519848773262</updated>
     </task>
     <task id="LOCAL-00132" summary="ok? ok">
       <created>1519849859699</created>
@@ -767,7 +759,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519949746536</updated>
     </task>
-    <option name="localTasksCounter" value="180" />
+    <task id="LOCAL-00180" summary="back">
+      <created>1519953589455</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1519953589458</updated>
+    </task>
+    <option name="localTasksCounter" value="181" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1082,7 +1081,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="1044">
           <caret line="161" column="45" lean-forward="false" selection-start-line="161" selection-start-column="45" selection-end-line="161" selection-end-column="45" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
