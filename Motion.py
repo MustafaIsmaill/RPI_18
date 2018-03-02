@@ -104,15 +104,15 @@ class Motion(Component):
         _r = self._valueMap['r']
 
         if _r > 0:
-            front_right_thruster_value = 239
+            front_right_thruster_value = 260
             front_left_thruster_value = self.PWMNORMAL
             back_right_thruster_value = self.PWMNORMAL
-            back_left_thruster_value = 239
+            back_left_thruster_value = 260
 
         elif _r < 0:
             front_right_thruster_value = self.PWMNORMAL
-            front_left_thruster_value = 338
-            back_right_thruster_value = 338
+            front_left_thruster_value = 328
+            back_right_thruster_value = 328
             back_left_thruster_value = self.PWMNORMAL
 
         elif abs(_y) > abs(_x) and _y > 0:
@@ -192,10 +192,10 @@ class Motion(Component):
     def _moveCamera(self):
         camera_servo_value = self._hardware.getDeviceValue('camera_servo')
 
-        if self._valueMap['cam_up'] and camera_servo_value <= 500:
+        if self._valueMap['cam_down'] and camera_servo_value <= 500:
             camera_servo_value = camera_servo_value + 10
 
-        elif self._valueMap['cam_down'] and camera_servo_value >= 310:
+        elif self._valueMap['cam_up'] and camera_servo_value >= 310:
             camera_servo_value = camera_servo_value - 10
 
         self._servos["camera_servo"] = camera_servo_value
@@ -255,7 +255,7 @@ class Motion(Component):
                     self._light()
 
                 print("calculating horizontal motors")
-                self._calculateHorizontalMotors_Local()
+                self._calculateHorizontalMotors_17()
 
             elif self._valueMap['mode'] == 1:
 
@@ -267,7 +267,7 @@ class Motion(Component):
                 else:
                     print("calculating horizontal motors")
                     self._stopVerticalMotors()
-                    self._calculateHorizontalMotors_Local()
+                    self._calculateHorizontalMotors_17()
 
                 if self._valueMap["cam_up"] == 1 or self._valueMap["cam_down"]:
                     print("moving camera")
