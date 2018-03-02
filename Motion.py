@@ -104,7 +104,7 @@ class Motion(Component):
         _r = self._valueMap['r']
 
         if _r > 0:
-            front_right_thruster_value = 352
+            front_right_thruster_value = 239
             front_left_thruster_value = self.PWMNORMAL
             back_right_thruster_value = self.PWMNORMAL
             back_left_thruster_value = 239
@@ -112,7 +112,7 @@ class Motion(Component):
         elif _r < 0:
             front_right_thruster_value = self.PWMNORMAL
             front_left_thruster_value = 338
-            back_right_thruster_value = 239
+            back_right_thruster_value = 338
             back_left_thruster_value = self.PWMNORMAL
 
         elif abs(_y) > abs(_x) and _y > 0:
