@@ -42,15 +42,15 @@ class ROV18:
         # initialize dummy hat for testing without the pi
         # self.hat = Dummy_Hat()
 
-        # adding devices to hat -- args: (device name, channel, base pwm)
+        # adding c to hat -- args: (device name, channel, base pwm)
         thruster_base_pwm = 305
         vertical_thruster_base_pwm = 358
         camera_base_pwm = 400
 
         self.hat.addDevice("top_rear_thruster", 0, thruster_base_pwm)
         self.hat.addDevice("top_front_thruster", 7, thruster_base_pwm)
-        self.hat.addDevice("left_rear_thruster", 11, vertical_thruster_base_pwm)
-        self.hat.addDevice("right_rear_thruster", 5, vertical_thruster_base_pwm)
+        self.hat.addDevice("left_rear_thruster", 11, thruster_base_pwm)
+        self.hat.addDevice("right_rear_thruster", 5, thruster_base_pwm)
         self.hat.addDevice("left_front_thruster", 9, thruster_base_pwm)
         self.hat.addDevice("right_front_thruster", 3, thruster_base_pwm)
         self.hat.addDevice("camera_servo", 15, camera_base_pwm)
