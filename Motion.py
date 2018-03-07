@@ -261,7 +261,8 @@ class Motion(Component):
                     self._light()
 
                 print("calculating horizontal motors")
-                self._calculateHorizontalMotors_17()
+                # self._calculateHorizontalMotors_17()
+                self._calculateHorizontalMotors_Local()
 
             elif self._valueMap['mode'] == 1:
 
@@ -273,7 +274,8 @@ class Motion(Component):
                 else:
                     print("calculating horizontal motors")
                     self._stopVerticalMotors()
-                    self._calculateHorizontalMotors_17()
+                    # self._calculateHorizontalMotors_17()
+                    self._calculateHorizontalMotors_Local()
 
                 if self._valueMap["cam_up"] == 1 or self._valueMap["cam_down"]:
                     print("moving camera")
