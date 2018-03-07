@@ -71,15 +71,16 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="278" column="0" lean-forward="true" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
+            <state relative-caret-position="363">
+              <caret line="150" column="83" lean-forward="false" selection-start-line="150" selection-start-column="83" selection-end-line="150" selection-end-column="83" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#1160#2557#0" expanded="false" />
                 <element signature="e#2612#4795#0" expanded="false" />
                 <element signature="e#4853#6654#0" expanded="false" />
-                <element signature="e#9383#9826#0" expanded="false" />
-                <element signature="e#9867#10076#0" expanded="false" />
+                <element signature="e#7655#8466#0" expanded="false" />
+                <element signature="e#9381#9824#0" expanded="false" />
+                <element signature="e#9865#10074#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -423,13 +424,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00148" summary="+ all">
-      <created>1519941124620</created>
-      <option name="number" value="00148" />
-      <option name="presentableId" value="LOCAL-00148" />
-      <option name="project" value="LOCAL" />
-      <updated>1519941124620</updated>
-    </task>
     <task id="LOCAL-00149" summary="shift zero downwards">
       <created>1519942163548</created>
       <option name="number" value="00149" />
@@ -766,7 +760,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520464092564</updated>
     </task>
-    <option name="localTasksCounter" value="197" />
+    <task id="LOCAL-00197" summary="vertical">
+      <created>1520464195653</created>
+      <option name="number" value="00197" />
+      <option name="presentableId" value="LOCAL-00197" />
+      <option name="project" value="LOCAL" />
+      <updated>1520464195653</updated>
+    </task>
+    <option name="localTasksCounter" value="198" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -856,8 +857,9 @@
             <element signature="e#1160#2557#0" expanded="false" />
             <element signature="e#2612#4795#0" expanded="false" />
             <element signature="e#4853#6654#0" expanded="false" />
-            <element signature="e#9383#9826#0" expanded="false" />
-            <element signature="e#9867#10076#0" expanded="false" />
+            <element signature="e#7655#8466#0" expanded="false" />
+            <element signature="e#9381#9824#0" expanded="false" />
+            <element signature="e#9865#10074#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -888,8 +890,9 @@
             <element signature="e#1160#2557#0" expanded="false" />
             <element signature="e#2612#4795#0" expanded="false" />
             <element signature="e#4853#6654#0" expanded="false" />
-            <element signature="e#9383#9826#0" expanded="false" />
-            <element signature="e#9867#10076#0" expanded="false" />
+            <element signature="e#7655#8466#0" expanded="false" />
+            <element signature="e#9381#9824#0" expanded="false" />
+            <element signature="e#9865#10074#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1109,15 +1112,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="278" column="0" lean-forward="true" selection-start-line="278" selection-start-column="0" selection-end-line="278" selection-end-column="0" />
+        <state relative-caret-position="363">
+          <caret line="150" column="83" lean-forward="false" selection-start-line="150" selection-start-column="83" selection-end-line="150" selection-end-column="83" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1160#2557#0" expanded="false" />
             <element signature="e#2612#4795#0" expanded="false" />
             <element signature="e#4853#6654#0" expanded="false" />
-            <element signature="e#9383#9826#0" expanded="false" />
-            <element signature="e#9867#10076#0" expanded="false" />
+            <element signature="e#7655#8466#0" expanded="false" />
+            <element signature="e#9381#9824#0" expanded="false" />
+            <element signature="e#9865#10074#0" expanded="false" />
           </folding>
         </state>
       </provider>
