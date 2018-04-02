@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Dummy_Interrupter.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Sensor.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Interrupter.py" afterPath="$PROJECT_DIR$/Interrupter.py" />
       <change beforePath="$PROJECT_DIR$/Motion.py" afterPath="$PROJECT_DIR$/Motion.py" />
-      <change beforePath="$PROJECT_DIR$/ROV18.py" afterPath="$PROJECT_DIR$/ROV18.py" />
       <change beforePath="$PROJECT_DIR$/communication/TcpCommunication.py" afterPath="$PROJECT_DIR$/communication/TcpCommunication.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,8 +63,8 @@
       <file leaf-file-name="ROV18.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ROV18.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="61" column="8" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+            <state relative-caret-position="342">
+              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -109,8 +105,8 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="87" column="35" lean-forward="false" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+            <state relative-caret-position="342">
+              <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#1190#2587#0" expanded="false" />
@@ -126,8 +122,8 @@
       <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="1170">
+              <caret line="65" column="27" lean-forward="true" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -181,9 +177,9 @@
       <find>register</find>
       <find>_send</find>
       <find>UDP</find>
-      <find>udp</find>
       <find>interr</find>
       <find>vertical</find>
+      <find>udp</find>
     </findStrings>
     <replaceStrings>
       <replace>right_front_thruster</replace>
@@ -237,8 +233,8 @@
         <option value="$PROJECT_DIR$/Sensor.py" />
         <option value="$PROJECT_DIR$/Interrupter.py" />
         <option value="$PROJECT_DIR$/Dummy_Interrupter.py" />
-        <option value="$PROJECT_DIR$/communication/TcpCommunication.py" />
         <option value="$PROJECT_DIR$/ROV18.py" />
+        <option value="$PROJECT_DIR$/communication/TcpCommunication.py" />
         <option value="$PROJECT_DIR$/Motion.py" />
       </list>
     </option>
@@ -444,13 +440,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00153" summary="305">
-      <created>1519943612400</created>
-      <option name="number" value="00153" />
-      <option name="presentableId" value="LOCAL-00153" />
-      <option name="project" value="LOCAL" />
-      <updated>1519943612400</updated>
     </task>
     <task id="LOCAL-00154" summary="305">
       <created>1519943802046</created>
@@ -788,7 +777,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520635791424</updated>
     </task>
-    <option name="localTasksCounter" value="202" />
+    <task id="LOCAL-00202" summary="removed vertical thrusters factor">
+      <created>1522702805841</created>
+      <option name="number" value="00202" />
+      <option name="presentableId" value="LOCAL-00202" />
+      <option name="project" value="LOCAL" />
+      <updated>1522702805841</updated>
+    </task>
+    <option name="localTasksCounter" value="203" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -825,7 +821,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="No cam" />
     <MESSAGE value="Camera enabled koleyet el banat" />
     <MESSAGE value="no cam" />
     <MESSAGE value="60% power" />
@@ -850,7 +845,8 @@
     <MESSAGE value="vertical" />
     <MESSAGE value="vertical max 60%" />
     <MESSAGE value="vertical max 60%&#10;horizontal max 30%" />
-    <option name="LAST_COMMIT_MESSAGE" value="vertical max 60%&#10;horizontal max 30%" />
+    <MESSAGE value="removed vertical thrusters factor" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed vertical thrusters factor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1103,28 +1099,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ROV18.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="61" column="8" lean-forward="true" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+        <state relative-caret-position="342">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="65" column="27" lean-forward="true" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="87" column="35" lean-forward="false" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+        <state relative-caret-position="342">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1190#2587#0" expanded="false" />

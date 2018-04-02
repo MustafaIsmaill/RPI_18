@@ -17,7 +17,7 @@ class Motion(Component):
         self.FULL_PWM_RANGE_COEFFICIENT = self.PWMRANGE / 100.0  # PWMRANGE/100
         self.MOTORS_BASE_PWM = 305
         self.FULL_ROTATION_COEFFICIENT = 0.3 * 1.65
-        self.MAXTHRUST = 0.3
+        self.MAXTHRUST = 0.6
         self.VMAXTHRUST = 0.6
 
         self.prev_value = self.PWMNORMAL

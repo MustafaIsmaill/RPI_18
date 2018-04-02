@@ -62,7 +62,8 @@ class TcpCommunicator:
         if self._conn is not None:
             return
         conn, addr = self._socket.accept()
-        udp_ip = "127.0.0.1"
+        # udp_ip = "127.0.0.1"
+        udp_ip = "10.0.1.54"
         self._udpSocket = UdpCommunicator(udp_ip, 8005)
 
         if "win" in sys.platform:
