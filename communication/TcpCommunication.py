@@ -1,6 +1,17 @@
 # TcpCommunicator.py
 import socket, sys, selectors
 
+class UdpCommunicator:
+    def __init__(self,targetIp,port):
+        self._targetIp=targetIp
+        self._port=port
+        self._socket=socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
+        self._socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        # self._socket.bind(("0.0.0.0",self._port))
+    def send(self,message):
+        if self._socket != None:
+            message=message.encode(encoding="UTF-8")
+            self._socket.sendto(message,(self._targetIp,self._port))
 
 class TcpCommunicator:
     def __init__(self, ip, port, streamingIP, streamingPort1, streamingPort2, streamingPort3, streamingPort4, streaming, timeout=None, closingword="close connection", bind=False):  #timeout is in seconds
@@ -17,6 +28,7 @@ class TcpCommunicator:
         self._keepaliveinterval = 1
         self._createMyCustomizedSocket()
         self._selector = selectors.DefaultSelector()
+        self._udpSocket = None
         self._timeout = timeout
         self._bufferSize = 1024
         self._conn = None
@@ -32,7 +44,6 @@ class TcpCommunicator:
             self._socket.ioctl(socket.SIO_KEEPALIVE_VALS, (1, self._keepaliveduration, 2))
         else:
             print("Linux")
-
             self._socket.setsockopt(socket.SOL_SOCKET, socket.SO_KEEPALIVE, 1)
             self._socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPIDLE, 1)
             self._socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_KEEPINTVL, 1)
@@ -51,6 +62,8 @@ class TcpCommunicator:
         if self._conn is not None:
             return
         conn, addr = self._socket.accept()
+        udp_ip = "127.0.0.1"
+        self._udpSocket = UdpCommunicator(udp_ip, 8005)
 
         if "win" in sys.platform:
             self._socket.ioctl(socket.SIO_KEEPALIVE_VALS, (1, self._keepaliveduration, self._keepaliveinterval))
@@ -121,12 +134,26 @@ class TcpCommunicator:
         print("data_map = ", data_map)
         return data_map
 
+    def _send(self, data='a', errorhandler=None):
+        if self._udpSocket != None:
+            self._udpSocket.send('a')
+        # if self._conn is None:
+        #     return
+        #try:
+        # self._conn.sendall(data.encode(encoding="UTF-8"))
+        #except:
+        #    self._cleanup()
+            #errorhandler("TCP ERROR", {})
+
     def _cleanup(self):
         self._eventcallback("TCP ERROR", {})
         if(self._conn != None):
             self._selector.unregister(self._conn)
             self._conn.close()
         self._conn = None
+        self._udpSocket._socket.close()
+        self._udpSocket = None
+
 
     def mainLoop(self):
         while True:

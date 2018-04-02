@@ -2,12 +2,13 @@ from communication.TcpCommunication import *
 from Interrupter import *
 from Publisher import *
 from Motion import *
+# from Sensor import *
 
 # import the Hat module (comment for testing)
 from Hat import *
 
 from Dummy_Hat import *
-
+from Dummy_Interrupter import *
 
 class ROV18:
     def __init__(self):
@@ -38,6 +39,7 @@ class ROV18:
         hat_address = 0x40
         frequency = 50
         self.hat = Hat(hat_address, frequency)
+        # self.pressureSensor = Sensor()
 
         # initialize dummy hat for testing without the pi
         # self.hat = Dummy_Hat()
@@ -73,15 +75,17 @@ class ROV18:
 
         self.publisher.registerEventListener("CLOCK", self.motion.update)
         self.publisher.registerEventListener("CLOCK", self.hat.update)
-
         self.publisher.registerEventListener("HAT", self.hat.update)
+        self.publisher.registerEventListener("SENSOR", self.tcp_communicator._send)
 
         self.tcp_communicator.registerCallBack(self.publisher.trigger_event)
         self.motion.registerCallBack(self.publisher.trigger_event)
+        # self.pressureSensor.registerCallBack(self.publisher.trigger_event)
 
         # create interrupter and bind to I2C event trigger callback
         # (when commented, pwms are only updated in the hat on change)
-        # self.interrupter = Interrupter(self.publisher.trigger_event, "CLOCK")
+        # self.interrupter = Interrupter(self.publisher.trigger_event, "SENSOR")
+        self.interrupter = Dummy_Interrupter(self.publisher.trigger_event, "SENSOR")
 
         # Main loop
         self.tcp_communicator.mainLoop()

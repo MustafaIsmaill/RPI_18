@@ -1,7 +1,7 @@
 import threading
 
 
-class Interrupter:
+class Dummy_Interrupter:
 
     def __init__(self, callback_function, str):
         self.register(callback_function, str)
