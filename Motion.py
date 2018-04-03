@@ -17,7 +17,7 @@ class Motion(Component):
         self.FULL_PWM_RANGE_COEFFICIENT = self.PWMRANGE / 100.0  # PWMRANGE/100
         self.MOTORS_BASE_PWM = 305
         self.FULL_ROTATION_COEFFICIENT = 0.3 * 1.65
-        self.MAXTHRUST = 0.3
+        self.MAXTHRUST = 0.6
         self.VMAXTHRUST = 0.6
 
         self.prev_value = self.PWMNORMAL
@@ -78,9 +78,9 @@ class Motion(Component):
         LeftComponent = resultant * math.sin(alpha) * maximum_factor
 
         front_right_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT))
-        front_left_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT))
+        front_left_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT)*0.5)
         back_right_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT))
-        back_left_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT))
+        back_left_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT)*0.5)
 
         front_right_thruster_value -= _r * self.FULL_ROTATION_COEFFICIENT
         front_left_thruster_value += _r * self.FULL_ROTATION_COEFFICIENT
