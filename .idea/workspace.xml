@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Motion.py" afterPath="$PROJECT_DIR$/Motion.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,8 +16,8 @@
     <SUITE FILE_PATH="coverage/RPI_18$Main.coverage" NAME="Main Coverage Results" MODIFIED="1519304689255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RPI_18$Hat.coverage" NAME="Hat Coverage Results" MODIFIED="1518293848481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RPI_18$Adafruit_I2C.coverage" NAME="Adafruit_I2C Coverage Results" MODIFIED="1518283989300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/RPI_18$Motion.coverage" NAME="Motion Coverage Results" MODIFIED="1519072701106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RPI_18$TcpCommunication.coverage" NAME="TcpCommunication Coverage Results" MODIFIED="1519304686464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/communication" />
+    <SUITE FILE_PATH="coverage/RPI_18$Motion.coverage" NAME="Motion Coverage Results" MODIFIED="1522799398433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RPI_18$ROV18.coverage" NAME="ROV18 Coverage Results" MODIFIED="1519072719031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RPI_18$Stream_Test.coverage" NAME="Stream_Test Coverage Results" MODIFIED="1517844538940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/RPI_18$VideoStream.coverage" NAME="VideoStream Coverage Results" MODIFIED="1519165136382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -73,15 +74,15 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="87" column="72" lean-forward="true" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
+            <state relative-caret-position="108">
+              <caret line="82" column="114" lean-forward="false" selection-start-line="82" selection-start-column="114" selection-end-line="82" selection-end-column="114" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#1190#2587#0" expanded="false" />
-                <element signature="e#4883#6684#0" expanded="false" />
-                <element signature="e#7679#8490#0" expanded="false" />
-                <element signature="e#9405#9848#0" expanded="false" />
-                <element signature="e#9889#10098#0" expanded="false" />
+                <element signature="e#4891#6692#0" expanded="false" />
+                <element signature="e#7687#8498#0" expanded="false" />
+                <element signature="e#9413#9856#0" expanded="false" />
+                <element signature="e#9897#10106#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -304,7 +305,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.Motion">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -409,11 +410,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.TcpCommunication" />
-        <item index="2" class="java.lang.String" itemvalue="Python.VideoStream" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ROV18" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Motion" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Motion" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Main" />
+        <item index="2" class="java.lang.String" itemvalue="Python.TcpCommunication" />
+        <item index="3" class="java.lang.String" itemvalue="Python.VideoStream" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ROV18" />
       </list>
     </recent_temporary>
   </component>
@@ -430,13 +431,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00161" summary="225">
-      <created>1519945789081</created>
-      <option name="number" value="00161" />
-      <option name="presentableId" value="LOCAL-00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1519945789081</updated>
     </task>
     <task id="LOCAL-00162" summary="225">
       <created>1519946120059</created>
@@ -774,7 +768,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522799303884</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="60% AND FACTORS">
+      <created>1522799322521</created>
+      <option name="number" value="00210" />
+      <option name="presentableId" value="LOCAL-00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1522799322530</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -802,6 +803,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17757009" sideWeight="0.4941435" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32866043" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -875,10 +877,10 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1190#2587#0" expanded="false" />
-            <element signature="e#4883#6684#0" expanded="false" />
-            <element signature="e#7679#8490#0" expanded="false" />
-            <element signature="e#9405#9848#0" expanded="false" />
-            <element signature="e#9889#10098#0" expanded="false" />
+            <element signature="e#4891#6692#0" expanded="false" />
+            <element signature="e#7687#8498#0" expanded="false" />
+            <element signature="e#9413#9856#0" expanded="false" />
+            <element signature="e#9897#10106#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1121,15 +1123,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="87" column="72" lean-forward="true" selection-start-line="87" selection-start-column="72" selection-end-line="87" selection-end-column="72" />
+        <state relative-caret-position="108">
+          <caret line="82" column="114" lean-forward="false" selection-start-line="82" selection-start-column="114" selection-end-line="82" selection-end-column="114" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1190#2587#0" expanded="false" />
-            <element signature="e#4883#6684#0" expanded="false" />
-            <element signature="e#7679#8490#0" expanded="false" />
-            <element signature="e#9405#9848#0" expanded="false" />
-            <element signature="e#9889#10098#0" expanded="false" />
+            <element signature="e#4891#6692#0" expanded="false" />
+            <element signature="e#7687#8498#0" expanded="false" />
+            <element signature="e#9413#9856#0" expanded="false" />
+            <element signature="e#9897#10106#0" expanded="false" />
           </folding>
         </state>
       </provider>
