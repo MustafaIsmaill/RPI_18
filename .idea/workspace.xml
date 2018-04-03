@@ -74,8 +74,8 @@
       <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-680">
-              <caret line="150" column="33" lean-forward="false" selection-start-line="150" selection-start-column="33" selection-end-line="150" selection-end-column="33" />
+            <state relative-caret-position="112">
+              <caret line="82" column="115" lean-forward="false" selection-start-line="82" selection-start-column="115" selection-end-line="82" selection-end-column="115" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#1190#2587#0" expanded="false" />
@@ -432,13 +432,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00158" summary="Code toss">
-      <created>1519944819352</created>
-      <option name="number" value="00158" />
-      <option name="presentableId" value="LOCAL-00158" />
-      <option name="project" value="LOCAL" />
-      <updated>1519944819352</updated>
-    </task>
     <task id="LOCAL-00159" summary="Code toss">
       <created>1519945211867</created>
       <option name="number" value="00159" />
@@ -775,7 +768,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522798807163</updated>
     </task>
-    <option name="localTasksCounter" value="207" />
+    <task id="LOCAL-00207" summary="60% AND FACTORS">
+      <created>1522799010707</created>
+      <option name="number" value="00207" />
+      <option name="presentableId" value="LOCAL-00207" />
+      <option name="project" value="LOCAL" />
+      <updated>1522799010707</updated>
+    </task>
+    <option name="localTasksCounter" value="208" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -835,7 +835,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="no cam" />
     <MESSAGE value="60% power" />
     <MESSAGE value="50% power" />
     <MESSAGE value="Camera on" />
@@ -860,7 +859,8 @@
     <MESSAGE value="vertical max 60%&#10;horizontal max 30%" />
     <MESSAGE value="removed vertical thrusters factor" />
     <MESSAGE value="add udp sensor feedback communication + lift bag communicator" />
-    <option name="LAST_COMMIT_MESSAGE" value="add udp sensor feedback communication + lift bag communicator" />
+    <MESSAGE value="60% AND FACTORS" />
+    <option name="LAST_COMMIT_MESSAGE" value="60% AND FACTORS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1122,8 +1122,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Motion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680">
-          <caret line="150" column="33" lean-forward="false" selection-start-line="150" selection-start-column="33" selection-end-line="150" selection-end-column="33" />
+        <state relative-caret-position="112">
+          <caret line="82" column="115" lean-forward="false" selection-start-line="82" selection-start-column="115" selection-end-line="82" selection-end-column="115" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#1190#2587#0" expanded="false" />
