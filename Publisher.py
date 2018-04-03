@@ -14,5 +14,6 @@ class Publisher:
 
     def trigger_event(self, *args):
         event_name = args[0]
+        # print (args[1])
         for listener in self._eventListeners[event_name]:
             listener(*args)

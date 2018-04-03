@@ -1,4 +1,5 @@
 from communication.TcpCommunication import *
+from Lift_Bag_Communicator import *
 from Interrupter import *
 from Publisher import *
 from Motion import *
@@ -7,7 +8,7 @@ from Motion import *
 # import the Hat module (comment for testing)
 from Hat import *
 
-from Dummy_Hat import *
+# from Dummy_Hat import *
 from Dummy_Interrupter import *
 
 class ROV18:
@@ -40,15 +41,15 @@ class ROV18:
         frequency = 50
         self.hat = Hat(hat_address, frequency)
         # self.pressureSensor = Sensor()
+        self.liftBagCommunicator = Lift_Bag_Communicator({"x": 0, "y": 0, "z": 0, "r": 0, "up": 0, "down": 0, "l": 0, "bag": 0})
 
         # initialize dummy hat for testing without the pi
         # self.hat = Dummy_Hat()
 
-        # adding c to hat -- args: (device name, channel, base pwm)
         thruster_base_pwm = 305
-        # vertical_thruster_base_pwm = 324
         camera_base_pwm = 400
 
+        # adding devices to hat -- args: (device name, channel, base pwm)
         self.hat.addDevice("top_rear_thruster", 0, thruster_base_pwm)
         self.hat.addDevice("top_front_thruster", 7, thruster_base_pwm)
         self.hat.addDevice("left_rear_thruster", 11, thruster_base_pwm)
@@ -62,7 +63,8 @@ class ROV18:
         components = []
 
         # motion equation component -- args (hat, angle zeros)
-        self.motion = Motion(self.hat, {"x": 0, "y": 0, "z": 0, "r": 0, "up": 0, "down": 0, "l": 0})
+        self.motion = Motion(self.hat, {"x": 0, "y": 0, "z": 0, "r": 0, "up": 0, "down": 0, "l": 0, "bag": 0})
+        components.append(self.liftBagCommunicator)
         components.append(self.motion)
 
         # publisher
@@ -76,16 +78,18 @@ class ROV18:
         self.publisher.registerEventListener("CLOCK", self.motion.update)
         self.publisher.registerEventListener("CLOCK", self.hat.update)
         self.publisher.registerEventListener("HAT", self.hat.update)
-        self.publisher.registerEventListener("SENSOR", self.tcp_communicator._send)
+        self.publisher.registerEventListener("SENSOR", self.tcp_communicator.sendFeedback)
+        self.publisher.registerEventListener("BAG", self.tcp_communicator.sendToLiftBag)
 
         self.tcp_communicator.registerCallBack(self.publisher.trigger_event)
         self.motion.registerCallBack(self.publisher.trigger_event)
+        self.liftBagCommunicator.registerCallBack(self.publisher.trigger_event)
         # self.pressureSensor.registerCallBack(self.publisher.trigger_event)
 
         # create interrupter and bind to I2C event trigger callback
         # (when commented, pwms are only updated in the hat on change)
         # self.interrupter = Interrupter(self.publisher.trigger_event, "SENSOR")
-        self.interrupter = Dummy_Interrupter(self.publisher.trigger_event, "SENSOR")
+        self.interrupter = Dummy_Interrupter(self.publisher.trigger_event, "SENSOR", 'dummy data')
 
         # Main loop
         self.tcp_communicator.mainLoop()

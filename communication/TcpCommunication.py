@@ -15,6 +15,7 @@ class UdpCommunicator:
 
 class TcpCommunicator:
     def __init__(self, ip, port, streamingIP, streamingPort1, streamingPort2, streamingPort3, streamingPort4, streaming, timeout=None, closingword="close connection", bind=False):  #timeout is in seconds
+        self.NUMBER_OF_TOKENS = 11
         self._videoStreamingEnable = streaming
         self._ip = ip
         self._port = port
@@ -28,7 +29,8 @@ class TcpCommunicator:
         self._keepaliveinterval = 1
         self._createMyCustomizedSocket()
         self._selector = selectors.DefaultSelector()
-        self._udpSocket = None
+        self._feedbackUdpSocket = None
+        self._liftBagUdpSocket = None
         self._timeout = timeout
         self._bufferSize = 1024
         self._conn = None
@@ -62,9 +64,13 @@ class TcpCommunicator:
         if self._conn is not None:
             return
         conn, addr = self._socket.accept()
-        # udp_ip = "127.0.0.1"
-        udp_ip = "10.0.1.54"
-        self._udpSocket = UdpCommunicator(udp_ip, 8005)
+        feedback_udp_ip = "127.0.0.1"
+        # feedback_udp_ip = "10.0.1.54"
+        self._feedbackUdpSocket = UdpCommunicator(feedback_udp_ip, 8006)
+
+        wifi_udp_ip = "127.0.0.1"
+        # wifi_udp_ip = "192.168.4.2"
+        self._liftBagUdpSocket = UdpCommunicator(wifi_udp_ip, 1112)
 
         if "win" in sys.platform:
             self._socket.ioctl(socket.SIO_KEEPALIVE_VALS, (1, self._keepaliveduration, self._keepaliveinterval))
@@ -113,12 +119,14 @@ class TcpCommunicator:
 
         data_map = {}
 
-        if (len(tokens) is not 10):
+        count = self.NUMBER_OF_TOKENS
+
+        if (len(tokens) is not count):
             print("wrong token")
             tokens_clone = tokens
-            tokens = [""]*10
-            for i in range(10):
-                tokens[i] = tokens_clone[len(tokens_clone)-(10-i)]
+            tokens = [""]*count
+            for i in range(count):
+                tokens[i] = tokens_clone[len(tokens_clone)-(count-i)]
             print(tokens)
 
         for token in tokens:
@@ -135,16 +143,13 @@ class TcpCommunicator:
         print("data_map = ", data_map)
         return data_map
 
-    def _send(self, data='a', errorhandler=None):
-        if self._udpSocket != None:
-            self._udpSocket.send('a')
-        # if self._conn is None:
-        #     return
-        #try:
-        # self._conn.sendall(data.encode(encoding="UTF-8"))
-        #except:
-        #    self._cleanup()
-            #errorhandler("TCP ERROR", {})
+    def sendFeedback(self, eventName, data, errorhandler=None):
+        if self._feedbackUdpSocket != None:
+            self._feedbackUdpSocket.send(data)
+
+    def sendToLiftBag(self, eventName, data, errorhandler=None):
+        if self._liftBagUdpSocket != None:
+            self._liftBagUdpSocket.send(data)
 
     def _cleanup(self):
         self._eventcallback("TCP ERROR", {})
@@ -152,8 +157,10 @@ class TcpCommunicator:
             self._selector.unregister(self._conn)
             self._conn.close()
         self._conn = None
-        self._udpSocket._socket.close()
-        self._udpSocket = None
+        self._feedbackUdpSocket._socket.close()
+        self._feedbackUdpSocket = None
+        self._liftBagUdpSocket._socket.close()
+        self._liftBagUdpSocket = None
 
 
     def mainLoop(self):
