@@ -78,9 +78,9 @@ class Motion(Component):
         LeftComponent = resultant * math.sin(alpha) * maximum_factor
 
         front_right_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT))
-        front_left_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT)*0.5)
+        front_left_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT)*0.3)
         back_right_thruster_value = int(self.MOTORS_BASE_PWM + (RightComponent * self.FULL_PWM_RANGE_COEFFICIENT))
-        back_left_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT)*0.5)
+        back_left_thruster_value = int(self.MOTORS_BASE_PWM + (LeftComponent * self.FULL_PWM_RANGE_COEFFICIENT)*0.3)
 
         front_right_thruster_value -= _r * self.FULL_ROTATION_COEFFICIENT
         front_left_thruster_value += _r * self.FULL_ROTATION_COEFFICIENT
@@ -145,10 +145,10 @@ class Motion(Component):
     def _calculateVerticalMotors_NormalMode(self):
         # top_front_thruster_value = self._hardware.getDeviceValue('top_front_thruster')
         # top_rear_thruster_value = self._hardware.getDeviceValue('top_rear_thruster')
-        if self._valueMap['down']:
+        if self._valueMap['up']:
             top_front_thruster_value = int(self.PWMNORMAL + (self._valueMap['z']*self.VMAXTHRUST*(self.PWMRANGE/100)))
             top_rear_thruster_value = int(self.PWMNORMAL + (self._valueMap['z']*self.VMAXTHRUST*(self.PWMRANGE/100)))
-        elif self._valueMap['up']:
+        elif self._valueMap['down']:
             top_front_thruster_value = int(self.PWMNORMAL - (self._valueMap['z']*self.VMAXTHRUST*(self.PWMRANGE/100)))
             top_rear_thruster_value = int(self.PWMNORMAL - (self._valueMap['z']*self.VMAXTHRUST*(self.PWMRANGE/100)))
         self._verticalMotors["top_front_thruster"] = int(top_front_thruster_value)
