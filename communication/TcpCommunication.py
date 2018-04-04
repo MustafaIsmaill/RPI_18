@@ -68,9 +68,9 @@ class TcpCommunicator:
         # feedback_udp_ip = "10.0.1.54"
         self._feedbackUdpSocket = UdpCommunicator(feedback_udp_ip, 8006)
 
-        wifi_udp_ip = "127.0.0.1"
-        # wifi_udp_ip = "192.168.4.2"
-        self._liftBagUdpSocket = UdpCommunicator(wifi_udp_ip, 1112)
+        # wifi_udp_ip = "127.0.0.1"
+        wifi_udp_ip = "192.168.4.1"
+        self._liftBagUdpSocket = UdpCommunicator(wifi_udp_ip, 4210)
 
         if "win" in sys.platform:
             self._socket.ioctl(socket.SIO_KEEPALIVE_VALS, (1, self._keepaliveduration, self._keepaliveinterval))

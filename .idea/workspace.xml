@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/communication/TcpCommunication.py" afterPath="$PROJECT_DIR$/communication/TcpCommunication.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Motion.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Motion.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Motion.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
@@ -97,11 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2808">
-              <caret line="156" column="45" lean-forward="false" selection-start-line="156" selection-start-column="45" selection-end-line="156" selection-end-column="45" />
+            <state relative-caret-position="252">
+              <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -138,7 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>down</find>
       <find>horizo</find>
       <find>horizon</find>
       <find>PWMNORMAL</find>
@@ -168,6 +168,7 @@
       <find>horizont</find>
       <find>_calculateHorizontalMotors_Local</find>
       <find>_calculateHorizontalMotors_17</find>
+      <find>up</find>
     </findStrings>
     <replaceStrings>
       <replace>right_front_thruster</replace>
@@ -223,9 +224,9 @@
         <option value="$PROJECT_DIR$/Lift_Bag_Communicator.py" />
         <option value="$PROJECT_DIR$/Dummy_Interrupter.py" />
         <option value="$PROJECT_DIR$/Publisher.py" />
-        <option value="$PROJECT_DIR$/communication/TcpCommunication.py" />
         <option value="$PROJECT_DIR$/ROV18.py" />
         <option value="$PROJECT_DIR$/Motion.py" />
+        <option value="$PROJECT_DIR$/communication/TcpCommunication.py" />
       </list>
     </option>
   </component>
@@ -430,13 +431,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00168" summary="motion">
-      <created>1519947476848</created>
-      <option name="number" value="00168" />
-      <option name="presentableId" value="LOCAL-00168" />
-      <option name="project" value="LOCAL" />
-      <updated>1519947476848</updated>
     </task>
     <task id="LOCAL-00169" summary="motion">
       <created>1519947528340</created>
@@ -774,7 +768,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522800198476</updated>
     </task>
-    <option name="localTasksCounter" value="217" />
+    <task id="LOCAL-00217" summary="50% AND FACTORS">
+      <created>1522800205003</created>
+      <option name="number" value="00217" />
+      <option name="presentableId" value="LOCAL-00217" />
+      <option name="project" value="LOCAL" />
+      <updated>1522800205003</updated>
+    </task>
+    <option name="localTasksCounter" value="218" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -835,7 +836,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="60% power" />
     <MESSAGE value="50% power" />
     <MESSAGE value="Camera on" />
     <MESSAGE value="Fixed thruster direction of rotation" />
@@ -860,7 +860,8 @@
     <MESSAGE value="removed vertical thrusters factor" />
     <MESSAGE value="add udp sensor feedback communication + lift bag communicator" />
     <MESSAGE value="60% AND FACTORS" />
-    <option name="LAST_COMMIT_MESSAGE" value="60% AND FACTORS" />
+    <MESSAGE value="50% AND FACTORS" />
+    <option name="LAST_COMMIT_MESSAGE" value="50% AND FACTORS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1002,6 +1003,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="21" column="230" lean-forward="false" selection-start-line="21" selection-start-column="230" selection-end-line="21" selection-end-column="230" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1086,14 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2808">
-          <caret line="156" column="45" lean-forward="false" selection-start-line="156" selection-start-column="45" selection-end-line="156" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lift_Bag_Communicator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1132,6 +1126,14 @@
             <element signature="e#9415#9858#0" expanded="false" />
             <element signature="e#9899#10108#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
