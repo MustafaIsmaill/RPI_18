@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/communication/TcpCommunication.py" afterPath="$PROJECT_DIR$/communication/TcpCommunication.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -432,13 +431,6 @@
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
     </task>
-    <task id="LOCAL-00171" summary="motion">
-      <created>1519948089685</created>
-      <option name="number" value="00171" />
-      <option name="presentableId" value="LOCAL-00171" />
-      <option name="project" value="LOCAL" />
-      <updated>1519948089685</updated>
-    </task>
     <task id="LOCAL-00172" summary="motion">
       <created>1519948210234</created>
       <option name="number" value="00172" />
@@ -775,7 +767,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522800555626</updated>
     </task>
-    <option name="localTasksCounter" value="220" />
+    <task id="LOCAL-00220" summary="exception">
+      <created>1522802037351</created>
+      <option name="number" value="00220" />
+      <option name="presentableId" value="LOCAL-00220" />
+      <option name="project" value="LOCAL" />
+      <updated>1522802037351</updated>
+    </task>
+    <option name="localTasksCounter" value="221" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -836,7 +835,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="50% power" />
     <MESSAGE value="Camera on" />
     <MESSAGE value="Fixed thruster direction of rotation" />
     <MESSAGE value="Added three streams" />
@@ -861,7 +859,8 @@
     <MESSAGE value="add udp sensor feedback communication + lift bag communicator" />
     <MESSAGE value="60% AND FACTORS" />
     <MESSAGE value="50% AND FACTORS" />
-    <option name="LAST_COMMIT_MESSAGE" value="50% AND FACTORS" />
+    <MESSAGE value="exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="exception" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
