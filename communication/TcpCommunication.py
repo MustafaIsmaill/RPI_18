@@ -148,8 +148,11 @@ class TcpCommunicator:
             self._feedbackUdpSocket.send(data)
 
     def sendToLiftBag(self, eventName, data, errorhandler=None):
-        if self._liftBagUdpSocket != None:
-            self._liftBagUdpSocket.send(data)
+        try:
+            if self._liftBagUdpSocket != None:
+                self._liftBagUdpSocket.send(data)
+        except IOError as e:
+            pass
 
     def _cleanup(self):
         self._eventcallback("TCP ERROR", {})
