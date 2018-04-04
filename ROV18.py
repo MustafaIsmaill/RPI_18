@@ -78,7 +78,7 @@ class ROV18:
         self.publisher.registerEventListener("CLOCK", self.motion.update)
         self.publisher.registerEventListener("CLOCK", self.hat.update)
         self.publisher.registerEventListener("HAT", self.hat.update)
-        self.publisher.registerEventListener("SENSOR", self.tcp_communicator.sendFeedback)
+        # self.publisher.registerEventListener("SENSOR", self.tcp_communicator.sendFeedback)
         self.publisher.registerEventListener("BAG", self.tcp_communicator.sendToLiftBag)
 
         self.tcp_communicator.registerCallBack(self.publisher.trigger_event)
@@ -89,7 +89,7 @@ class ROV18:
         # create interrupter and bind to I2C event trigger callback
         # (when commented, pwms are only updated in the hat on change)
         # self.interrupter = Interrupter(self.publisher.trigger_event, "SENSOR")
-        self.interrupter = Dummy_Interrupter(self.publisher.trigger_event, "SENSOR", 'dummy data')
+        # self.interrupter = Dummy_Interrupter(self.publisher.trigger_event, "SENSOR", 'dummy data')
 
         # Main loop
         self.tcp_communicator.mainLoop()
