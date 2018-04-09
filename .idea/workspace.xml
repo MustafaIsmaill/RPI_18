@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="New Thruster Layout">
+    <list default="true" id="1c307353-ce5e-4a99-b77d-15c85cced282" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ROV18.py" afterPath="$PROJECT_DIR$/ROV18.py" />
-      <change beforePath="$PROJECT_DIR$/VideoStream.py" afterPath="$PROJECT_DIR$/VideoStream.py" />
       <change beforePath="$PROJECT_DIR$/communication/TcpCommunication.py" afterPath="$PROJECT_DIR$/communication/TcpCommunication.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -113,11 +111,11 @@
       <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="90" column="223" lean-forward="false" selection-start-line="90" selection-start-column="223" selection-end-line="90" selection-end-column="223" />
               <folding>
-                <marker date="1523312871539" expanded="true" signature="2669:4409" ph="..." />
-                <marker date="1523312871539" expanded="true" signature="3750:4409" ph="..." />
+                <marker date="1523313025305" expanded="true" signature="2669:4492" ph="..." />
+                <marker date="1523313025305" expanded="true" signature="3750:4492" ph="..." />
               </folding>
             </state>
           </provider>
@@ -446,13 +444,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00176" summary="test">
-      <created>1519948846645</created>
-      <option name="number" value="00176" />
-      <option name="presentableId" value="LOCAL-00176" />
-      <option name="project" value="LOCAL" />
-      <updated>1519948846645</updated>
     </task>
     <task id="LOCAL-00177" summary="back">
       <created>1519949089016</created>
@@ -790,7 +781,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523224322898</updated>
     </task>
-    <option name="localTasksCounter" value="225" />
+    <task id="LOCAL-00225" summary="New Thruster Layout">
+      <created>1523312881628</created>
+      <option name="number" value="00225" />
+      <option name="presentableId" value="LOCAL-00225" />
+      <option name="project" value="LOCAL" />
+      <updated>1523312881628</updated>
+    </task>
+    <option name="localTasksCounter" value="226" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1148,11 +1146,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        <state relative-caret-position="162">
+          <caret line="90" column="223" lean-forward="false" selection-start-line="90" selection-start-column="223" selection-end-line="90" selection-end-column="223" />
           <folding>
-            <marker date="1523312871539" expanded="true" signature="2669:4409" ph="..." />
-            <marker date="1523312871539" expanded="true" signature="3750:4409" ph="..." />
+            <marker date="1523313025305" expanded="true" signature="2669:4492" ph="..." />
+            <marker date="1523313025305" expanded="true" signature="3750:4492" ph="..." />
           </folding>
         </state>
       </provider>
