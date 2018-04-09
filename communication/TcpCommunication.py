@@ -64,8 +64,8 @@ class TcpCommunicator:
         if self._conn is not None:
             return
         conn, addr = self._socket.accept()
-        feedback_udp_ip = "127.0.0.1"
-        # feedback_udp_ip = "10.0.1.54"
+        # feedback_udp_ip = "127.0.0.1"
+        feedback_udp_ip = "10.0.1.54"
         self._feedbackUdpSocket = UdpCommunicator(feedback_udp_ip, 8006)
 
         # wifi_udp_ip = "127.0.0.1"
@@ -87,9 +87,12 @@ class TcpCommunicator:
         self._selector.register(self._conn, selectors.EVENT_READ, self._recv)
         if self._videoStreamingEnable:
             import VideoStream
-            self._videoStream = VideoStream.VideoStream(self._streamingIP, self._streamingPort1, self._streamingPort2, self._streamingPort3, self._streamingPort4)
-            # self._videoStream = VideoStream.VideoStream("127.0.0.1", "5000")
+            self._pipeline1 = "v4l2src device=/dev/video0 ! image/jpeg, width=1280, height=720, framerate=60/1 ! rtpjpegpay ! multiudpsink clients=" + self._ip + ":" + self._port + "," + ip + ":" + self._port2 +" sync=false")
+            self._pipeline2 = "v4l2src device=/dev/video1 ! image/jpeg, width=1280, height=720, framerate=30/1 ! rtpjpegpay ! multiudpsink clients=" + self._ip + ":" + self._port3 + "," + ip + ":" + self._port4 +" sync=false")
+            self._videoStream = VideoStream.VideoStream(pipeline1)
+            # self._videoStream2 = VideoStream.VideoStream(pipeline2)
             self._videoStream.start()
+            # self._videoStream2.start()
 
     def _recv(self,x=None,y=None):
         data = None

@@ -7,19 +7,9 @@ from gi.repository import GObject, Gst
 
 
 class VideoStream():
-    def __init__(self, ip, port, port2, port3, port4):
+    def __init__(self, pipeline):
         Gst.init(None)
-        self._ip = ip
-        self._port = port
-        self._port2 = port2
-        self._port3 = port3
-        self._port4 = port4
-        # self._ip = "10.0.1.54"
-        # self._port = "5000"
-        self._ip = ip
-        self._port = port
-        self._pipeline = Gst.parse_launch(
-            "v4l2src device=/dev/video0 ! image/jpeg, width=1280, height=720, framerate=60/1 ! rtpjpegpay ! multiudpsink clients=" + self._ip + ":" + self._port + "," + ip + ":" + self._port2 + "," + self._ip + ":" + self._port3 +" sync=false")
+        self._pipeline = Gst.parse_launch(pipeline)
             # "v4l2src device=/dev/video0 ! image/jpeg, width=1280, height=720, framerate=60/1 ! rtpjpegpay ! udpsink host=" + self._ip + " port=" + self._port + "sync=false")
         self._thread = None
 
