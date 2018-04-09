@@ -89,7 +89,7 @@ class TcpCommunicator:
             import VideoStream
             self._pipeline1 = "v4l2src device=/dev/video0 ! image/jpeg, width=1280, height=720, framerate=60/1 ! rtpjpegpay ! multiudpsink clients=" + self._streamingIP + ":" + self._streamingPort1 + "," + self._streamingIP + ":" + self._streamingPort2 +" sync=false"
             self._pipeline2 = "v4l2src device=/dev/video1 ! image/jpeg, width=1280, height=720, framerate=30/1 ! rtpjpegpay ! multiudpsink clients=" + self._streamingIP + ":" + self._streamingPort3 + "," + self._streamingIP + ":" + self._streamingPort4 +" sync=false"
-            self._videoStream = VideoStream.VideoStream(pipeline1)
+            self._videoStream = VideoStream.VideoStream(self._pipeline1)
             # self._videoStream2 = VideoStream.VideoStream(pipeline2)
             self._videoStream.start()
             # self._videoStream2.start()
