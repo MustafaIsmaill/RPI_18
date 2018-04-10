@@ -111,11 +111,11 @@
       <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="97" column="19" lean-forward="false" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
+            <state relative-caret-position="324">
+              <caret line="93" column="67" lean-forward="false" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
               <folding>
-                <marker date="1523326806358" expanded="true" signature="2669:4531" ph="..." />
-                <marker date="1523326806358" expanded="true" signature="3767:4531" ph="..." />
+                <marker date="1523326915677" expanded="true" signature="2669:4537" ph="..." />
+                <marker date="1523326915677" expanded="true" signature="3767:4537" ph="..." />
               </folding>
             </state>
           </provider>
@@ -444,13 +444,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00179" summary="back">
-      <created>1519949746536</created>
-      <option name="number" value="00179" />
-      <option name="presentableId" value="LOCAL-00179" />
-      <option name="project" value="LOCAL" />
-      <updated>1519949746536</updated>
     </task>
     <task id="LOCAL-00180" summary="back">
       <created>1519953589455</created>
@@ -788,7 +781,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523313066667</updated>
     </task>
-    <option name="localTasksCounter" value="228" />
+    <task id="LOCAL-00228" summary="Added second camera!!!!!!!!!!!">
+      <created>1523326855519</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1523326855519</updated>
+    </task>
+    <option name="localTasksCounter" value="229" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -849,7 +849,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Print PWMs" />
     <MESSAGE value="40% power" />
     <MESSAGE value="+ all" />
     <MESSAGE value="shift zero downwards" />
@@ -874,7 +873,8 @@
     <MESSAGE value="handled udp exception" />
     <MESSAGE value="removed dummy interrupter" />
     <MESSAGE value="New Thruster Layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Thruster Layout" />
+    <MESSAGE value="Added second camera!!!!!!!!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added second camera!!!!!!!!!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1146,11 +1146,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="97" column="19" lean-forward="false" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
+        <state relative-caret-position="324">
+          <caret line="93" column="67" lean-forward="false" selection-start-line="93" selection-start-column="67" selection-end-line="93" selection-end-column="67" />
           <folding>
-            <marker date="1523326806358" expanded="true" signature="2669:4531" ph="..." />
-            <marker date="1523326806358" expanded="true" signature="3767:4531" ph="..." />
+            <marker date="1523326915677" expanded="true" signature="2669:4537" ph="..." />
+            <marker date="1523326915677" expanded="true" signature="3767:4537" ph="..." />
           </folding>
         </state>
       </provider>
