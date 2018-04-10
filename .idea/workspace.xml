@@ -32,8 +32,8 @@
       <file leaf-file-name="ROV18.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ROV18.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="324">
+              <caret line="36" column="47" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="47" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -111,11 +111,11 @@
       <file leaf-file-name="TcpCommunication.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="91" column="71" lean-forward="false" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
+            <state relative-caret-position="396">
+              <caret line="97" column="19" lean-forward="false" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
               <folding>
-                <marker date="1523313063464" expanded="true" signature="2669:4498" ph="..." />
-                <marker date="1523313063464" expanded="true" signature="3750:4498" ph="..." />
+                <marker date="1523326806358" expanded="true" signature="2669:4531" ph="..." />
+                <marker date="1523326806358" expanded="true" signature="3767:4531" ph="..." />
               </folding>
             </state>
           </provider>
@@ -444,13 +444,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1514795069138</updated>
-    </task>
-    <task id="LOCAL-00178" summary="back">
-      <created>1519949661730</created>
-      <option name="number" value="00178" />
-      <option name="presentableId" value="LOCAL-00178" />
-      <option name="project" value="LOCAL" />
-      <updated>1519949661730</updated>
     </task>
     <task id="LOCAL-00179" summary="back">
       <created>1519949746536</created>
@@ -788,7 +781,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523313034490</updated>
     </task>
-    <option name="localTasksCounter" value="227" />
+    <task id="LOCAL-00227" summary="New Thruster Layout">
+      <created>1523313066667</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1523313066667</updated>
+    </task>
+    <option name="localTasksCounter" value="228" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1136,8 +1136,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ROV18.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="324">
+          <caret line="36" column="47" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="47" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
           </folding>
@@ -1146,11 +1146,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/communication/TcpCommunication.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="91" column="71" lean-forward="false" selection-start-line="91" selection-start-column="71" selection-end-line="91" selection-end-column="71" />
+        <state relative-caret-position="396">
+          <caret line="97" column="19" lean-forward="false" selection-start-line="97" selection-start-column="19" selection-end-line="97" selection-end-column="19" />
           <folding>
-            <marker date="1523313063464" expanded="true" signature="2669:4498" ph="..." />
-            <marker date="1523313063464" expanded="true" signature="3750:4498" ph="..." />
+            <marker date="1523326806358" expanded="true" signature="2669:4531" ph="..." />
+            <marker date="1523326806358" expanded="true" signature="3767:4531" ph="..." />
           </folding>
         </state>
       </provider>
